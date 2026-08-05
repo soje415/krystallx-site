@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@theme {
+  /* Extended from the internal ops console's own tokens — the public site
+     is the same brand's public face, not a separate marketing skin. */
+  --color-void: #050a0e;
+  --color-elevated: #11191f;
+  --color-hover: #16202a;
+  --color-steel: #223038;
+  --color-ink: #e4eaec;
+  --color-ink-dim: #9aa7ab;
+  --color-ink-faint: #5c6a6e;
+  --color-amber: #f5a623;
+  --color-amber-glow: #ffb733;
+  --color-cyan: #2ba9e0;
+  --color-red: #e0483f;
+  --color-green: #2fae66;
+
+  --font-display: 'Rajdhani', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-mono: 'Share Tech Mono', ui-monospace, monospace;
+}
+
+:root {
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+
+html, body, #root {
+  min-height: 100%;
+  background: var(--color-void);
+}
+
+body {
+  margin: 0;
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  background:
+    radial-gradient(ellipse 900px 500px at 15% -10%, rgba(43,169,224,0.06), transparent 60%),
+    radial-gradient(ellipse 800px 500px at 100% 0%, rgba(245,166,35,0.045), transparent 55%),
+    var(--color-void);
+}
+
+::selection { background: var(--color-amber); color: var(--color-void); }
+
+a { color: inherit; text-decoration: none; }
+
+.font-display { font-family: var(--font-display); }
+.font-mono { font-family: var(--font-mono); }
+
+.grid-overlay {
+  background-image:
+    linear-gradient(var(--color-steel) 1px, transparent 1px),
+    linear-gradient(90deg, var(--color-steel) 1px, transparent 1px);
+  background-size: 34px 34px;
+  opacity: 0.22;
+}
+
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: var(--color-void); }
+::-webkit-scrollbar-thumb { background: var(--color-steel); }
+::-webkit-scrollbar-thumb:hover { background: var(--color-ink-faint); }
+
+:focus-visible { outline: 2px solid var(--color-amber); outline-offset: 2px; }
