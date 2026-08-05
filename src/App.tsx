@@ -8,6 +8,7 @@ import { Environmental } from './pages/Environmental'
 import { Maritime } from './pages/Maritime'
 import { LandThreat } from './pages/LandThreat'
 import { Security } from './pages/Security'
+import { Deployment } from './pages/Deployment'
 import { Mission } from './pages/Mission'
 import { Evidence } from './pages/Evidence'
 import { RequestBriefing } from './pages/RequestBriefing'
@@ -22,6 +23,7 @@ function AnimatedRoutes() {
         <Route path="/maritime-domain-awareness" element={<Maritime />} />
         <Route path="/land-threat-intelligence" element={<LandThreat />} />
         <Route path="/security-identity" element={<Security />} />
+        <Route path="/state-police-deployment" element={<Deployment />} />
         <Route path="/mission" element={<Mission />} />
         <Route path="/evidence" element={<Evidence />} />
         <Route path="/request-briefing" element={<RequestBriefing />} />

@@ -9,6 +9,8 @@ const CAPABILITIES = [
   { to: '/security-identity', label: 'Security & Identity', color: 'var(--color-red)' },
 ]
 
+const DEPLOYMENT = { to: '/state-police-deployment', label: 'State Police Deployment Tiers', color: 'var(--color-red)' }
+
 export function Nav() {
   const [open, setOpen] = useState(false)
   const [mobileOpen, setMobileOpen] = useState(false)
@@ -66,6 +68,14 @@ export function Nav() {
                       <span className="text-[12.5px] text-ink-dim tracking-normal">{c.label}</span>
                     </Link>
                   ))}
+                  <Link
+                    to={DEPLOYMENT.to}
+                    onClick={() => setOpen(false)}
+                    className="flex items-center gap-2.5 px-4 py-3 border-t border-steel bg-void/40 hover:bg-hover transition-colors normal-case"
+                  >
+                    <span className="w-1.5 h-1.5 shrink-0" style={{ background: DEPLOYMENT.color }} />
+                    <span className="text-[12.5px] text-ink-dim tracking-normal">{DEPLOYMENT.label}</span>
+                  </Link>
                 </motion.div>
               )}
             </AnimatePresence>
@@ -113,6 +123,10 @@ export function Nav() {
                   {c.label}
                 </Link>
               ))}
+              <Link to={DEPLOYMENT.to} className="py-2.5 text-ink-dim border-b border-steel/60 flex items-center gap-2.5">
+                <span className="w-1.5 h-1.5 shrink-0" style={{ background: DEPLOYMENT.color }} />
+                {DEPLOYMENT.label}
+              </Link>
               <Link to="/mission" className="py-2.5 text-ink-dim border-b border-steel/60">Mission</Link>
               <Link to="/evidence" className="py-2.5 text-ink-dim border-b border-steel/60">Evidence</Link>
               <Link to="/request-briefing" className="mt-3 text-center bg-amber text-void py-2.5">Request Briefing</Link>

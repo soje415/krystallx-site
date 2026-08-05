@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { PageShell, Reveal, StatCounter, Eyebrow } from '../components/motion'
+import { HeroGlobe } from '../components/HeroGlobe'
 
 const PILLARS = [
   {
@@ -49,33 +50,44 @@ export function Home() {
         <div className="absolute inset-0 grid-overlay pointer-events-none" />
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-void pointer-events-none" />
         <div className="max-w-[1240px] mx-auto px-7 py-28 md:py-36 relative">
-          <motion.div
-            initial={{ opacity: 0, y: 22 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
-          >
-            <Eyebrow>Environmental &amp; Security Intelligence · Nigeria &amp; West Africa</Eyebrow>
-            <h1 className="font-display font-bold text-[clamp(38px,7vw,76px)] leading-[1.02] tracking-tight max-w-4xl mb-8 text-balance">
-              We saw the Numan flood <em className="text-amber not-italic">four days</em> before the official warning did.
-            </h1>
-            <p className="text-ink-dim text-[17px] md:text-[19px] max-w-2xl leading-relaxed mb-10">
-              Satellite-verified flood, maritime, and threat intelligence for institutions that protect Nigeria's people, water, and borders — under full judicial accountability where it counts.
-            </p>
-            <div className="flex flex-wrap items-center gap-4">
-              <Link
-                to="/request-briefing"
-                className="inline-flex items-center gap-2 font-mono text-[12px] tracking-wider uppercase bg-amber text-void px-7 py-4 hover:bg-amber-glow transition-colors"
-              >
-                Request a Briefing →
-              </Link>
-              <Link
-                to="/evidence"
-                className="inline-flex items-center gap-2 font-mono text-[12px] tracking-wider uppercase border border-steel text-ink-dim px-7 py-4 hover:border-ink-faint hover:text-ink transition-colors"
-              >
-                See the Evidence
-              </Link>
-            </div>
-          </motion.div>
+          <div className="grid lg:grid-cols-[1.15fr_0.85fr] gap-12 lg:gap-8 items-center">
+            <motion.div
+              initial={{ opacity: 0, y: 22 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
+            >
+              <Eyebrow>Environmental &amp; Security Intelligence · Nigeria &amp; West Africa</Eyebrow>
+              <h1 className="font-display font-bold text-[clamp(38px,6vw,68px)] leading-[1.02] tracking-tight mb-8 text-balance">
+                We saw the Numan flood <em className="text-amber not-italic">four days</em> before the official warning did.
+              </h1>
+              <p className="text-ink-dim text-[17px] md:text-[19px] max-w-xl leading-relaxed mb-10">
+                Satellite-verified flood, maritime, and threat intelligence for institutions that protect Nigeria's people, water, and borders — under full judicial accountability where it counts.
+              </p>
+              <div className="flex flex-wrap items-center gap-4">
+                <Link
+                  to="/request-briefing"
+                  className="inline-flex items-center gap-2 font-mono text-[12px] tracking-wider uppercase bg-amber text-void px-7 py-4 hover:bg-amber-glow transition-colors"
+                >
+                  Request a Briefing →
+                </Link>
+                <Link
+                  to="/evidence"
+                  className="inline-flex items-center gap-2 font-mono text-[12px] tracking-wider uppercase border border-steel text-ink-dim px-7 py-4 hover:border-ink-faint hover:text-ink transition-colors"
+                >
+                  See the Evidence
+                </Link>
+              </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, scale: 0.92 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.9, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
+              className="hidden lg:block"
+            >
+              <HeroGlobe />
+            </motion.div>
+          </div>
 
           <motion.div
             initial={{ opacity: 0 }}
