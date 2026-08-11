@@ -61,7 +61,7 @@ export function Home() {
                 We saw the Numan flood <em className="text-amber not-italic">four days</em> before the official warning did.
               </h1>
               <p className="text-ink-dim text-[17px] md:text-[19px] max-w-xl leading-relaxed mb-10">
-                Satellite-verified flood, maritime, and threat intelligence for institutions that protect Nigeria's people, water, and borders — under full judicial accountability where it counts.
+                One platform for security and environmental intelligence — flood and dam early warning, maritime and pipeline monitoring, threat detection, and C4ISR for state policing. Satellite-verified, under full judicial accountability where it counts.
               </p>
               <div className="flex flex-wrap items-center gap-4">
                 <Link
@@ -141,6 +141,57 @@ export function Home() {
               </Link>
             </Reveal>
           ))}
+        </div>
+      </section>
+
+      {/* STATE POLICE C4ISR */}
+      <section className="border-t border-steel relative overflow-hidden">
+        <div className="absolute inset-x-0 top-0 h-1 bg-red" />
+        <div className="max-w-[1240px] mx-auto px-7 py-24">
+          <div className="grid md:grid-cols-[1.1fr_0.9fr] gap-14 items-start">
+            <Reveal>
+              <div className="font-mono text-[10px] tracking-[0.2em] uppercase text-red mb-3">
+                State Police Deployment · C4ISR
+              </div>
+              <h2 className="font-display font-bold text-[30px] mb-5 text-balance">
+                A new police force needs a command picture, not just officers.
+              </h2>
+              <p className="text-ink-dim text-[14.5px] leading-relaxed mb-5">
+                As Nigerian states prepare to stand up their own policing capability, the constraint is command, not
+                headcount. We deploy C4ISR — tactical command, security awareness, and satellite intelligence in one
+                console — in three tiers, starting with a tier that requires no change to a state's existing
+                infrastructure.
+              </p>
+              <p className="text-ink-dim text-[14.5px] leading-relaxed mb-7">
+                The same platform runs the environmental side: the flood, dam, and pipeline monitoring a state
+                government needs sits behind the same login as the threat map. One relationship, both mandates.
+              </p>
+              <Link
+                to="/state-police-deployment"
+                className="font-mono text-[11px] tracking-wider uppercase text-red hover:text-amber transition-colors inline-flex items-center gap-1.5"
+              >
+                See the deployment tiers →
+              </Link>
+            </Reveal>
+            <Reveal delay={0.15}>
+              <div className="border border-steel bg-elevated divide-y divide-steel">
+                {[
+                  ['C²', 'Command & control', 'One live picture, dispatch driven from it'],
+                  ['C³', 'Communications', 'Alerting into channels units already use'],
+                  ['C⁴', 'Computers', 'Runs on infrastructure the state already has'],
+                  ['ISR', 'Intelligence & reconnaissance', 'Satellite tasking, LGA-level threat mapping'],
+                ].map(([letter, name, detail]) => (
+                  <div key={letter} className="flex gap-4 p-5">
+                    <span className="font-mono text-[12px] text-red w-9 shrink-0 pt-0.5">{letter}</span>
+                    <div>
+                      <div className="text-[14px] text-ink mb-0.5">{name}</div>
+                      <div className="text-[12.5px] text-ink-dim leading-relaxed">{detail}</div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </Reveal>
+          </div>
         </div>
       </section>
 

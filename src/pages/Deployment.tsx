@@ -50,6 +50,33 @@ const TIERS: Tier[] = [
   },
 ]
 
+const C4ISR = [
+  {
+    letter: 'C²',
+    name: 'Command & Control',
+    detail:
+      'A single live operating picture for the state, with dispatch and tasking driven from it — so the commander and the officer on the ground are reading the same map.',
+  },
+  {
+    letter: 'C³',
+    name: 'Communications',
+    detail:
+      'Alerting into the channels units already use, so a detection reaches the people who can act on it without waiting for a shift briefing.',
+  },
+  {
+    letter: 'C⁴',
+    name: 'Computers',
+    detail:
+      'Deployed as software on infrastructure the state already has. No new command centre required to start — Tier 1 changes nothing about existing infrastructure.',
+  },
+  {
+    letter: 'ISR',
+    name: 'Intelligence, Surveillance & Reconnaissance',
+    detail:
+      'Satellite tasking on demand: threat mapping to LGA level, holdsite and camp detection, and radar imaging that works through cloud and darkness.',
+  },
+]
+
 export function Deployment() {
   return (
     <PageShell>
@@ -57,14 +84,39 @@ export function Deployment() {
         <div className="absolute inset-0 grid-overlay pointer-events-none" />
         <div className="max-w-[1240px] mx-auto px-7 py-24 md:py-28 relative">
           <Reveal>
-            <Eyebrow color="var(--color-red)">State Police Deployment</Eyebrow>
+            <Eyebrow color="var(--color-red)">State Police Deployment · C4ISR</Eyebrow>
             <h1 className="font-display font-bold text-[clamp(32px,5.5vw,54px)] leading-[1.04] max-w-3xl mb-6 text-balance">
-              One platform, three tiers of command integration.
+              A state police force needs a <em className="text-red not-italic">command picture</em> on day one.
             </h1>
+            <p className="text-ink-dim text-[16px] md:text-[17px] max-w-2xl leading-relaxed mb-5">
+              As Nigerian states prepare to stand up their own policing capability, the hard part is not recruitment — it is command. Officers deployed without a shared operating picture are reacting to yesterday's report. C4ISR is the layer that turns a new force into a coordinated one: tactical command, security awareness, and satellite-derived intelligence in a single console.
+            </p>
             <p className="text-ink-dim text-[16px] md:text-[17px] max-w-2xl leading-relaxed">
               A state's needs at first contact are rarely its needs after twelve months. Each tier is a real deployment scope, not a marketing label — and every tier is discussed and configured in a briefing, not a checkout.
             </p>
           </Reveal>
+        </div>
+      </section>
+
+      <section className="border-b border-steel">
+        <div className="max-w-[1240px] mx-auto px-7 py-20">
+          <Reveal>
+            <div className="font-mono text-[10px] tracking-[0.2em] uppercase text-ink-faint mb-3">
+              What C4ISR means here
+            </div>
+            <h2 className="font-display font-bold text-[28px] mb-10 max-w-2xl text-balance">
+              An acronym is worth nothing. These are the components it maps to.
+            </h2>
+          </Reveal>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-px bg-steel border border-steel">
+            {C4ISR.map((c, i) => (
+              <Reveal key={c.letter} delay={i * 0.06} className="bg-elevated p-6">
+                <div className="font-mono text-[11px] tracking-[0.16em] uppercase text-red mb-2">{c.letter}</div>
+                <h3 className="font-display font-semibold text-[16px] mb-2 text-ink">{c.name}</h3>
+                <p className="text-[12.5px] text-ink-dim leading-relaxed">{c.detail}</p>
+              </Reveal>
+            ))}
+          </div>
         </div>
       </section>
 
