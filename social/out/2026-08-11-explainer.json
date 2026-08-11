@@ -1,0 +1,30 @@
+{
+  "caption": "Resolution gets the attention. Revisit cadence decides whether you see the event at all.\n\nA high-resolution pass that arrives once every twelve days can miss a flood surge, a fence breach, or a burn scar entirely — the change happens and reverses between looks. A lower-resolution pass that returns every one to three days catches the trend forming: water rising, ground disturbed, vegetation stressed, before it peaks.\n\nDetail answers \"what is this.\" Cadence answers \"is this still happening, and how fast.\" For indications and warning, cadence is the harder requirement to satisfy and the one that actually shortens a decision cycle.\n\nWhen you're building a collection plan, ask about revisit before you ask about pixel size. The sharpest image of a gap in coverage is still a gap.",
+  "thread": [
+    "Resolution gets the attention. Revisit cadence decides whether you see the event at all.",
+    "A sharp image every twelve days can miss a surge that forms and passes between looks. A blurrier image every one to three days catches the trend as it builds.",
+    "Detail tells you what something is. Cadence tells you whether it's still happening and how fast. For indications and warning, cadence is the harder spec to meet — and the one that matters more.",
+    "Before you ask about pixel size in a collection plan, ask about revisit. The sharpest image of a coverage gap is still a gap."
+  ],
+  "card": {
+    "eyebrow": "Collection basics",
+    "headline": "Cadence beats <em>resolution</em>, most of the time",
+    "sub": "A sharp image every twelve days can miss the event. A rougher one every day catches it forming.",
+    "footright": "Revisit vs. resolution"
+  },
+  "rationale": "Teaches a real tradecraft principle (revisit cadence over resolution) distinct from the prior two posts, with no product pitch and a usable takeaway for a buyer building a collection plan.",
+  "pillar": "EXPLAINER",
+  "tier": "AUTO",
+  "illustrative": false,
+  "cites_detection": false,
+  "generated_at": "2026-08-11T23:06:05.719Z",
+  "usage": {
+    "input": 2132,
+    "output": 685
+  },
+  "opsec": {
+    "verdict": "PASS",
+    "reasons": []
+  },
+  "effective_tier": "AUTO"
+}

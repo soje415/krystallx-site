@@ -10,4 +10,4 @@ compatibility_flags = ["nodejs_compat"]
 [[d1_databases]]
 binding = "DB"
 database_name = "krystallx-site"
-database_id = "PLACEHOLDER_RUN_WRANGLER_D1_CREATE"
+database_id = "5d1847b1-826c-44f8-b1ed-f53a5c4976c6"
