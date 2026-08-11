@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Local Cloudflare Pages dev secrets — never commit
+.dev.vars

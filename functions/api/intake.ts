@@ -15,7 +15,14 @@
  */
 import Anthropic from '@anthropic-ai/sdk'
 
-export const config = { runtime: 'edge' }
+interface Env {
+  ANTHROPIC_API_KEY: string
+  SUPABASE_URL?: string
+  SUPABASE_SERVICE_ROLE_KEY?: string
+  TELEGRAM_BOT_TOKEN?: string
+  TELEGRAM_CHAT_ID?: string
+  INTAKE_IP_SALT?: string
+}
 
 const MODEL = 'claude-sonnet-5'
 const MAX_TURNS = 24
@@ -150,16 +157,18 @@ async function notifyTelegram(token: string, chatId: string, text: string): Prom
   }
 }
 
-export default async function handler(req: Request): Promise<Response> {
-  if (req.method === 'OPTIONS') return new Response(null, { headers: cors })
-  if (req.method !== 'POST') return json({ error: 'method not allowed' }, 405)
+export const onRequestOptions: PagesFunction<Env> = async () => new Response(null, { headers: cors })
 
-  const apiKey = process.env.ANTHROPIC_API_KEY
+export const onRequestPost: PagesFunction<Env> = async (context) => {
+  const req = context.request
+  const env = context.env
+
+  const apiKey = env.ANTHROPIC_API_KEY
   if (!apiKey) return json({ error: 'intake unavailable' }, 503)
 
-  const supabaseUrl = process.env.SUPABASE_URL ?? ''
-  const serviceKey = process.env.SUPABASE_SERVICE_ROLE_KEY ?? ''
-  const ipSalt = process.env.INTAKE_IP_SALT ?? 'krystallx-intake'
+  const supabaseUrl = env.SUPABASE_URL ?? ''
+  const serviceKey = env.SUPABASE_SERVICE_ROLE_KEY ?? ''
+  const ipSalt = env.INTAKE_IP_SALT ?? 'krystallx-intake'
 
   let body: { messages?: Anthropic.MessageParam[] }
   try {
@@ -179,7 +188,9 @@ export default async function handler(req: Request): Promise<Response> {
     }
   }
 
-  const ip = req.headers.get('x-forwarded-for')?.split(',')[0].trim() ?? 'unknown'
+  // CF-Connecting-IP is set by the edge and cannot be spoofed by the client,
+  // unlike X-Forwarded-For which is caller-supplied.
+  const ip = req.headers.get('CF-Connecting-IP') ?? 'unknown'
   const ipHash = await hashIp(ip, ipSalt)
 
   if (supabaseUrl && serviceKey && !(await rateLimitOk(supabaseUrl, serviceKey, ipHash))) {
@@ -231,8 +242,8 @@ export default async function handler(req: Request): Promise<Response> {
     })
   }
 
-  const tgToken = process.env.TELEGRAM_BOT_TOKEN
-  const tgChat = process.env.TELEGRAM_CHAT_ID
+  const tgToken = env.TELEGRAM_BOT_TOKEN
+  const tgChat = env.TELEGRAM_CHAT_ID
   if (tgToken && tgChat) {
     const claim = input.claimed_authority ? `\n⚠️ <b>Unverified claim:</b> ${input.claimed_authority}` : ''
     await notifyTelegram(
