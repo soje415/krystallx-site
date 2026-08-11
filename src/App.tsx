@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom'
 import { AnimatePresence } from 'framer-motion'
 import { HudBar } from './components/HudBar'
@@ -12,6 +13,15 @@ import { Deployment } from './pages/Deployment'
 import { Mission } from './pages/Mission'
 import { Evidence } from './pages/Evidence'
 import { RequestBriefing } from './pages/RequestBriefing'
+import { NotFound } from './pages/NotFound'
+
+function ScrollToTop() {
+  const { pathname } = useLocation()
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [pathname])
+  return null
+}
 
 function AnimatedRoutes() {
   const location = useLocation()
@@ -27,6 +37,7 @@ function AnimatedRoutes() {
         <Route path="/mission" element={<Mission />} />
         <Route path="/evidence" element={<Evidence />} />
         <Route path="/request-briefing" element={<RequestBriefing />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </AnimatePresence>
   )
@@ -35,6 +46,7 @@ function AnimatedRoutes() {
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <div className="min-h-screen flex flex-col">
         <HudBar />
         <Nav />

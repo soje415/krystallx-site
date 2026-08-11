@@ -28,7 +28,7 @@ const TIERS: Tier[] = [
     summary: 'Everything in Tier 1, plus proactive detection tasked directly against the state\'s active concerns.',
     includes: [
       'Everything in Tier 1',
-      'Sentinel ISR — satellite sweep tasking on demand',
+      'Satellite ISR Sweep — imaging tasking on demand',
       'Holdsite & mining-camp detection',
       "Environmental & maritime layers relevant to the state's mandate",
     ],

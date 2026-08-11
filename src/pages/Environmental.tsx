@@ -25,7 +25,7 @@ export function Environmental() {
         },
         {
           name: 'Resource Intel',
-          description: 'Illegal mining detection, oil-slick tracking with drift and volume modeling, and flare/methane watch via VIIRS persistence and Sentinel-5P.',
+          description: 'Illegal mining detection, oil-slick tracking with drift and volume modeling, and flare/methane watch via persistent thermal and atmospheric satellite monitoring.',
         },
         {
           name: 'Carbon MRV',

@@ -14,8 +14,8 @@ export function LandThreat() {
       ]}
       capabilities={[
         {
-          name: 'Sentinel ISR',
-          description: 'The core satellite sweep pipeline — Sentinel-2 optical and Sentinel-1 SAR fused, switching to SAR-primary automatically when cloud cover exceeds usable thresholds.',
+          name: 'Satellite ISR Sweep',
+          description: 'The core satellite sweep pipeline — multi-source optical and radar imagery fused, switching to radar-primary automatically when cloud cover exceeds usable thresholds.',
         },
         {
           name: 'Holdsite Detection',

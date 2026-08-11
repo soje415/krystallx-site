@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<style>
+  @font-face { font-family: 'Rajdhani'; src: local('Rajdhani'); }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 1200px; height: 630px; }
+  body {
+    background:
+      radial-gradient(ellipse 700px 420px at 12% -12%, rgba(43,169,224,0.14), transparent 62%),
+      radial-gradient(ellipse 640px 400px at 104% 4%, rgba(245,166,35,0.10), transparent 58%),
+      #050a0e;
+    color: #e4eaec;
+    font-family: 'Inter', 'DejaVu Sans', system-ui, sans-serif;
+    position: relative;
+    overflow: hidden;
+  }
+  .grid {
+    position: absolute; inset: 0;
+    background-image:
+      linear-gradient(#223038 1px, transparent 1px),
+      linear-gradient(90deg, #223038 1px, transparent 1px);
+    background-size: 42px 42px;
+    opacity: 0.20;
+  }
+  .frame { position: absolute; inset: 0; padding: 64px 72px; display: flex; flex-direction: column; }
+  .brand { display: flex; align-items: center; gap: 14px; }
+  .chip { width: 16px; height: 16px; background: #f5a623; }
+  .wordmark {
+    font-family: 'Rajdhani', 'DejaVu Sans Condensed', sans-serif;
+    font-weight: 700; font-size: 34px; letter-spacing: 0.055em;
+  }
+  .wordmark span { color: #f5a623; }
+  .eyebrow {
+    font-family: 'Share Tech Mono', 'DejaVu Sans Mono', monospace;
+    font-size: 16px; letter-spacing: 0.24em; text-transform: uppercase;
+    color: #f5a623; display: flex; align-items: center; gap: 14px;
+    margin-top: auto;
+  }
+  .eyebrow::before { content: ''; width: 42px; height: 1px; background: #f5a623; display: block; }
+  h1 {
+    font-family: 'Rajdhani', 'DejaVu Sans Condensed', sans-serif;
+    font-weight: 700; font-size: 68px; line-height: 1.04; letter-spacing: -0.015em;
+    margin-top: 22px; max-width: 21ch;
+  }
+  h1 em { font-style: normal; color: #f5a623; }
+  .sub {
+    color: #9aa7ab; font-size: 22px; line-height: 1.5; max-width: 56ch; margin-top: 24px;
+  }
+  .rule { height: 1px; background: #223038; margin-top: 34px; }
+  .foot {
+    display: flex; justify-content: space-between; align-items: center;
+    font-family: 'Share Tech Mono', 'DejaVu Sans Mono', monospace;
+    font-size: 15px; letter-spacing: 0.13em; text-transform: uppercase;
+    color: #5c6a6e; padding-top: 20px;
+  }
+  .foot .live { color: #2fae66; display: flex; align-items: center; gap: 9px; }
+  .foot .live::before { content: ''; width: 9px; height: 9px; background: #2fae66; display: block; }
+</style>
+</head>
+<body>
+  <div class="grid"></div>
+  <div class="frame">
+    <div class="brand">
+      <div class="chip"></div>
+      <div class="wordmark">KRYSTALLX <span>SHIELD</span></div>
+    </div>
+
+    <div class="eyebrow" id="eyebrow">Environmental &amp; Security Intelligence</div>
+    <h1 id="headline">Satellite-verified intelligence for <em>Nigeria</em> &amp; West Africa.</h1>
+    <div class="sub" id="sub">Flood, maritime, and threat monitoring for the institutions that protect Nigeria's people, water, and borders.</div>
+
+    <div class="rule"></div>
+    <div class="foot">
+      <span id="footleft">krystallxdefense.com</span>
+      <span class="live" id="footright">Hindcast-certified · Numan +4 days</span>
+    </div>
+  </div>
+</body>
+</html>

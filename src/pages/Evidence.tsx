@@ -25,7 +25,7 @@ export function Evidence() {
             <h2 className="font-display font-bold text-[30px] mb-6 text-balance">The Numan flood, September 2022</h2>
             <div className="space-y-5 text-[14.5px] text-ink-dim leading-relaxed">
               <p>
-                We ran our reach-sentinel array back against the historical record of the September 2022 Benue River flood event at Numan, Adamawa State — one of the most consequential flood events in recent Nigerian history.
+                We ran our reach-monitoring array back against the historical record of the September 2022 Benue River flood event at Numan, Adamawa State — one of the most consequential flood events in recent Nigerian history.
               </p>
               <p>
                 The array's SAR-based reach fingerprints flagged the flood signature <span className="text-ink">four days before</span> the official warning was issued through conventional channels. As a control, we ran the same array against the equivalent 2021 window on the same reach — it correctly stayed quiet, with no false signal.

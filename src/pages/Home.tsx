@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { PageShell, Reveal, StatCounter, Eyebrow } from '../components/motion'
-import { HeroGlobe } from '../components/HeroGlobe'
+import heroSatellite from '../assets/hero-satellite.jpg'
 
 const PILLARS = [
   {
@@ -20,7 +20,7 @@ const PILLARS = [
     colorClass: 'text-cyan',
     barClass: 'bg-cyan',
     title: 'Maritime Domain Awareness',
-    desc: 'Vessel tracking, dark-vessel detection, and SAR — day or night, clear skies or cloud cover.',
+    desc: 'Vessel tracking, dark-vessel and illegal-bunkering detection, flare and methane watch, and SAR — day or night, clear skies or cloud cover.',
   },
   {
     to: '/land-threat-intelligence',
@@ -80,12 +80,30 @@ export function Home() {
             </motion.div>
 
             <motion.div
-              initial={{ opacity: 0, scale: 0.92 }}
+              initial={{ opacity: 0, scale: 0.96 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.9, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-              className="hidden lg:block"
+              className="hidden lg:block relative"
             >
-              <HeroGlobe />
+              <div className="relative">
+                <img
+                  src={heroSatellite}
+                  alt="Satellite in orbit above an illuminated data network spanning the globe"
+                  className="w-full h-auto block"
+                  style={{
+                    maskImage: 'radial-gradient(ellipse 62% 60% at 50% 42%, black 30%, transparent 72%)',
+                    WebkitMaskImage: 'radial-gradient(ellipse 62% 60% at 50% 42%, black 30%, transparent 72%)',
+                    filter: 'saturate(0.85) brightness(0.92) contrast(1.05)',
+                  }}
+                />
+                <div
+                  className="absolute pointer-events-none"
+                  style={{
+                    inset: '-20%',
+                    background: 'radial-gradient(ellipse 45% 45% at 50% 42%, rgba(43,169,224,0.16), transparent 70%)',
+                  }}
+                />
+              </div>
             </motion.div>
           </div>
 
@@ -134,7 +152,7 @@ export function Home() {
               <div className="font-mono text-[10px] tracking-[0.2em] uppercase text-green mb-3">Hindcast-certified</div>
               <h2 className="font-display font-bold text-[30px] mb-5 text-balance">The Numan flood, September 2022.</h2>
               <p className="text-ink-dim text-[14.5px] leading-relaxed mb-6">
-                Run back against the actual 2022 event, our reach-sentinel array flagged the Numan flood signature four days before the official warning was issued — while the neighboring 2021 dry season correctly stayed quiet. This is the one claim on this site with a fully reconstructed, dated record behind it.
+                Run back against the actual 2022 event, our reach-monitoring array flagged the Numan flood signature four days before the official warning was issued — while the neighboring 2021 dry season correctly stayed quiet. This is the one claim on this site with a fully reconstructed, dated record behind it.
               </p>
               <Link to="/evidence" className="font-mono text-[11px] tracking-wider uppercase text-amber hover:text-amber-glow transition-colors inline-flex items-center gap-1.5">
                 Read the full methodology →
