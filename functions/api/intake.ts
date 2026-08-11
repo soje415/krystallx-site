@@ -17,8 +17,7 @@ import Anthropic from '@anthropic-ai/sdk'
 
 interface Env {
   ANTHROPIC_API_KEY: string
-  SUPABASE_URL?: string
-  SUPABASE_SERVICE_ROLE_KEY?: string
+  DB?: D1Database
   TELEGRAM_BOT_TOKEN?: string
   TELEGRAM_CHAT_ID?: string
   INTAKE_IP_SALT?: string
@@ -113,36 +112,62 @@ async function hashIp(ip: string, salt: string): Promise<string> {
     .join('')
 }
 
-async function rateLimitOk(supabaseUrl: string, serviceKey: string, ipHash: string): Promise<boolean> {
+/**
+ * Per-IP hourly throttle. Read-modify-write in one statement so concurrent
+ * requests from the same hash can't both read the pre-increment count.
+ */
+async function rateLimitOk(db: D1Database, ipHash: string, limit = 30, windowSecs = 3600): Promise<boolean> {
   try {
-    const res = await fetch(`${supabaseUrl}/rest/v1/rpc/intake_rate_check`, {
-      method: 'POST',
-      headers: { apikey: serviceKey, authorization: `Bearer ${serviceKey}`, 'content-type': 'application/json' },
-      body: JSON.stringify({ p_ip_hash: ipHash }),
-    })
-    if (!res.ok) return true // limiter unavailable — hard caps below still apply
-    return (await res.json()) === true
+    const now = Math.floor(Date.now() / 1000)
+    const row = await db
+      .prepare(
+        `insert into intake_rate_limit (ip_hash, window_start, request_count)
+         values (?1, ?2, 1)
+         on conflict(ip_hash) do update set
+           request_count = case when window_start < ?2 - ?3 then 1 else request_count + 1 end,
+           window_start  = case when window_start < ?2 - ?3 then ?2 else window_start end
+         returning request_count`,
+      )
+      .bind(ipHash, now, windowSecs)
+      .first<{ request_count: number }>()
+    return (row?.request_count ?? 0) <= limit
   } catch {
-    return true
+    return true // limiter unavailable — hard caps in the handler still apply
   }
 }
 
-async function persist(
-  supabaseUrl: string,
-  serviceKey: string,
-  row: Record<string, unknown>,
-): Promise<boolean> {
-  const res = await fetch(`${supabaseUrl}/rest/v1/briefing_requests`, {
-    method: 'POST',
-    headers: {
-      apikey: serviceKey,
-      authorization: `Bearer ${serviceKey}`,
-      'content-type': 'application/json',
-      prefer: 'return=minimal',
-    },
-    body: JSON.stringify(row),
-  })
-  return res.ok
+async function persist(db: D1Database, row: Record<string, unknown>): Promise<boolean> {
+  try {
+    await db
+      .prepare(
+        `insert into briefing_requests
+           (id, created_at, full_name, email, organisation, role_title, mandate,
+            pillars, region, decision_context, timeline, claimed_authority,
+            transcript, source_ip_hash, user_agent)
+         values (?1,?2,?3,?4,?5,?6,?7,?8,?9,?10,?11,?12,?13,?14,?15)`,
+      )
+      .bind(
+        crypto.randomUUID(),
+        new Date().toISOString(),
+        row.full_name,
+        row.email,
+        row.organisation,
+        row.role_title ?? null,
+        row.mandate,
+        JSON.stringify(row.pillars ?? []),
+        row.region ?? null,
+        row.decision_context ?? null,
+        row.timeline ?? null,
+        row.claimed_authority ?? null,
+        JSON.stringify(row.transcript ?? []),
+        row.source_ip_hash ?? null,
+        row.user_agent ?? null,
+      )
+      .run()
+    return true
+  } catch {
+    return false
+  }
 }
 
 async function notifyTelegram(token: string, chatId: string, text: string): Promise<void> {
@@ -166,8 +191,7 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
   const apiKey = env.ANTHROPIC_API_KEY
   if (!apiKey) return json({ error: 'intake unavailable' }, 503)
 
-  const supabaseUrl = env.SUPABASE_URL ?? ''
-  const serviceKey = env.SUPABASE_SERVICE_ROLE_KEY ?? ''
+  const db = env.DB
   const ipSalt = env.INTAKE_IP_SALT ?? 'krystallx-intake'
 
   let body: { messages?: Anthropic.MessageParam[] }
@@ -193,7 +217,7 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
   const ip = req.headers.get('CF-Connecting-IP') ?? 'unknown'
   const ipHash = await hashIp(ip, ipSalt)
 
-  if (supabaseUrl && serviceKey && !(await rateLimitOk(supabaseUrl, serviceKey, ipHash))) {
+  if (db && !(await rateLimitOk(db, ipHash))) {
     return json({ error: 'Too many requests. Please email hello@krystallxdefense.com instead.' }, 429)
   }
 
@@ -232,10 +256,10 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
   const input = submission.input as Record<string, unknown>
   let saved = false
 
-  if (supabaseUrl && serviceKey) {
-    saved = await persist(supabaseUrl, serviceKey, {
+  if (db) {
+    // identity_verified is deliberately absent — never set from chat content.
+    saved = await persist(db, {
       ...input,
-      // identity_verified is never set from chat content — see SQL comment.
       transcript: messages,
       source_ip_hash: ipHash,
       user_agent: req.headers.get('user-agent')?.slice(0, 500) ?? null,
