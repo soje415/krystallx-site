@@ -1,4 +1,4 @@
-import { motion, useInView, useMotionValue, useSpring } from 'framer-motion'
+import { motion, useInView, useMotionValue, useSpring, useReducedMotion } from 'framer-motion'
 import { useEffect, useRef, type ReactNode } from 'react'
 
 export function PageShell({ children }: { children: ReactNode }) {
@@ -17,12 +17,15 @@ export function PageShell({ children }: { children: ReactNode }) {
 export function Reveal({
   children, delay = 0, y = 18, className = '',
 }: { children: ReactNode; delay?: number; y?: number; className?: string }) {
+  // Vestibular disorders are triggered by movement, not by opacity. Drop the
+  // travel and keep a short fade so content still reads as arriving.
+  const reduced = useReducedMotion()
   return (
     <motion.div
-      initial={{ opacity: 0, y }}
+      initial={{ opacity: 0, y: reduced ? 0 : y }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: '-60px' }}
-      transition={{ duration: 0.55, delay, ease: [0.16, 1, 0.3, 1] }}
+      transition={{ duration: reduced ? 0.2 : 0.55, delay: reduced ? 0 : delay, ease: [0.16, 1, 0.3, 1] }}
       className={className}
     >
       {children}
@@ -35,6 +38,7 @@ export function StatCounter({
 }: { value: number; suffix?: string; decimals?: number; label: string }) {
   const ref = useRef<HTMLDivElement>(null)
   const inView = useInView(ref, { once: true, margin: '-40px' })
+  const reduced = useReducedMotion()
   const motionVal = useMotionValue(0)
   const spring = useSpring(motionVal, { damping: 26, stiffness: 90 })
   const displayRef = useRef<HTMLSpanElement>(null)
@@ -43,11 +47,17 @@ export function StatCounter({
     if (inView) motionVal.set(value)
   }, [inView, value, motionVal])
 
+  // With motion reduced, show the final figure rather than animating to it.
   useEffect(() => {
+    if (reduced && displayRef.current) displayRef.current.textContent = value.toFixed(decimals)
+  }, [reduced, value, decimals])
+
+  useEffect(() => {
+    if (reduced) return
     return spring.on('change', (v) => {
       if (displayRef.current) displayRef.current.textContent = v.toFixed(decimals)
     })
-  }, [spring, decimals])
+  }, [spring, decimals, reduced])
 
   return (
     <div ref={ref}>

@@ -1,7 +1,8 @@
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { PageShell, Reveal, StatCounter, Eyebrow } from '../components/motion'
-import heroSatellite from '../assets/hero-satellite.jpg'
+import { HeroGlobe } from '../components/HeroGlobe'
+import { OrbitTelemetry } from '../components/OrbitTelemetry'
 
 const PILLARS = [
   {
@@ -86,23 +87,18 @@ export function Home() {
               className="hidden lg:block relative"
             >
               <div className="relative">
-                <img
-                  src={heroSatellite}
-                  alt="Satellite in orbit above an illuminated data network spanning the globe"
-                  className="w-full h-auto block"
-                  style={{
-                    maskImage: 'radial-gradient(ellipse 62% 60% at 50% 42%, black 30%, transparent 72%)',
-                    WebkitMaskImage: 'radial-gradient(ellipse 62% 60% at 50% 42%, black 30%, transparent 72%)',
-                    filter: 'saturate(0.85) brightness(0.92) contrast(1.05)',
-                  }}
-                />
+                <HeroGlobe />
                 <div
                   className="absolute pointer-events-none"
                   style={{
-                    inset: '-20%',
-                    background: 'radial-gradient(ellipse 45% 45% at 50% 42%, rgba(43,169,224,0.16), transparent 70%)',
+                    inset: '-18%',
+                    background:
+                      'radial-gradient(ellipse 45% 45% at 50% 46%, rgba(43,169,224,0.14), transparent 70%)',
                   }}
                 />
+              </div>
+              <div className="mt-6">
+                <OrbitTelemetry />
               </div>
             </motion.div>
           </div>
