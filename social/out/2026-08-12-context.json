@@ -1,26 +1,26 @@
 {
-  "caption": "Pipeline theft in the Niger Delta is not primarily a security failure. It is an arbitrage. As long as the margin between the cost of tapping a line and the price of refined or black-market product stays wide, interdiction slows the practice — it does not end it. Patrol density changes the risk calculation. It does not change the economics.\n\nFlood season runs on a similar logic from a different institution. Release decisions on upstream dams are made against reservoir capacity and structural risk, not against the flood plain hundreds of kilometres downstream. The people who take the water are rarely the people who decided to send it.\n\nNeither problem gets solved by a sensor. What a sensor buys is warning time — enough of it that a response starts before the water or the loss shows up as a headline. That is the limit of what monitoring can promise, and it is worth stating plainly.",
+  "caption": "Flood risk and pipeline theft in Nigeria share a structural trait: the geography of the problem does not match the geography of the response. A reservoir sits in one jurisdiction. The floodplain it can drown sits in another, often across a state or even a border. A pipeline right-of-way runs through multiple local government areas, each with its own security posture and none with visibility into the whole corridor.\n\nThis is why dam management reads as an upstream engineering decision but lands as a downstream emergency, and why pipeline theft persists despite dense ground patrols — the corridor is long, the incentive is a price margin, and no single command owns the full line of sight.\n\nNone of this is new. It is publicly documented in flood bulletins and pipeline-loss reporting every year. The pattern holds because the response is still organized by administrative boundary, not by basin or by corridor.",
   "thread": [
-    "Pipeline theft is an arbitrage, not a security gap. While tapping a line stays cheaper than the black-market price of what's inside it, patrols slow the practice — they don't remove the incentive.",
-    "Dam releases run on a separate logic. Reservoir capacity and structural risk drive the decision. The flood plain downstream is not in that room.",
-    "Two different economics, same outcome: the cost lands on people who made neither decision. Monitoring doesn't fix either driver — it buys warning time before the cost lands.",
-    "#FloodSeason #WestAfrica"
+    "Nigeria's flood and pipeline-theft problems share a structural flaw: the risk follows a river basin or a pipeline corridor. The response follows administrative boundaries. Those two maps rarely line up.",
+    "A dam release decision sits with one authority. The floodplain it can drown sits in another jurisdiction downstream — sometimes another state. That gap is where warning time gets lost.",
+    "A pipeline corridor crosses dozens of local government areas. Each has its own patrol posture. None has a single view of the whole line. Theft economics exploit exactly that seam.",
+    "Public flood bulletins and pipeline-loss reports document this every year. The pattern doesn't repeat because it's random. It repeats because the response is organized by map lines that don't match the risk."
   ],
   "card": {
-    "eyebrow": "Flood season economics",
-    "headline": "Nobody downstream made the <em>decision</em>",
-    "sub": "Pipeline theft tracks a price margin. Dam releases track reservoir risk. Both costs land on people absent from the decision.",
-    "footright": "Niger Delta / Sahel corridor"
+    "eyebrow": "Basin risk vs. administrative maps",
+    "headline": "The risk follows a <em>basin</em>. The response follows a border",
+    "sub": "Dam releases and pipeline corridors cross jurisdictions the security response does not. That mismatch, not chance, drives the annual pattern.",
+    "footright": "Flood & pipeline risk"
   },
-  "rationale": "Reframes the theft-and-dam context around decision-ownership and economics rather than the previously used downstream/cost-gap and calendar-driver angles, keeping the pillar fresh.",
+  "rationale": "Introduces a distinct, publicly-grounded CONTEXT angle — jurisdictional mismatch between risk geography and administrative response — without repeating prior decision, cadence, or limits framings.",
   "pillar": "CONTEXT",
   "tier": "APPROVE",
   "illustrative": false,
   "cites_detection": false,
-  "generated_at": "2026-08-12T16:55:29.456Z",
+  "generated_at": "2026-08-12T23:33:14.952Z",
   "usage": {
-    "input": 2503,
-    "output": 1385
+    "input": 2507,
+    "output": 1019
   },
   "opsec": {
     "verdict": "PASS",
