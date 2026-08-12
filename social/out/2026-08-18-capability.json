@@ -1,0 +1,30 @@
+{
+  "caption": "Wide-area change detection finds what moved. It does not tell you why.\n\nAcross an area of interest, we run successive optical and radar passes against a baseline and flag deltas — new clearing, disturbed ground, structure changes, vessel presence. That cueing narrows a search area from hundreds of square kilometers to a handful of points worth a closer look.\n\nThe honest limit: a flagged change is a signature, not a verdict. It does not say who did it, whether it is licit, or what happens next. That call still needs ground truth — a patrol, a source, a follow-up collect. Treat the output as a tasking list, not a finding.",
+  "thread": [
+    "Wide-area change detection finds what moved. It does not tell you why.",
+    "We diff successive passes against a baseline across an area of interest and flag deltas — clearing, disturbed ground, new structures, vessel presence. That's cueing, not confirmation.",
+    "Limit: a flagged change is a signature, not a verdict. It doesn't say who, why, or what's next. That call needs ground truth — a patrol, a source, a follow-up pass.",
+    "Use it to narrow a search area, not to close a case."
+  ],
+  "card": {
+    "eyebrow": "Change detection",
+    "headline": "It flags the change. Not the <em>cause</em>",
+    "sub": "Successive-pass comparison narrows a search area to a handful of points. Intent still requires ground truth.",
+    "footright": "Optical + radar change detection"
+  },
+  "rationale": "Introduces a distinct capability (change detection) and its honest limit without repeating the revisit/resolution/queue/calendar angles already covered.",
+  "pillar": "CAPABILITY",
+  "tier": "APPROVE",
+  "illustrative": false,
+  "cites_detection": false,
+  "generated_at": "2026-08-12T10:59:53.159Z",
+  "usage": {
+    "input": 2163,
+    "output": 676
+  },
+  "opsec": {
+    "verdict": "PASS",
+    "reasons": []
+  },
+  "effective_tier": "APPROVE"
+}

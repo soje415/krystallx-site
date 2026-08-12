@@ -1,0 +1,30 @@
+{
+  "caption": "Our position: a brief is only worth issuing if it says what it does not know.\n\nEvery product we ship carries three labels — confirmed, assessed, unknown. Confirmed means ground truth or corroborated imagery. Assessed means pattern consistent with prior signature, but unverified. Unknown means the coverage gap is real and we are not going to paper over it with confidence we don't have.\n\nThis is slower than issuing a clean narrative. It is also the only version of this work that survives a courtroom, an inquiry, or a commander asking \"how do you know.\" We built the collection plan around that question, not around the demo.",
+  "thread": [
+    "Position: a brief that hides its own gaps is worse than no brief. We label every output confirmed, assessed, or unknown — and we mean it.",
+    "Confirmed: ground-truthed or corroborated. Assessed: consistent with a known pattern, not verified. Unknown: coverage gap, stated flat. No blending the three.",
+    "This slows down the product. It also means the brief holds up when someone with authority to ask hard questions actually asks them.",
+    "We are not building a narrative generator. We are building something that names its own limits before an operator finds them the hard way."
+  ],
+  "card": {
+    "eyebrow": "How we brief",
+    "headline": "State the <em>limit</em>, not just the finding",
+    "sub": "Confirmed. Assessed. Unknown. Every output labeled, every gap named — because a brief that hides its limits does not survive scrutiny.",
+    "footright": "Analytic standards"
+  },
+  "rationale": "Establishes the company's epistemic discipline as a differentiator without boasting, reinforcing credibility ahead of any procurement or judicial scrutiny.",
+  "pillar": "MISSION",
+  "tier": "AUTO",
+  "illustrative": false,
+  "cites_detection": false,
+  "generated_at": "2026-08-12T10:58:57.516Z",
+  "usage": {
+    "input": 2078,
+    "output": 553
+  },
+  "opsec": {
+    "verdict": "PASS",
+    "reasons": []
+  },
+  "effective_tier": "AUTO"
+}

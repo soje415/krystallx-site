@@ -1,0 +1,31 @@
+{
+  "caption": "Optical imagery is blind through cloud cover. Radar is not. That is the whole reason synthetic-aperture radar matters for flood and pipeline monitoring in West Africa, where the wet season stacks cloud over the exact windows you need to see.\n\nRadar works by sending its own microwave pulse down and reading the echo. It does not wait for sunlight and it does not care about cloud, haze, or dark. Optical imagery needs a clear sky and daylight, which is precisely what is missing during a flood event or a storm-covered incursion.\n\nThe trade-off: radar images look nothing like a photograph. Water shows up as a smooth, dark return. A pipeline right-of-way with standing water reads differently than dry ground. Reading radar correctly takes trained interpretation, not a glance. That is the cost side of the capability, and it is real.",
+  "thread": [
+    "Optical imagery is blind through cloud cover. Radar is not. That single fact decides which sensor you task during a flood or a storm-masked incursion.",
+    "Radar sends its own microwave pulse and reads the echo back. No need for sunlight, no need for clear sky. Optical needs both.",
+    "The cost: radar imagery does not look like a photograph. Water reads as a smooth dark return. Interpreting it correctly takes training, not a glance.",
+    "Wet season in West Africa stacks cloud over the exact windows that matter most for I&W. That is the case for radar as a standing layer in the collection plan, not a backup.",
+    "#EarthObservation #SAR"
+  ],
+  "card": {
+    "eyebrow": "How radar actually sees",
+    "headline": "Cloud does not stop a <em>radar</em> pulse",
+    "sub": "Synthetic-aperture radar sends its own signal and reads the echo. It works through cloud, haze, and dark, when optical imagery cannot.",
+    "footright": "Synthetic-aperture radar"
+  },
+  "rationale": "Delivers a genuinely new, ungated technical fact (SAR's active-sensing principle and its interpretation cost) distinct from the revisit-cadence and detection-limit posts already run.",
+  "pillar": "EXPLAINER",
+  "tier": "AUTO",
+  "illustrative": false,
+  "cites_detection": false,
+  "generated_at": "2026-08-12T10:59:42.237Z",
+  "usage": {
+    "input": 2173,
+    "output": 788
+  },
+  "opsec": {
+    "verdict": "PASS",
+    "reasons": []
+  },
+  "effective_tier": "AUTO"
+}

@@ -1,0 +1,30 @@
+{
+  "caption": "Standing collection does not stop between headlines. Across river reaches, pipeline corridors, and coastal segments in our area of interest, tasking cycles run on a fixed schedule regardless of whether a given pass shows anything worth a call.\n\nMost passes are quiet. That is the expected output of a working collection plan, not a gap in it. The value sits in the baseline built from months of unremarkable imagery, because that baseline is what makes the one anomalous pass legible in hours instead of days.\n\nWe do not publish site-level activity. What we can say: the tasking queue does not idle, and dwell on priority reaches gets reviewed on every cycle, not just when someone asks.",
+  "thread": [
+    "Standing collection does not stop between headlines. Tasking cycles across our area of interest run on a fixed schedule whether or not a given pass shows anything.",
+    "Most passes are quiet. That is the expected output of a working collection plan, not evidence it isn't working.",
+    "Months of unremarkable imagery build the baseline that makes one anomalous pass legible in hours instead of days.",
+    "We don't publish site-level activity. What we can confirm: priority reaches get reviewed on every cycle, not only on request."
+  ],
+  "card": {
+    "eyebrow": "Operating tempo",
+    "headline": "The queue does not <em>idle</em>",
+    "sub": "Tasking cycles run on schedule across the area of interest. Most passes are quiet. That is the baseline working, not a gap.",
+    "footright": "Standing collection"
+  },
+  "rationale": "Communicates scale and operational discipline without disclosing any site, client, or event, reinforcing reliability rather than novelty.",
+  "pillar": "ACTIVITY",
+  "tier": "DRAFT",
+  "illustrative": false,
+  "cites_detection": false,
+  "generated_at": "2026-08-12T10:59:29.797Z",
+  "usage": {
+    "input": 2130,
+    "output": 656
+  },
+  "opsec": {
+    "verdict": "PASS",
+    "reasons": []
+  },
+  "effective_tier": "DRAFT"
+}

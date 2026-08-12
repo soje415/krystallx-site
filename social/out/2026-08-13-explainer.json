@@ -1,0 +1,31 @@
+{
+  "caption": "Resolution gets the attention. Revisit cadence wins the argument.\n\nA sharp image of a flooded reach taken once a week is not intelligence, it is a snapshot. If the water rose and fell between passes, you never see it. The gap in coverage is the risk, not the pixel count.\n\nThink of it as a sampling problem. Synthetic-aperture radar can image through cloud cover, which matters most exactly when weather is bad enough to cause the flood you are trying to catch. But if the satellite only revisits that reach every 10 to 14 days, cloud penetration doesn't help you — you simply weren't looking when it mattered.\n\nA lower-resolution feed with a tight revisit window will beat a high-resolution feed with a long one, every time, for indications and warning work. Coverage frequency sets your decision cycle. Detail is secondary until you've solved for when you're actually watching.",
+  "thread": [
+    "Resolution gets the attention. Revisit cadence wins the argument.",
+    "A sharp image taken once a week isn't intelligence — it's a snapshot. If the river rose and fell between passes, you never saw it happen.",
+    "SAR sees through cloud, which matters most during bad weather — exactly when floods form. But cloud penetration is wasted if the revisit window is 10-14 days and the event happens between passes.",
+    "For indications and warning, a coarser feed with tight revisit beats a sharp feed with a long gap. Coverage frequency sets your decision cycle. Detail is secondary.",
+    "Ask any vendor two questions: what's the resolution, and what's the revisit. The second answer tells you whether the first one matters."
+  ],
+  "card": {
+    "eyebrow": "Collection basics",
+    "headline": "Revisit cadence beats <em>resolution</em>",
+    "sub": "A sharp image taken too rarely is a snapshot, not a warning. Coverage frequency sets the decision cycle — detail is secondary.",
+    "footright": "SAR / revisit cycles"
+  },
+  "rationale": "Delivers a genuinely useful, non-promotional lesson on revisit vs resolution that builds analyst credibility without repeating the prior Numan/upstream angle.",
+  "pillar": "EXPLAINER",
+  "tier": "AUTO",
+  "illustrative": false,
+  "cites_detection": false,
+  "generated_at": "2026-08-12T10:58:45.971Z",
+  "usage": {
+    "input": 2105,
+    "output": 738
+  },
+  "opsec": {
+    "verdict": "PASS",
+    "reasons": []
+  },
+  "effective_tier": "AUTO"
+}

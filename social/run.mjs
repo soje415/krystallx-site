@@ -40,7 +40,11 @@ function recentHeadlines(limit = 12) {
     .slice(-limit)
     .map((f) => {
       try {
-        return JSON.parse(readFileSync(join(OUT, f), 'utf8')).card?.headline
+        // Headline alone is too weak a signal — two posts can carry different
+        // headlines and still cover identical ground. Include the sub so the
+        // model sees the actual subject matter it must avoid repeating.
+        const d = JSON.parse(readFileSync(join(OUT, f), 'utf8'))
+        return d.card ? `${d.card.headline} — ${d.card.sub}` : null
       } catch {
         return null
       }

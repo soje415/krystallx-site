@@ -36,16 +36,25 @@ const SECURITY_IDENTITY = [
  */
 const THIRD_PARTIES = [
   'nema', 'nihsa', 'cjtf', 'nnpc', 'nosdra', 'nesrea', 'dicon', 'nscdc',
-  'nasrda', 'shell', 'chevron', 'total', 'agip', 'seplat', 'ecowas',
-  'dss', 'nia', 'nigerian army', 'nigeria police',
+  'nasrda', 'chevron', 'totalenergies', 'agip', 'seplat', 'ecowas',
+  'dss', 'nigerian army', 'nigeria police',
 ]
 
 /** Unverifiable marketing absolutes. */
 const OVERCLAIM = [
   'guaranteed', '100%', 'always accurate', 'never miss', 'never misses',
-  'fully autonomous', 'the only', 'the first', 'world-class', 'unmatched',
+  'fully autonomous', 'world-class', 'unmatched',
   'real-time surveillance', 'continuous surveillance', '24/7 surveillance',
 ]
+
+/**
+ * "the only" / "the first" are only a problem as MARKET claims. Plain English
+ * uses them constantly ("the first one matters", "the only version that
+ * survives a courtroom"), and flagging those teaches the reviewer to ignore
+ * the gate — which is worse than not flagging at all.
+ */
+const MARKET_CLAIM =
+  /\b(the (only|first)|world'?s first)\s+(\w+\s+){0,3}(platform|system|company|firm|provider|solution|service|product|technology|tool)\b/i
 
 /** Decimal degrees, DMS, and "12.34N 5.67E" style coordinate pairs. */
 const COORD_PATTERNS = [
@@ -54,7 +63,14 @@ const COORD_PATTERNS = [
   /\b\d{1,2}\.\d+\s*[NS][ ,]+\d{1,3}\.\d+\s*[EW]\b/i,
 ]
 
-const found = (haystack, needles) => needles.filter((n) => haystack.includes(n))
+const escape = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+
+/**
+ * Whole-word (or whole-phrase) matching. Substring matching produced
+ * false positives that mattered: "total" fired on "rainfall totals".
+ */
+const found = (haystack, needles) =>
+  needles.filter((n) => new RegExp(`(?<![a-z0-9])${escape(n)}(?![a-z0-9])`, 'i').test(haystack))
 
 /**
  * @param {{caption?: string, thread?: string[], card?: object, image_prompt?: string,
@@ -94,6 +110,9 @@ export function opsecCheck(post) {
   }
   for (const hit of found(lower, THIRD_PARTIES)) {
     review(`names a third-party organisation ("${hit}")`)
+  }
+  if (MARKET_CLAIM.test(text)) {
+    review('unverifiable market-position claim ("the only/first ... platform")')
   }
 
   // A specific detection claim needs a traceable record behind it. This is the

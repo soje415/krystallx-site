@@ -1,26 +1,27 @@
 {
-  "caption": "Flood season in Nigeria is often described as a rainfall problem. It is more accurately a coordination problem.\n\nMuch of the worst flooding along the Benue and Niger river systems follows scheduled dam releases upstream, not just local rainfall. The water is not a surprise to the dam operator. It is often a surprise to the community three days downstream, because the release schedule and the flood warning do not travel on the same timeline.\n\nPipeline theft has a similar shape. The economics are well documented: theft persists because the margin between stolen crude and refined product still clears, even after logistics and risk. Enforcement that only patrols pipeline right-of-way addresses the symptom. The market that makes theft profitable is the actual problem.\n\nBoth cases point to the same gap — the information that would let someone act early exists somewhere in the system. It just does not arrive at the point where a decision gets made.",
+  "caption": "Flood season in the Niger-Benue system is a dam-management problem before it is a rainfall problem. Nigeria's worst flood years correlate with controlled dam releases upstream, not just local precipitation. When reservoirs approach capacity, operators release water to protect the structure. That release becomes a downstream surge with days of lead time before it hits a floodplain community.\n\nThe same lag applies to pipeline theft economics. Tapping a line is low-cost and low-skill relative to the resale value of diverted product. As long as that spread holds, enforcement that relies on ground patrols alone will keep losing the arithmetic. The theft sites move faster than the patrols can.\n\nBoth problems share a structure: the actionable signal exists before the visible damage does. A release upstream, a new access track to a pipeline right-of-way — these show up in the collection window ahead of the flood crest or the spill. The gap is not information. It's who is watching the right window at the right time.",
   "thread": [
-    "Nigeria's worst river flooding is often triggered less by local rain and more by scheduled dam releases upstream. The release is planned. The downstream warning frequently is not, and that gap costs communities days.",
-    "Pipeline theft in the Niger Delta is not primarily a security failure. It's an economics problem — the margin on stolen crude and refined product clears even after logistics and risk. Patrols alone don't change that math.",
-    "Same pattern in both cases: the information needed to act early already exists somewhere upstream. The failure is in how late it reaches the people who have to respond.",
-    "Context pillar, not a claim about what any one system caught. Just the shape of the problem before you get to tools."
+    "Nigeria's worst floods track controlled dam releases upstream, not just rainfall. When a reservoir nears capacity, the release becomes a downstream surge days before it reaches a floodplain community.",
+    "Pipeline theft runs on simple economics: low cost to tap, high resale value for diverted product. Ground patrols alone can't win that arithmetic — the tap sites move faster than the patrol schedule.",
+    "Both problems share a pattern: the actionable signal precedes the visible damage. An upstream release, a new access track near a right-of-way — both are observable before the crest or the spill.",
+    "The gap isn't a lack of information. It's coverage timing against a moving problem.",
+    "#FloodRisk #WestAfrica"
   ],
   "card": {
-    "eyebrow": "CONTEXT — WEST AFRICA",
-    "headline": "The water is <em>scheduled</em>. The warning isn't.",
-    "sub": "Much of Nigeria's worst river flooding follows planned upstream dam releases. The information exists early. It rarely arrives early.",
-    "footright": "KrystallX Shield"
+    "eyebrow": "Flood season, upstream causes",
+    "headline": "The flood starts <em>upstream</em>",
+    "sub": "Dam releases and pipeline economics both generate warning signal before the visible damage. Coverage timing is the gap, not information.",
+    "footright": "Niger-Benue basin"
   },
-  "rationale": "Reframes flood/theft as a systemic information-timing problem using only public knowledge, reinforcing the brand's value proposition without making any detection claim.",
+  "rationale": "Grounds the brand in real regional dynamics using only public knowledge, reinforcing the collection-timing thesis without overreaching into unproven detection claims.",
   "pillar": "CONTEXT",
   "tier": "APPROVE",
   "illustrative": false,
   "cites_detection": false,
-  "generated_at": "2026-08-11T23:01:59.943Z",
+  "generated_at": "2026-08-12T10:58:33.475Z",
   "usage": {
-    "input": 1442,
-    "output": 877
+    "input": 2038,
+    "output": 721
   },
   "opsec": {
     "verdict": "PASS",

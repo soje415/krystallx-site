@@ -1,0 +1,30 @@
+{
+  "caption": "West Africa's annual flood and pipeline-theft cycle is not random. It is structural, and public record explains most of it.\n\nDam releases from transboundary reservoirs upstream, most publicly documented around the Lagdo dam in Cameroon, are coordinated on a schedule that does not always match downstream warning timelines in Nigeria. That gap is administrative, not meteorological. Rainfall totals matter, but release timing decides when a surge actually arrives.\n\nPipeline theft follows its own logic: the arbitrage between crude price and refined product price on the black market persists regardless of enforcement surges. Interdictions raise the cost of theft. They rarely remove the incentive. Until that margin closes, the tapping will continue at a rate enforcement can suppress but not end.\n\nBoth patterns reward the same posture: watch the driver, not just the consequence.",
+  "thread": [
+    "West Africa's flood and pipeline-theft cycle is not random. It is structural. Public record explains most of the pattern.",
+    "Dam release timing upstream (Lagdo, Cameroon, is the most documented case) does not reliably sync with downstream warning cycles in Nigeria. That gap is administrative, not meteorological.",
+    "Pipeline theft persists at a rate enforcement can suppress but not end, because the crude-to-black-market-product margin stays wide. Raise interdiction cost, the incentive survives.",
+    "Watch the driver, not just the consequence. That's the operational read on both patterns."
+  ],
+  "card": {
+    "eyebrow": "West Africa risk calendar",
+    "headline": "The calendar is not <em>random</em>",
+    "sub": "Dam release timing and theft economics are structural, publicly documented drivers behind Nigeria's annual flood and pipeline crisis pattern.",
+    "footright": "Hydrology & pipeline economics"
+  },
+  "rationale": "Establishes analytical credibility on well-known regional dynamics without claiming any detection, positioning KrystallX as understanding root causes rather than just selling imagery.",
+  "pillar": "CONTEXT",
+  "tier": "APPROVE",
+  "illustrative": false,
+  "cites_detection": false,
+  "generated_at": "2026-08-12T10:59:18.032Z",
+  "usage": {
+    "input": 2121,
+    "output": 1360
+  },
+  "opsec": {
+    "verdict": "PASS",
+    "reasons": []
+  },
+  "effective_tier": "APPROVE"
+}
