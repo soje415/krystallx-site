@@ -17,6 +17,8 @@ import { execFileSync } from 'node:child_process'
 import { PILLARS, pillarForDate } from './pillars.mjs'
 import { opsecCheck } from './opsec.mjs'
 import { generatePost } from './generate.mjs'
+import { publishPost } from './publish.mjs'
+import { notify } from './notify.mjs'
 
 const HERE = dirname(fileURLToPath(import.meta.url))
 const ROOT = join(HERE, '..')
@@ -69,14 +71,7 @@ function renderCard(post, slug) {
   return out
 }
 
-/**
- * Publish adapter. No provider is configured yet, so this is a dry run —
- * it reports what WOULD go out. Swap the body for an Ayrshare call (one POST
- * with the platforms array) or per-platform API calls; nothing upstream changes.
- */
-async function publish(post) {
-  return { published: false, reason: 'no publishing provider configured (dry run)' }
-}
+
 
 async function runOne(pillar, dateStr) {
   const slug = `${dateStr}-${pillar.id.toLowerCase()}`
@@ -99,13 +94,26 @@ async function runOne(pillar, dateStr) {
   const card = renderCard(post, slug)
   writeFileSync(join(OUT, `${slug}.json`), JSON.stringify(post, null, 2))
 
-  const result = effectiveTier === 'AUTO' ? await publish(post) : { published: false, reason: `tier ${effectiveTier}` }
+  // AUTO publishes immediately; everything else waits for a tap in Telegram.
+  const result =
+    effectiveTier === 'AUTO'
+      ? await publishPost(post, card, slug)
+      : { published: false, reason: `held for ${effectiveTier}` }
+
+  let notified = { notified: false }
+  try {
+    notified = await notify(post, card, slug, effectiveTier, result)
+  } catch (e) {
+    // A notification failure must never lose the post — it's on disk either way.
+    notified = { notified: false, reason: e.message }
+  }
 
   process.stdout.write(`  ✓ ${gate.verdict} · tier ${effectiveTier}\n`)
   for (const r of gate.reasons) process.stdout.write(`    ${r}\n`)
   process.stdout.write(`  card: ${card}\n`)
   process.stdout.write(`  ${post.card.headline.replace(/<\/?em>/g, '')}\n`)
   process.stdout.write(`  publish: ${result.reason}\n`)
+  process.stdout.write(`  telegram: ${notified.notified ? 'sent' : notified.reason ?? 'skipped'}\n`)
   process.stdout.write(`  tokens: ${post.usage.input} in / ${post.usage.output} out\n`)
 
   return { slug, killed: false, gate, tier: effectiveTier }
