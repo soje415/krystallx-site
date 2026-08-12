@@ -17,7 +17,8 @@ import { execFileSync } from 'node:child_process'
 import { PILLARS, pillarForDate } from './pillars.mjs'
 import { opsecCheck } from './opsec.mjs'
 import { generatePost } from './generate.mjs'
-import { publishPost } from './publish.mjs'
+import { publishPost as publishMeta } from './publish.mjs'
+import { publishPost as publishAyrshare } from './publish-ayrshare.mjs'
 import { notify } from './notify.mjs'
 
 const HERE = dirname(fileURLToPath(import.meta.url))
@@ -78,6 +79,15 @@ function renderCard(post, slug) {
 
 
 
+/**
+ * Whichever provider is configured wins; Ayrshare takes precedence when both
+ * are present. Neither = dry run, and the post is still queued.
+ */
+function publisher() {
+  if (process.env.AYRSHARE_API_KEY) return publishAyrshare
+  return publishMeta
+}
+
 async function runOne(pillar, dateStr) {
   const slug = `${dateStr}-${pillar.id.toLowerCase()}`
   process.stdout.write(`\n── ${slug} ──\n`)
@@ -102,7 +112,7 @@ async function runOne(pillar, dateStr) {
   // AUTO publishes immediately; everything else waits for a tap in Telegram.
   const result =
     effectiveTier === 'AUTO'
-      ? await publishPost(post, card, slug)
+      ? await publisher()(post, card, slug)
       : { published: false, reason: `held for ${effectiveTier}` }
 
   let notified = { notified: false }

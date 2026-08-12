@@ -1,25 +1,26 @@
 {
-  "caption": "Dam releases and pipeline theft share a structural trait: the decision and the damage happen in different places. A reservoir gate opens upstream, often across a border, and the flood arrives days later in a community with no formal say in the release schedule. A pipeline segment gets tapped and refined product moves into a parallel market shaped by price differentials that persist regardless of enforcement activity.\n\nNeither pattern is random. Lagdo dam releases follow known seasonal rainfall accumulation. Illegal tapping follows the arbitrage between official and black-market fuel prices. Both are publicly documented, both are annual, and both put the cost on populations downstream of a decision they did not make.\n\nCalling either problem \"downstream\" is not a metaphor. It is where the monitoring gap actually sits — between the point of decision and the point of impact.",
+  "caption": "Pipeline theft in the Niger Delta is not primarily a security failure. It is an arbitrage. As long as the margin between the cost of tapping a line and the price of refined or black-market product stays wide, interdiction slows the practice — it does not end it. Patrol density changes the risk calculation. It does not change the economics.\n\nFlood season runs on a similar logic from a different institution. Release decisions on upstream dams are made against reservoir capacity and structural risk, not against the flood plain hundreds of kilometres downstream. The people who take the water are rarely the people who decided to send it.\n\nNeither problem gets solved by a sensor. What a sensor buys is warning time — enough of it that a response starts before the water or the loss shows up as a headline. That is the limit of what monitoring can promise, and it is worth stating plainly.",
   "thread": [
-    "Dam releases and pipeline theft share a structure: decision in one place, damage in another. That gap is where monitoring has to sit.",
-    "Lagdo dam releases track known seasonal rainfall accumulation. Illegal pipeline tapping tracks the price gap between official and black-market fuel. Neither is random. Both are downstream problems by design, not by accident.",
-    "Downstream communities absorb the cost of decisions made elsewhere — a reservoir gate opened across a border, a valve opened along an unpatrolled right-of-way. The monitoring question is whether that gap gets watched before or after impact."
+    "Pipeline theft is an arbitrage, not a security gap. While tapping a line stays cheaper than the black-market price of what's inside it, patrols slow the practice — they don't remove the incentive.",
+    "Dam releases run on a separate logic. Reservoir capacity and structural risk drive the decision. The flood plain downstream is not in that room.",
+    "Two different economics, same outcome: the cost lands on people who made neither decision. Monitoring doesn't fix either driver — it buys warning time before the cost lands.",
+    "#FloodSeason #WestAfrica"
   ],
   "card": {
-    "eyebrow": "Flood and theft economics",
-    "headline": "The damage is always <em>downstream</em>",
-    "sub": "Dam releases and pipeline theft both put the cost on communities that did not make the decision. That gap is where monitoring belongs.",
-    "footright": "Nigeria / West Africa"
+    "eyebrow": "Flood season economics",
+    "headline": "Nobody downstream made the <em>decision</em>",
+    "sub": "Pipeline theft tracks a price margin. Dam releases track reservoir risk. Both costs land on people absent from the decision.",
+    "footright": "Niger Delta / Sahel corridor"
   },
-  "rationale": "Reframes the recurring flood/theft context around the shared structural trait of decision-impact separation, a genuinely new angle distinct from prior calendar and upstream-signal posts.",
+  "rationale": "Reframes the theft-and-dam context around decision-ownership and economics rather than the previously used downstream/cost-gap and calendar-driver angles, keeping the pillar fresh.",
   "pillar": "CONTEXT",
   "tier": "APPROVE",
   "illustrative": false,
   "cites_detection": false,
-  "generated_at": "2026-08-12T11:47:07.259Z",
+  "generated_at": "2026-08-12T16:55:29.456Z",
   "usage": {
-    "input": 2502,
-    "output": 1175
+    "input": 2503,
+    "output": 1385
   },
   "opsec": {
     "verdict": "PASS",
