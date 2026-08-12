@@ -84,6 +84,11 @@ export function HeroGlobe() {
           <stop offset="0%" stopColor="var(--color-cyan)" stopOpacity="0" />
           <stop offset="100%" stopColor="var(--color-cyan)" stopOpacity="0.6" />
         </linearGradient>
+        <linearGradient id="sweep-fade" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0%" stopColor="var(--color-cyan)" stopOpacity="0" />
+          <stop offset="72%" stopColor="var(--color-cyan)" stopOpacity="0.05" />
+          <stop offset="100%" stopColor="var(--color-cyan)" stopOpacity="0.20" />
+        </linearGradient>
         <clipPath id="globe-clip">
           <circle cx="250" cy="250" r="195" />
         </clipPath>
@@ -126,6 +131,20 @@ export function HeroGlobe() {
         {/* landmass hint */}
         <ellipse cx="205" cy="230" rx="70" ry="34" fill="var(--color-elevated)" opacity="0.5" />
         <ellipse cx="320" cy="270" rx="55" ry="26" fill="var(--color-elevated)" opacity="0.4" />
+
+        {/* sensing sweep — a leading edge with a trailing wash, crossing the
+            disc on a slow cycle. Omitted entirely when motion is reduced. */}
+        {!reduced && (
+          <g>
+            <rect x="-110" y="55" width="110" height="390" fill="url(#sweep-fade)">
+              <animate attributeName="x" from="-110" to="500" dur="7s" repeatCount="indefinite" />
+            </rect>
+            <line x1="0" y1="55" x2="0" y2="445" stroke="var(--color-cyan)" strokeWidth="1.4" opacity="0.7">
+              <animate attributeName="x1" from="-1" to="499" dur="7s" repeatCount="indefinite" />
+              <animate attributeName="x2" from="-1" to="499" dur="7s" repeatCount="indefinite" />
+            </line>
+          </g>
+        )}
       </g>
 
       {/* vertical uplink beams from rim */}

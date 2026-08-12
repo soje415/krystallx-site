@@ -3,6 +3,7 @@ import { motion } from 'framer-motion'
 import { PageShell, Reveal, StatCounter, Eyebrow } from '../components/motion'
 import { HeroGlobe } from '../components/HeroGlobe'
 import { OrbitTelemetry } from '../components/OrbitTelemetry'
+import { SensorBand } from '../components/SensorBand'
 
 const PILLARS = [
   {
@@ -139,6 +140,8 @@ export function Home() {
           ))}
         </div>
       </section>
+
+      <SensorBand />
 
       {/* STATE POLICE C4ISR */}
       <section className="border-t border-steel relative overflow-hidden">
