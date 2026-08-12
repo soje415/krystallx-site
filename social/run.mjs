@@ -23,6 +23,10 @@ import { notify } from './notify.mjs'
 const HERE = dirname(fileURLToPath(import.meta.url))
 const ROOT = join(HERE, '..')
 const OUT = join(HERE, 'out')
+// Cards live under public/ so they deploy with the site. Instagram will not
+// accept an upload — it fetches the image from a public URL — so an
+// undeployed card means no Instagram post.
+const CARDS = join(ROOT, 'public', 'cards')
 
 /** Load .dev.vars so local runs use the same secret file as wrangler. */
 function loadDevVars() {
@@ -55,7 +59,8 @@ function recentHeadlines(limit = 12) {
 }
 
 function renderCard(post, slug) {
-  const out = join(OUT, `${slug}.png`)
+  mkdirSync(CARDS, { recursive: true })
+  const out = join(CARDS, `${slug}.png`)
   execFileSync(
     'node',
     [
@@ -122,6 +127,7 @@ async function runOne(pillar, dateStr) {
 async function main() {
   loadDevVars()
   mkdirSync(OUT, { recursive: true })
+  mkdirSync(CARDS, { recursive: true })
 
   const argv = process.argv.slice(2)
   const arg = (f) => { const i = argv.indexOf(f); return i === -1 ? null : argv[i + 1] }

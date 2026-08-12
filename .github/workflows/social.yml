@@ -57,7 +57,7 @@ jobs:
         run: |
           git config user.name  "krystallx-social"
           git config user.email "social@users.noreply.github.com"
-          git add social/out
+          git add social/out public/cards
           # Nothing to commit is a normal outcome: every post may have been
           # killed by the OPSEC gate. Don't fail the run for it.
           git diff --staged --quiet || git commit -m "social: $(date -u +%Y-%m-%d) queue"
@@ -68,6 +68,6 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: cards-${{ github.run_number }}
-          path: social/out/*.png
+          path: public/cards/*.png
           if-no-files-found: ignore
           retention-days: 30

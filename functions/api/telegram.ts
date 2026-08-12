@@ -55,7 +55,7 @@ async function publishToMeta(env: Env, slug: string, caption: string) {
   const results: string[] = []
 
   // Facebook — upload the bytes directly.
-  const card = await repoFile(env, `social/out/${slug}.png`)
+  const card = await repoFile(env, `public/cards/${slug}.png`)
   if (card) {
     const form = new FormData()
     form.set('message', caption)

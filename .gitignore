@@ -25,6 +25,3 @@ dist-ssr
 
 # Local Cloudflare Pages dev secrets — never commit
 .dev.vars
-
-# Generated social cards — re-renderable from the queued JSON, no need to version PNGs
-social/out/*.png
