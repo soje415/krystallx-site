@@ -1,27 +1,26 @@
 {
-  "caption": "Resolution gets the attention. Revisit cadence wins the argument.\n\nA sharp image of a flooded reach taken once a week is not intelligence, it is a snapshot. If the water rose and fell between passes, you never see it. The gap in coverage is the risk, not the pixel count.\n\nThink of it as a sampling problem. Synthetic-aperture radar can image through cloud cover, which matters most exactly when weather is bad enough to cause the flood you are trying to catch. But if the satellite only revisits that reach every 10 to 14 days, cloud penetration doesn't help you — you simply weren't looking when it mattered.\n\nA lower-resolution feed with a tight revisit window will beat a high-resolution feed with a long one, every time, for indications and warning work. Coverage frequency sets your decision cycle. Detail is secondary until you've solved for when you're actually watching.",
+  "caption": "A false positive is not free. Every alert dispatches a patrol, a duty officer, an hour of attention that could have gone to a real signature. Run the threshold too loose and the queue fills with noise until operators start ignoring it — the same failure mode as no coverage at all.\n\nRun it too tight and the system misses the slow, low-signature change that matters: a pipeline tap that bleeds for weeks, a reservoir creeping past its rule curve. Tuning that line is not a technical afterthought. It is the difference between a system commanders trust and one they route around.\n\nThe honest measure of a monitoring system is not how many alerts it generates. It is how many of those alerts were worth the trip.",
   "thread": [
-    "Resolution gets the attention. Revisit cadence wins the argument.",
-    "A sharp image taken once a week isn't intelligence — it's a snapshot. If the river rose and fell between passes, you never saw it happen.",
-    "SAR sees through cloud, which matters most during bad weather — exactly when floods form. But cloud penetration is wasted if the revisit window is 10-14 days and the event happens between passes.",
-    "For indications and warning, a coarser feed with tight revisit beats a sharp feed with a long gap. Coverage frequency sets your decision cycle. Detail is secondary.",
-    "Ask any vendor two questions: what's the resolution, and what's the revisit. The second answer tells you whether the first one matters."
+    "A false positive is not free. It costs a patrol, a duty officer's hour, attention pulled from a real signature.",
+    "Set the alert threshold too loose and the queue fills with noise. Operators learn to ignore it. That is the same failure as no coverage — just slower to notice.",
+    "Set it too tight and you miss the slow bleed: a tap that drains for weeks, a reservoir edging past its rule curve, never enough change in one pass to trip the alarm.",
+    "The real measure of a monitoring system isn't alert volume. It's the fraction of alerts worth the trip out."
   ],
   "card": {
     "eyebrow": "Collection basics",
-    "headline": "Revisit cadence beats <em>resolution</em>",
-    "sub": "A sharp image taken too rarely is a snapshot, not a warning. Coverage frequency sets the decision cycle — detail is secondary.",
-    "footright": "SAR / revisit cycles"
+    "headline": "An alert that isn't worth the trip is a <em>cost</em>",
+    "sub": "Loose thresholds drown operators in noise. Tight ones miss the slow bleed. Tuning that line is the job.",
+    "footright": "Alert threshold design"
   },
-  "rationale": "Delivers a genuinely useful, non-promotional lesson on revisit vs resolution that builds analyst credibility without repeating the prior Numan/upstream angle.",
+  "rationale": "Fills the one untouched EXPLAINER angle in the brief — false-positive cost — without repeating prior cadence/radar/cause posts, and stays instructive rather than promotional.",
   "pillar": "EXPLAINER",
   "tier": "AUTO",
   "illustrative": false,
   "cites_detection": false,
-  "generated_at": "2026-08-12T10:58:45.971Z",
+  "generated_at": "2026-08-13T08:24:48.552Z",
   "usage": {
-    "input": 2105,
-    "output": 738
+    "input": 2537,
+    "output": 712
   },
   "opsec": {
     "verdict": "PASS",
