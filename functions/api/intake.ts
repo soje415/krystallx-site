@@ -249,8 +249,12 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
     (b): b is Anthropic.ToolUseBlock => b.type === 'tool_use' && b.name === 'submit_briefing_request',
   )
 
+  // Return the assistant's text and nothing else. `response.content` also carries
+  // the model's thinking blocks (adaptive thinking is on), and this endpoint is
+  // reachable by anyone — handing back the raw block array publishes the model's
+  // reasoning about the visitor to the visitor.
   if (!submission) {
-    return json({ reply: text, submitted: false, content: response.content })
+    return json({ reply: text, submitted: false })
   }
 
   const input = submission.input as Record<string, unknown>

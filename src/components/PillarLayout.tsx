@@ -7,6 +7,7 @@ export interface PillarCapability { name: string; description: string; proof?: s
 
 export function PillarLayout({
   colorVar, colorClass, eyebrow, title, description, stats, capabilities, note,
+  visual, visualHeading, visualLead,
 }: {
   colorVar: string
   colorClass: string
@@ -16,6 +17,10 @@ export function PillarLayout({
   stats: PillarStat[]
   capabilities: PillarCapability[]
   note?: string
+  /** The pillar's method diagram — the argument, before the capability list. */
+  visual?: ReactNode
+  visualHeading?: string
+  visualLead?: string
 }) {
   return (
     <PageShell>
@@ -46,6 +51,25 @@ export function PillarLayout({
           )}
         </div>
       </section>
+
+      {visual && (
+        <section className="border-b border-steel">
+          <div className="max-w-[1240px] mx-auto px-7 py-20">
+            <Reveal>
+              <div className="font-mono text-[10px] tracking-[0.2em] uppercase mb-3" style={{ color: colorVar }}>
+                How it works
+              </div>
+              {visualHeading && (
+                <h2 className="font-display font-bold text-[28px] mb-4 max-w-2xl text-balance">{visualHeading}</h2>
+              )}
+              {visualLead && (
+                <p className="text-ink-dim text-[14.5px] leading-relaxed max-w-2xl mb-10">{visualLead}</p>
+              )}
+            </Reveal>
+            <Reveal delay={0.1}>{visual}</Reveal>
+          </div>
+        </section>
+      )}
 
       <section className="max-w-[1240px] mx-auto px-7 py-20">
         <Reveal>

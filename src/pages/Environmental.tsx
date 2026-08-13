@@ -1,8 +1,12 @@
 import { PillarLayout } from '../components/PillarLayout'
+import { CascadeDiagram } from '../components/diagrams'
 
 export function Environmental() {
   return (
     <PillarLayout
+      visual={<CascadeDiagram />}
+      visualHeading="A flood warning is a countdown, not an announcement."
+      visualLead="Water arriving at Makurdi left the upstream reservoir days earlier. That travel time is the whole opportunity — so the system is built to confirm at the source and hand every downstream reach the number that actually matters to it: how long it has."
       colorVar="var(--color-cyan)"
       colorClass="bg-cyan"
       eyebrow="Environmental Intelligence"

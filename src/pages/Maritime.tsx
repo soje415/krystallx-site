@@ -1,8 +1,12 @@
 import { PillarLayout } from '../components/PillarLayout'
+import { FusionDiagram } from '../components/diagrams'
 
 export function Maritime() {
   return (
     <PillarLayout
+      visual={<FusionDiagram />}
+      visualHeading="Three signals have to agree before anyone gets sent out."
+      visualLead="Bunkering detection is where a platform is most tempted to overclaim, because each individual signal looks damning on its own. We report the convergence instead — and say plainly what a partial match is."
       colorVar="var(--color-cyan)"
       colorClass="bg-cyan"
       eyebrow="Maritime Domain Awareness"

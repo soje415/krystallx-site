@@ -1,8 +1,12 @@
 import { PillarLayout } from '../components/PillarLayout'
+import { WarrantGateDiagram } from '../components/diagrams'
 
 export function Security() {
   return (
     <PillarLayout
+      visual={<WarrantGateDiagram />}
+      visualHeading="The only thing we will show you here is the gate."
+      visualLead="We publish no target types, no coverage, no operational detail on this pillar. What we will publish is the shape of the control around it, because a claim of judicial accountability is worth nothing unless you can see where it sits in the path."
       colorVar="var(--color-red)"
       colorClass="bg-red"
       eyebrow="Security & Identity"

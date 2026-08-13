@@ -1,8 +1,12 @@
 import { PillarLayout } from '../components/PillarLayout'
+import { SweepDiagram } from '../components/diagrams'
 
 export function LandThreat() {
   return (
     <PillarLayout
+      visual={<SweepDiagram />}
+      visualHeading="A sweep tasks an area, and has to survive two filters to produce anything."
+      visualLead="The pipeline is deliberately unglamorous. What matters is what it refuses to do: fail quietly when cloud rolls in, and let a detection out the far end before the exclusion doctrine has had its say."
       colorVar="var(--color-amber)"
       colorClass="bg-amber"
       eyebrow="Land & Threat Intelligence"

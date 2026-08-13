@@ -13,6 +13,9 @@ const COVERS = [
   'What "warrant-gated" actually means for the Security & Identity pillar',
 ]
 
+/** Must match MAX_TURNS in functions/api/intake.ts — the server rejects beyond it. */
+const MAX_TURNS = 24
+
 const OPENING =
   "I handle briefing requests here. Tell me what you're responsible for and what problem brought you — I'll work out which capabilities are relevant and set up the right conversation.\n\nIf you'd rather skip ahead: your name, organisation, and what you need to monitor gets us most of the way there."
 
@@ -24,6 +27,13 @@ export function RequestBriefing() {
   const [done, setDone] = useState<{ full_name: string; organisation: string; email: string } | null>(null)
   const logRef = useRef<HTMLDivElement>(null)
 
+  // The endpoint caps a conversation at MAX_TURNS messages and rejects the next
+  // one outright. Counting the same way here lets us warn before that happens
+  // instead of letting a long, good conversation end on an error.
+  const sent = turns.length - 1 // the opening line is UI copy, never sent
+  const remaining = MAX_TURNS - sent
+  const atCap = remaining <= 0
+
   useEffect(() => {
     logRef.current?.scrollTo({ top: logRef.current.scrollHeight, behavior: 'smooth' })
   }, [turns, busy])
@@ -31,13 +41,21 @@ export function RequestBriefing() {
   async function send(e: FormEvent) {
     e.preventDefault()
     const text = draft.trim()
-    if (!text || busy || done) return
+    if (!text || busy || done || atCap) return
 
     const next: Turn[] = [...turns, { role: 'user', content: text }]
     setTurns(next)
     setDraft('')
     setBusy(true)
     setError(null)
+
+    // A failed send must not eat what they typed. Put the turn back in the box
+    // so Send retries it, rather than leaving them to retype from memory.
+    const restore = (message: string) => {
+      setTurns(turns)
+      setDraft(text)
+      setError(message)
+    }
 
     try {
       const res = await fetch('/api/intake', {
@@ -49,13 +67,13 @@ export function RequestBriefing() {
       const data = await res.json()
 
       if (!res.ok) {
-        setError(data.error ?? 'Something went wrong.')
+        restore(data.error ?? 'Something went wrong.')
         return
       }
       if (data.reply) setTurns((t) => [...t, { role: 'assistant', content: data.reply }])
       if (data.submitted) setDone(data.summary)
     } catch {
-      setError('Could not reach the intake service.')
+      restore('Could not reach the intake service.')
     } finally {
       setBusy(false)
     }
@@ -108,7 +126,9 @@ export function RequestBriefing() {
           </Reveal>
 
           <Reveal delay={0.1}>
-            <div className="border border-steel bg-elevated flex flex-col h-[560px]">
+            {/* Fixed 560px overflows a short phone viewport; scale with the screen
+                but keep enough room that the log doesn't become a two-line slot. */}
+            <div className="border border-steel bg-elevated flex flex-col h-[clamp(400px,62vh,560px)]">
               <div className="border-b border-steel px-5 py-3 flex items-center gap-2.5 shrink-0">
                 <span className="w-1.5 h-1.5 bg-green" aria-hidden="true" />
                 <span className="font-mono text-[10.5px] tracking-[0.18em] uppercase text-ink-dim">
@@ -157,17 +177,29 @@ export function RequestBriefing() {
                 {error && (
                   <div className="border border-red/40 bg-red/5 p-4" role="alert">
                     <p className="text-[13.5px] text-ink-dim leading-relaxed">
-                      {error}{' '}
+                      {error} Your message is back in the box — press Send to try again, or{' '}
                       <a href="mailto:hello@krystallxdefense.com" className="text-amber hover:text-amber-glow">
-                        Email us directly
+                        email us directly
                       </a>{' '}
                       and we'll pick it up from there.
                     </p>
                   </div>
                 )}
+
+                {!done && atCap && (
+                  <div className="border border-amber/40 bg-amber/5 p-4" role="status">
+                    <p className="text-[13.5px] text-ink-dim leading-relaxed">
+                      This conversation has run as long as it can here.{' '}
+                      <a href="mailto:hello@krystallxdefense.com?subject=Briefing%20Request" className="text-amber hover:text-amber-glow">
+                        Email us
+                      </a>{' '}
+                      and we'll carry on from what you've written.
+                    </p>
+                  </div>
+                )}
               </div>
 
-              {!done && (
+              {!done && !atCap && (
                 <form onSubmit={send} className="border-t border-steel p-3 flex gap-2 shrink-0">
                   <label htmlFor="intake-input" className="sr-only">
                     Your message
