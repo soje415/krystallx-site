@@ -1,26 +1,26 @@
 {
-  "caption": "Standing collection does not stop between headlines. Across river reaches, pipeline corridors, and coastal segments in our area of interest, tasking cycles run on a fixed schedule regardless of whether a given pass shows anything worth a call.\n\nMost passes are quiet. That is the expected output of a working collection plan, not a gap in it. The value sits in the baseline built from months of unremarkable imagery, because that baseline is what makes the one anomalous pass legible in hours instead of days.\n\nWe do not publish site-level activity. What we can say: the tasking queue does not idle, and dwell on priority reaches gets reviewed on every cycle, not just when someone asks.",
+  "caption": "Operating tempo, this week: multiple reaches and corridors across the area of interest sat on scheduled revisit. Passes ran on cadence, day and night, regardless of cloud cover. Most returned quiet.\n\nA small fraction of passes produced a change flag — a shift in water extent, a new thermal signature, a break in an established pattern of life. Each flagged pass moved to review. Most were resolved as benign after cross-check against prior imagery. A handful triggered a closer look.\n\nThis is the baseline. Not a single incident, not a single site — a standing collection plan running on schedule across a wide area, with the overwhelming majority of output being confirmation that nothing changed.",
   "thread": [
-    "Standing collection does not stop between headlines. Tasking cycles across our area of interest run on a fixed schedule whether or not a given pass shows anything.",
-    "Most passes are quiet. That is the expected output of a working collection plan, not evidence it isn't working.",
-    "Months of unremarkable imagery build the baseline that makes one anomalous pass legible in hours instead of days.",
-    "We don't publish site-level activity. What we can confirm: priority reaches get reviewed on every cycle, not only on request."
+    "Operating tempo this cycle: scheduled revisit across multiple reaches and corridors in the area of interest. Day and night, through cloud. Most passes came back quiet.",
+    "A small percentage produced a change flag. Each one went to review against prior-pass imagery before anything moved further.",
+    "Most flags resolved as benign. A handful warranted closer follow-up. That ratio is the point — the system is built to run quiet most of the time and surface the rest.",
+    "No incident, no site, no client in this post. Just the shape of the workload: continuous tasking, low noise, review before action."
   ],
   "card": {
     "eyebrow": "Operating tempo",
-    "headline": "The queue does not <em>idle</em>",
-    "sub": "Tasking cycles run on schedule across the area of interest. Most passes are quiet. That is the baseline working, not a gap.",
-    "footright": "Standing collection"
+    "headline": "Most passes come back <em>quiet</em>",
+    "sub": "Scheduled revisit across the area of interest, day and night, through cloud. Quiet is the baseline, not a gap.",
+    "footright": "Collection plan · standing tasking"
   },
-  "rationale": "Communicates scale and operational discipline without disclosing any site, client, or event, reinforcing reliability rather than novelty.",
+  "rationale": "Shows scale and discipline of ongoing monitoring without disclosing any specific site, client, or detection, reinforcing operational credibility through cadence rather than incident.",
   "pillar": "ACTIVITY",
   "tier": "DRAFT",
   "illustrative": false,
   "cites_detection": false,
-  "generated_at": "2026-08-12T10:59:29.797Z",
+  "generated_at": "2026-08-16T07:35:18.708Z",
   "usage": {
-    "input": 2130,
-    "output": 656
+    "input": 2506,
+    "output": 672
   },
   "opsec": {
     "verdict": "PASS",
