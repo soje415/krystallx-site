@@ -23,8 +23,18 @@ export function Nav() {
     function onClick(e: MouseEvent) {
       if (ref.current && !ref.current.contains(e.target as Node)) setOpen(false)
     }
+    function onKey(e: KeyboardEvent) {
+      if (e.key === 'Escape') {
+        setOpen(false)
+        setMobileOpen(false)
+      }
+    }
     document.addEventListener('mousedown', onClick)
-    return () => document.removeEventListener('mousedown', onClick)
+    document.addEventListener('keydown', onKey)
+    return () => {
+      document.removeEventListener('mousedown', onClick)
+      document.removeEventListener('keydown', onKey)
+    }
   }, [])
 
   return (
@@ -41,6 +51,9 @@ export function Nav() {
           <div className="relative" ref={ref}>
             <button
               onClick={() => setOpen((v) => !v)}
+              aria-haspopup="menu"
+              aria-expanded={open}
+              aria-controls="capabilities-menu"
               className="px-4 py-2 text-ink-dim hover:text-ink transition-colors flex items-center gap-1.5"
             >
               Capabilities
@@ -51,6 +64,8 @@ export function Nav() {
             <AnimatePresence>
               {open && (
                 <motion.div
+                  id="capabilities-menu"
+                  role="menu"
                   initial={{ opacity: 0, y: -6 }}
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -6 }}
@@ -100,6 +115,8 @@ export function Nav() {
             className="lg:hidden text-ink w-8 h-8 flex flex-col items-center justify-center gap-1.5"
             onClick={() => setMobileOpen((v) => !v)}
             aria-label="Toggle menu"
+            aria-expanded={mobileOpen}
+            aria-controls="mobile-menu"
           >
             <span className={`block w-5 h-px bg-current transition-transform ${mobileOpen ? 'translate-y-[3px] rotate-45' : ''}`} />
             <span className={`block w-5 h-px bg-current transition-transform ${mobileOpen ? '-translate-y-[3px] -rotate-45' : ''}`} />
@@ -110,6 +127,7 @@ export function Nav() {
       <AnimatePresence>
         {mobileOpen && (
           <motion.div
+            id="mobile-menu"
             initial={{ height: 0, opacity: 0 }}
             animate={{ height: 'auto', opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}

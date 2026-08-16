@@ -38,7 +38,7 @@ export function Footer() {
         <div>
           <div className="font-mono text-[10px] tracking-widest uppercase text-ink-faint mb-4">Contact</div>
           <ul className="flex flex-col gap-2.5 text-[13px] text-ink-dim">
-            <li>hello@krystallxdefense.com</li>
+            <li>hello@krystallxsheild.org</li>
             <li className="text-ink-faint pt-1">By qualified briefing only — no self-serve access.</li>
           </ul>
         </div>

@@ -1,7 +1,12 @@
 import { PillarLayout } from '../components/PillarLayout'
 import { CascadeDiagram } from '../components/diagrams'
+import { useSeo } from '../lib/seo'
 
 export function Environmental() {
+  useSeo(
+    'Environmental Intelligence — KrystallX Shield',
+    'Satellite-driven flood early warning, dam watch, illegal mining and oil-slick detection, methane watch and carbon MRV for Nigeria and West Africa.',
+  )
   return (
     <PillarLayout
       visual={<CascadeDiagram />}

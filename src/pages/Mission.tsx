@@ -1,4 +1,5 @@
 import { PageShell, Reveal, Eyebrow } from '../components/motion'
+import { useSeo } from '../lib/seo'
 
 const VALUES = [
   {
@@ -16,6 +17,10 @@ const VALUES = [
 ]
 
 export function Mission() {
+  useSeo(
+    'Mission — KrystallX Shield',
+    'Built for institutions that have to answer for what they claim. Verify before we claim it, state the gaps out loud, and treat accountability as a feature.',
+  )
   return (
     <PageShell>
       <section className="border-b border-steel relative overflow-hidden">

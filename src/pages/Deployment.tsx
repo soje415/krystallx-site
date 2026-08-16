@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { PageShell, Reveal, Eyebrow } from '../components/motion'
+import { useSeo } from '../lib/seo'
 
 interface Tier {
   tag: string
@@ -78,6 +79,10 @@ const C4ISR = [
 ]
 
 export function Deployment() {
+  useSeo(
+    'State Police Deployment Tiers — KrystallX Shield',
+    'C4ISR deployment in three tiers for Nigerian states standing up their own policing capability — tactical command, security awareness, and satellite intelligence.',
+  )
   return (
     <PageShell>
       <section className="border-b border-steel relative overflow-hidden">

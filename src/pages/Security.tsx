@@ -1,7 +1,12 @@
 import { PillarLayout } from '../components/PillarLayout'
 import { WarrantGateDiagram } from '../components/diagrams'
+import { useSeo } from '../lib/seo'
 
 export function Security() {
+  useSeo(
+    'Security & Identity — KrystallX Shield',
+    'Warrant-gated identity verification and signals intelligence for authorized law enforcement, under full judicial audit trail.',
+  )
   return (
     <PillarLayout
       visual={<WarrantGateDiagram />}

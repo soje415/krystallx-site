@@ -1,5 +1,6 @@
 import { useState, useRef, useEffect, type FormEvent } from 'react'
 import { PageShell, Reveal, Eyebrow } from '../components/motion'
+import { useSeo } from '../lib/seo'
 
 interface Turn {
   role: 'user' | 'assistant'
@@ -20,6 +21,10 @@ const OPENING =
   "I handle briefing requests here. Tell me what you're responsible for and what problem brought you — I'll work out which capabilities are relevant and set up the right conversation.\n\nIf you'd rather skip ahead: your name, organisation, and what you need to monitor gets us most of the way there."
 
 export function RequestBriefing() {
+  useSeo(
+    'Request a Briefing — KrystallX Shield',
+    'No self-serve signup. Request a qualified briefing with the KrystallX Shield team — coverage, capabilities and Security & Identity are discussed in person, not in a checkout.',
+  )
   const [turns, setTurns] = useState<Turn[]>([{ role: 'assistant', content: OPENING }])
   const [draft, setDraft] = useState('')
   const [busy, setBusy] = useState(false)
@@ -113,10 +118,10 @@ export function RequestBriefing() {
             <div className="border border-steel bg-elevated p-6">
               <div className="font-mono text-[10px] tracking-[0.2em] uppercase text-ink-faint mb-3">Prefer email</div>
               <a
-                href="mailto:hello@krystallxdefense.com?subject=Briefing%20Request"
+                href="mailto:hello@krystallxsheild.org?subject=Briefing%20Request"
                 className="font-display font-semibold text-[17px] text-amber hover:text-amber-glow transition-colors"
               >
-                hello@krystallxdefense.com
+                hello@krystallxsheild.org
               </a>
               <p className="text-[12.5px] text-ink-faint leading-relaxed mt-4 pt-4 border-t border-steel">
                 For Security &amp; Identity: briefings are limited to verified government and law-enforcement entities.
@@ -178,7 +183,7 @@ export function RequestBriefing() {
                   <div className="border border-red/40 bg-red/5 p-4" role="alert">
                     <p className="text-[13.5px] text-ink-dim leading-relaxed">
                       {error} Your message is back in the box — press Send to try again, or{' '}
-                      <a href="mailto:hello@krystallxdefense.com" className="text-amber hover:text-amber-glow">
+                      <a href="mailto:hello@krystallxsheild.org" className="text-amber hover:text-amber-glow">
                         email us directly
                       </a>{' '}
                       and we'll pick it up from there.
@@ -190,7 +195,7 @@ export function RequestBriefing() {
                   <div className="border border-amber/40 bg-amber/5 p-4" role="status">
                     <p className="text-[13.5px] text-ink-dim leading-relaxed">
                       This conversation has run as long as it can here.{' '}
-                      <a href="mailto:hello@krystallxdefense.com?subject=Briefing%20Request" className="text-amber hover:text-amber-glow">
+                      <a href="mailto:hello@krystallxsheild.org?subject=Briefing%20Request" className="text-amber hover:text-amber-glow">
                         Email us
                       </a>{' '}
                       and we'll carry on from what you've written.

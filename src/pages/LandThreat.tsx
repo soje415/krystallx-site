@@ -1,7 +1,12 @@
 import { PillarLayout } from '../components/PillarLayout'
 import { SweepDiagram } from '../components/diagrams'
+import { useSeo } from '../lib/seo'
 
 export function LandThreat() {
+  useSeo(
+    'Land & Threat Intelligence — KrystallX Shield',
+    'Satellite ISR sweeps, holdsite and mining-camp detection, national threat mapping and orbital tracking for Nigeria and West Africa.',
+  )
   return (
     <PillarLayout
       visual={<SweepDiagram />}

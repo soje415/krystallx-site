@@ -1,7 +1,12 @@
 import { PillarLayout } from '../components/PillarLayout'
 import { FusionDiagram } from '../components/diagrams'
+import { useSeo } from '../lib/seo'
 
 export function Maritime() {
+  useSeo(
+    'Maritime Domain Awareness — KrystallX Shield',
+    'Vessel tracking, dark-vessel and illegal bunkering detection, SAR and flare/methane watch for the Niger Delta — through cloud and darkness.',
+  )
   return (
     <PillarLayout
       visual={<FusionDiagram />}

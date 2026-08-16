@@ -218,7 +218,7 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
   const ipHash = await hashIp(ip, ipSalt)
 
   if (db && !(await rateLimitOk(db, ipHash))) {
-    return json({ error: 'Too many requests. Please email hello@krystallxdefense.com instead.' }, 429)
+    return json({ error: 'Too many requests. Please email hello@krystallxsheild.org instead.' }, 429)
   }
 
   const client = new Anthropic({ apiKey })

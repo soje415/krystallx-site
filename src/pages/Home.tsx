@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { PageShell, Reveal, StatCounter, Eyebrow } from '../components/motion'
+import { useSeo } from '../lib/seo'
 import { HeroGlobe } from '../components/HeroGlobe'
 import { OrbitTelemetry } from '../components/OrbitTelemetry'
 import { SensorBand } from '../components/SensorBand'
@@ -45,6 +46,10 @@ const PILLARS = [
 ]
 
 export function Home() {
+  useSeo(
+    'KrystallX Shield — Satellite-Verified Intelligence for Nigeria & West Africa',
+    'Satellite-verified flood, maritime, and threat intelligence for Nigeria and West Africa, under full judicial accountability. We saw the Numan flood four days before the official warning did.',
+  )
   return (
     <PageShell>
       {/* HERO */}

@@ -1,6 +1,7 @@
 import { PageShell, Reveal, Eyebrow } from '../components/motion'
 import { HindcastChart } from '../components/HindcastChart'
 import { LEAD_DAYS } from '../data/numan'
+import { useSeo } from '../lib/seo'
 
 const RULE = [
   ['Surge test', 'Wetted area at least 1.4× the trailing median of passes 10–45 days back — is this reach carrying more water than it was carrying itself, recently?'],
@@ -11,6 +12,10 @@ const RULE = [
 ]
 
 export function Evidence() {
+  useSeo(
+    'Evidence — KrystallX Shield',
+    'The Numan flood hindcast, September 2022: the detector flagged the flood four days before the official warning, while the 2021 control year stayed quiet.',
+  )
   return (
     <PageShell>
       <section className="border-b border-steel relative overflow-hidden">

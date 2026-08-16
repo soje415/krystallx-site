@@ -1,7 +1,9 @@
 import { Link } from 'react-router-dom'
 import { PageShell, Reveal, Eyebrow } from '../components/motion'
+import { useSeo } from '../lib/seo'
 
 export function NotFound() {
+  useSeo('Page not found — KrystallX Shield')
   return (
     <PageShell>
       <section className="relative overflow-hidden">

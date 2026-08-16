@@ -47,10 +47,16 @@ function App() {
   return (
     <BrowserRouter>
       <ScrollToTop />
+      <a
+        href="#main"
+        className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-[60] focus:bg-amber focus:text-void focus:px-4 focus:py-2 focus:font-mono focus:text-[11px] focus:uppercase focus:tracking-wider"
+      >
+        Skip to content
+      </a>
       <div className="min-h-screen flex flex-col">
         <HudBar />
         <Nav />
-        <main className="flex-1">
+        <main id="main" tabIndex={-1} className="flex-1 focus:outline-none">
           <AnimatedRoutes />
         </main>
         <Footer />

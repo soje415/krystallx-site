@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://krystallxdefense.com/sitemap.xml
+Sitemap: https://krystallxsheild.org/sitemap.xml
