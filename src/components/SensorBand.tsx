@@ -1,4 +1,6 @@
+import { useState } from 'react'
 import { Reveal } from './motion'
+import { Lightbox } from './Lightbox'
 import deltaOptical from '../assets/delta-optical.webp'
 
 /**
@@ -10,6 +12,8 @@ import deltaOptical from '../assets/delta-optical.webp'
  * operational captures is exactly what we tell clients we don't do.
  */
 export function SensorBand() {
+  const [zoomed, setZoomed] = useState(false)
+
   return (
     <section className="relative border-t border-steel overflow-hidden">
       <div className="absolute inset-0">
@@ -29,7 +33,19 @@ export function SensorBand() {
         <div className="absolute inset-0 bg-gradient-to-t from-void/70 via-transparent to-void/40" />
       </div>
 
-      <div className="relative max-w-[1240px] mx-auto px-7 py-28">
+      {/* The real image is clickable — open it full-size with its attribution. */}
+      <button
+        type="button"
+        onClick={() => setZoomed(true)}
+        className="absolute inset-0 group cursor-zoom-in"
+        aria-label="Open the full-size satellite image"
+      >
+        <span className="absolute bottom-4 right-4 font-mono text-[9.5px] tracking-[0.14em] uppercase text-ink-faint border border-steel bg-void/70 backdrop-blur-sm px-3 py-1.5 opacity-0 group-hover:opacity-100 group-focus-visible:opacity-100 transition-opacity">
+          Click to enlarge →
+        </span>
+      </button>
+
+      <div className="relative max-w-[1240px] mx-auto px-7 py-28 pointer-events-none">
         <Reveal>
           <div className="max-w-xl">
             <div className="font-mono text-[10px] tracking-[0.2em] uppercase text-cyan mb-3">
@@ -55,6 +71,19 @@ export function SensorBand() {
           Imagery: NASA, public domain · illustrative, not an operational capture
         </div>
       </div>
+
+      <Lightbox open={zoomed} onClose={() => setZoomed(false)} label="Full-size optical satellite image of the Niger Delta">
+        <figure className="m-0">
+          <img
+            src={deltaOptical}
+            alt="Optical satellite view of the Niger Delta coastline, with scattered cumulus cloud obscuring large areas of the land surface"
+            className="w-full h-auto max-h-[82vh] object-contain border border-steel bg-void"
+          />
+          <figcaption className="mt-3 font-mono text-[10.5px] tracking-[0.14em] uppercase text-ink-faint text-center">
+            Optical pass over the Niger Delta · NASA, public domain · illustrative, not an operational capture
+          </figcaption>
+        </figure>
+      </Lightbox>
     </section>
   )
 }

@@ -90,7 +90,7 @@ export function Home() {
               initial={{ opacity: 0, scale: 0.96 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.9, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-              className="hidden lg:block relative"
+              className="relative max-w-md mx-auto w-full lg:max-w-none"
             >
               <div className="relative">
                 <HeroGlobe />

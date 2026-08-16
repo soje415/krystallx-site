@@ -103,8 +103,10 @@ export function RequestBriefing() {
       </section>
 
       <section className="max-w-[1240px] mx-auto px-7 py-20">
-        <div className="grid lg:grid-cols-[0.85fr_1.15fr] gap-14">
-          <Reveal>
+        <div className="grid lg:grid-cols-[0.85fr_1.15fr] gap-10 lg:gap-14 items-start">
+          {/* The intake is the primary action, so it leads on mobile and sits
+              second on desktop, where the prose column anchors the left. */}
+          <Reveal className="order-2 lg:order-1">
             <div className="font-mono text-[10px] tracking-[0.2em] uppercase text-ink-faint mb-4">A briefing covers</div>
             <ul className="flex flex-col gap-4 mb-10">
               {COVERS.map((c) => (
@@ -130,7 +132,7 @@ export function RequestBriefing() {
             </div>
           </Reveal>
 
-          <Reveal delay={0.1}>
+          <Reveal delay={0.1} className="order-1 lg:order-2">
             {/* Fixed 560px overflows a short phone viewport; scale with the screen
                 but keep enough room that the log doesn't become a two-line slot. */}
             <div className="border border-steel bg-elevated flex flex-col h-[clamp(400px,62vh,560px)]">

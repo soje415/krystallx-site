@@ -23,6 +23,7 @@ export function Footer() {
             <li><Link to="/maritime-domain-awareness" className="text-ink-dim hover:text-cyan transition-colors">Maritime Domain Awareness</Link></li>
             <li><Link to="/land-threat-intelligence" className="text-ink-dim hover:text-amber transition-colors">Land &amp; Threat Intelligence</Link></li>
             <li><Link to="/security-identity" className="text-ink-dim hover:text-red transition-colors">Security &amp; Identity</Link></li>
+            <li><Link to="/state-police-deployment" className="text-ink-dim hover:text-red transition-colors">State Police Deployment</Link></li>
           </ul>
         </div>
 
