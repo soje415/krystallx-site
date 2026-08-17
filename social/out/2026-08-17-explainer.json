@@ -1,27 +1,27 @@
 {
-  "caption": "Optical imagery is blind through cloud cover. Radar is not. That is the whole reason synthetic-aperture radar matters for flood and pipeline monitoring in West Africa, where the wet season stacks cloud over the exact windows you need to see.\n\nRadar works by sending its own microwave pulse down and reading the echo. It does not wait for sunlight and it does not care about cloud, haze, or dark. Optical imagery needs a clear sky and daylight, which is precisely what is missing during a flood event or a storm-covered incursion.\n\nThe trade-off: radar images look nothing like a photograph. Water shows up as a smooth, dark return. A pipeline right-of-way with standing water reads differently than dry ground. Reading radar correctly takes trained interpretation, not a glance. That is the cost side of the capability, and it is real.",
+  "caption": "A sharper image of an old picture is still an old picture. Resolution tells you how clearly you can see a feature. It says nothing about when that feature was last observed.\n\nA site imaged once a month at high resolution can miss a structure built and torched inside that gap. A site imaged every few days at lower resolution catches the sequence — bare ground, construction, activity, removal — even if no single frame is crisp. For most security and infrastructure questions, the sequence matters more than the snapshot.\n\nThis is why a collection plan should be built around revisit cadence first, resolution second. Ask what changes over what interval before asking how sharp the picture needs to be. Get the cadence wrong and no amount of detail recovers the gap.",
   "thread": [
-    "Optical imagery is blind through cloud cover. Radar is not. That single fact decides which sensor you task during a flood or a storm-masked incursion.",
-    "Radar sends its own microwave pulse and reads the echo back. No need for sunlight, no need for clear sky. Optical needs both.",
-    "The cost: radar imagery does not look like a photograph. Water reads as a smooth dark return. Interpreting it correctly takes training, not a glance.",
-    "Wet season in West Africa stacks cloud over the exact windows that matter most for I&W. That is the case for radar as a standing layer in the collection plan, not a backup.",
-    "#EarthObservation #SAR"
+    "Resolution tells you how clear the picture is. Revisit cadence tells you whether you had a picture when it mattered. Most people optimize the wrong one first.",
+    "A monthly high-res pass can miss a structure built and burned inside the gap. A frequent lower-res pass catches the sequence: bare ground, build, activity, removal.",
+    "For pattern-of-life and change detection, sequence beats sharpness. A blurry timeline still tells you something happened. A single sharp frame taken at the wrong moment tells you nothing.",
+    "Build the collection plan around the question first: what changes, over what interval. Set cadence to match that interval. Then pick the resolution you can afford.",
+    "Get cadence wrong and no amount of detail fixes it after the fact."
   ],
   "card": {
-    "eyebrow": "How radar actually sees",
-    "headline": "Cloud does not stop a <em>radar</em> pulse",
-    "sub": "Synthetic-aperture radar sends its own signal and reads the echo. It works through cloud, haze, and dark, when optical imagery cannot.",
-    "footright": "Synthetic-aperture radar"
+    "eyebrow": "Collection basics",
+    "headline": "Frequency beats <em>sharpness</em>",
+    "sub": "A clear image taken at the wrong moment tells you nothing. Revisit cadence decides what you see. Resolution only decides how well.",
+    "footright": "Collection planning"
   },
-  "rationale": "Delivers a genuinely new, ungated technical fact (SAR's active-sensing principle and its interpretation cost) distinct from the revisit-cadence and detection-limit posts already run.",
+  "rationale": "Fills a genuinely untouched explainer gap (cadence vs. resolution) with a concrete, teachable mental model and no product pitch.",
   "pillar": "EXPLAINER",
   "tier": "AUTO",
   "illustrative": false,
   "cites_detection": false,
-  "generated_at": "2026-08-12T10:59:42.237Z",
+  "generated_at": "2026-08-17T07:56:00.664Z",
   "usage": {
-    "input": 2173,
-    "output": 788
+    "input": 2534,
+    "output": 726
   },
   "opsec": {
     "verdict": "PASS",
