@@ -1,30 +1,32 @@
 {
-  "caption": "Wide-area change detection finds what moved. It does not tell you why.\n\nAcross an area of interest, we run successive optical and radar passes against a baseline and flag deltas — new clearing, disturbed ground, structure changes, vessel presence. That cueing narrows a search area from hundreds of square kilometers to a handful of points worth a closer look.\n\nThe honest limit: a flagged change is a signature, not a verdict. It does not say who did it, whether it is licit, or what happens next. That call still needs ground truth — a patrol, a source, a follow-up collect. Treat the output as a tasking list, not a finding.",
+  "caption": "Persistent thermal monitoring flags heat anomalies along a pipeline corridor — signatures consistent with illegal refining or line-tapping activity that would not show up in optical imagery under cover of night or smoke.\n\nThe limit: each pass is a snapshot, not a feed. Between scheduled revisits, a refining site can stand up and strike camp before the next collection window. The system tells you where to look at the next opportunity. It cannot watch the corridor in real time.\n\nAssessed: thermal anomaly consistent with heat-generating activity. Unknown: what happens in the gap between passes. Confirmed: only what ground teams verify on arrival.",
   "thread": [
-    "Wide-area change detection finds what moved. It does not tell you why.",
-    "We diff successive passes against a baseline across an area of interest and flag deltas — clearing, disturbed ground, new structures, vessel presence. That's cueing, not confirmation.",
-    "Limit: a flagged change is a signature, not a verdict. It doesn't say who, why, or what's next. That call needs ground truth — a patrol, a source, a follow-up pass.",
-    "Use it to narrow a search area, not to close a case."
+    "Persistent thermal monitoring flags heat anomalies along a pipeline corridor — signatures consistent with illegal refining or line-tapping, even under night or smoke cover.",
+    "The limit: each pass is a snapshot, not a feed. Between scheduled revisits, a site can stand up and strike camp before the next collection window.",
+    "This is cueing, not real-time surveillance. It narrows where a patrol should go next. It does not replace the patrol.",
+    "Assessed: thermal anomaly. Unknown: activity in the revisit gap. Confirmed: only what ground teams verify on arrival."
   ],
   "card": {
-    "eyebrow": "Change detection",
-    "headline": "It flags the change. Not the <em>cause</em>",
-    "sub": "Successive-pass comparison narrows a search area to a handful of points. Intent still requires ground truth.",
-    "footright": "Optical + radar change detection"
+    "eyebrow": "Pipeline security",
+    "headline": "It sees the <em>heat</em>. Not the gap between passes",
+    "sub": "Thermal anomalies cue where to look next. Between scheduled revisits, a site can rise and disappear before the next collection window.",
+    "footright": "Persistent thermal monitoring"
   },
-  "rationale": "Introduces a distinct capability (change detection) and its honest limit without repeating the revisit/resolution/queue/calendar angles already covered.",
+  "rationale": "Introduces a new capability (thermal cueing for pipeline theft) not covered in prior posts, while holding the line on the periodic-not-continuous limit that builds credibility with operators who already know satellites don't watch continuously.",
   "pillar": "CAPABILITY",
   "tier": "APPROVE",
   "illustrative": false,
   "cites_detection": false,
-  "generated_at": "2026-08-12T10:59:53.159Z",
+  "generated_at": "2026-08-18T07:41:50.545Z",
   "usage": {
-    "input": 2163,
-    "output": 676
+    "input": 2493,
+    "output": 1213
   },
   "opsec": {
-    "verdict": "PASS",
-    "reasons": []
+    "verdict": "REVIEW",
+    "reasons": [
+      "REVIEW: unverifiable absolute (\"real-time surveillance\")"
+    ]
   },
   "effective_tier": "APPROVE"
 }
