@@ -1,0 +1,30 @@
+{
+  "caption": "Pipeline theft in the Niger Delta tracks the refining margin, not the patrol schedule. When the spread between crude price and black-market refined product widens, tapping incidents rise — independent of how many boots are on the ground. Enforcement changes risk. It does not change the arbitrage.\n\nDam management sits downstream of a different economics problem. Release volumes are set against grid demand, irrigation schedules, and reservoir safety margins — decisions made at the dam, priced in dam terms. The flood exposure they create thirty kilometers downstream is not part of that calculation. It is an externality, not an oversight.\n\nBoth patterns are public record. What is missing is not the data — it is a shared operating picture that connects a release decision or a price spread to the corridor or community that absorbs the consequence days later.",
+  "thread": [
+    "Pipeline theft tracks the refining margin, not the patrol density. Widen the spread between crude price and black-market product, tapping incidents rise — regardless of enforcement posture.",
+    "Dam releases are priced in dam terms: grid demand, irrigation, reservoir safety. Downstream flood exposure is not in that equation. It's an externality, not a detection gap.",
+    "Neither problem lacks data. Both lack a shared operating picture linking the upstream decision to the downstream consequence before it lands.",
+    "#WestAfrica #FloodSeason"
+  ],
+  "card": {
+    "eyebrow": "Pipeline economics",
+    "headline": "The <em>margin</em>, not the patrol",
+    "sub": "Theft incidents track the price spread between crude and black-market refined product — not enforcement density.",
+    "footright": "Niger Delta"
+  },
+  "rationale": "Introduces a distinct, publicly-sourced economic driver for pipeline theft that hasn't been covered in prior CONTEXT posts, reinforcing the pillar without repeating angle or phrasing.",
+  "pillar": "CONTEXT",
+  "tier": "APPROVE",
+  "illustrative": false,
+  "cites_detection": false,
+  "generated_at": "2026-08-19T07:42:33.953Z",
+  "usage": {
+    "input": 2515,
+    "output": 1160
+  },
+  "opsec": {
+    "verdict": "PASS",
+    "reasons": []
+  },
+  "effective_tier": "APPROVE"
+}
