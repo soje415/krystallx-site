@@ -1,0 +1,30 @@
+{
+  "caption": "Optical imagery needs two things: sunlight and clear sky. During West Africa's rainy season, both disappear for weeks at a time — exactly when flood and pipeline risk peaks. That is a coverage gap, not a data problem.\n\nSynthetic-aperture radar does not wait for either. It transmits its own energy and measures what bounces back. Cloud, smoke, and darkness do not block that signal the way they block a camera. The trade is resolution — radar reads texture and moisture, not fine detail — but it collects on schedule regardless of weather.\n\nThis is why revisit cadence and sensor mix matter more than headline resolution when the objective is early warning, not photography. A sharp image you cannot get during the event you care about is not a capability. It is a demo.",
+  "thread": [
+    "Optical satellites need sunlight and clear sky. Rainy season strips away both — for weeks, in the exact window flood and pipeline risk peaks. That is a coverage gap.",
+    "Synthetic-aperture radar transmits its own energy and reads the backscatter. Cloud, smoke, darkness — none of it blocks the signal the way it blocks a camera.",
+    "The trade: radar resolution is coarser. It reads moisture and texture, not fine detail. For early warning that trade is usually correct. For forensic identification, it is not.",
+    "A sharp image you cannot collect during the event you're watching for isn't a capability. It's a demo."
+  ],
+  "card": {
+    "eyebrow": "Collection basics",
+    "headline": "Cloud doesn't stop <em>radar</em>",
+    "sub": "Optical needs sunlight and clear sky. Synthetic-aperture radar sends its own signal and reads what comes back — rain or shine, day or night.",
+    "footright": "Synthetic-aperture radar"
+  },
+  "rationale": "Teaches the core optical-vs-radar mechanism in plain terms, directly relevant to rainy-season flood risk, without repeating prior revisit/quiet/resolution angles.",
+  "pillar": "EXPLAINER",
+  "tier": "AUTO",
+  "illustrative": false,
+  "cites_detection": false,
+  "generated_at": "2026-08-20T07:45:15.623Z",
+  "usage": {
+    "input": 2584,
+    "output": 951
+  },
+  "opsec": {
+    "verdict": "PASS",
+    "reasons": []
+  },
+  "effective_tier": "AUTO"
+}
