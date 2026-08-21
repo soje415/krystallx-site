@@ -1,0 +1,31 @@
+{
+  "caption": "Every assessment we issue has to survive cross-examination, not just a briefing. That standard shapes how we work before it shapes what we say.\n\nAn output that can't be traced back to a specific pass, a specific timestamp, a specific signal, doesn't go out labeled as fact. It goes out labeled as what it is — assessed, not confirmed. In the Numan reach-monitoring run, the flood signature was flagged four days ahead of the official warning. The 2021 control year stayed quiet, correctly, because there was nothing to flag. Both outcomes matter. A system that only reports when told to report isn't proof of anything.\n\nWe are not a unit and we do not claim operational history we don't have. We build the evidence trail — imagery, timestamps, revisit logs — so a decision-maker or a court can check our work, not just accept it.",
+  "thread": [
+    "An assessment that can't survive cross-examination doesn't go out labeled as fact. That's the standard we hold ourselves to before anyone else does.",
+    "Confirmed. Assessed. Unknown. Every line traced to a pass, a timestamp, a signal — because a claim without a trail is an assertion, not evidence.",
+    "Proof point: the Numan reach-monitoring array flagged the 2022 flood signature four days before the official warning. The 2021 control year stayed quiet, correctly.",
+    "Both outcomes matter. A system that only speaks up on cue proves nothing about what it does the rest of the time.",
+    "We're not a unit and don't claim a service record we don't have. We build the record so it can be checked, not just trusted."
+  ],
+  "card": {
+    "eyebrow": "How we work",
+    "headline": "Every claim has to survive a <em>check</em>",
+    "sub": "Confirmed. Assessed. Unknown. Evidence traced to a timestamp — not asserted, verified.",
+    "footright": "Methodology"
+  },
+  "rationale": "Reframes the mission around methodological accountability (traceable evidence, honest labeling) rather than repeating prior confidence/limits angles, and ties it to the one proven claim without inventing new detections.",
+  "pillar": "MISSION",
+  "tier": "AUTO",
+  "illustrative": false,
+  "cites_detection": false,
+  "generated_at": "2026-08-21T07:47:23.256Z",
+  "usage": {
+    "input": 2608,
+    "output": 802
+  },
+  "opsec": {
+    "verdict": "PASS",
+    "reasons": []
+  },
+  "effective_tier": "AUTO"
+}
