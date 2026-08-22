@@ -1,0 +1,30 @@
+{
+  "caption": "Nigeria's worst river floods do not start in Nigeria. The Lagdo Dam sits across the border in Cameroon, on the Benue system. Its release schedule is public. The downstream flood warning system that should sync with it is not.\n\nA dam operator manages reservoir safety. That is the job. Downstream terrain, population density, and evacuation lead time are someone else's problem — usually several someones, across a border, with no shared decision cycle.\n\nThis is not a detection claim. It is documented structure: releases decided upstream, consequences absorbed downstream, and no single authority holding both ends of that timeline.",
+  "thread": [
+    "Nigeria's worst river floods start outside Nigeria. The Lagdo Dam release schedule, publicly documented, drives Benue basin flooding — and there is no shared decision cycle syncing it with downstream warning.",
+    "A dam operator's job is reservoir safety. Downstream terrain and evacuation lead time are not inputs to that decision. That gap is structural, not a failure of any one actor.",
+    "This is public record, not a detection claim. The pattern repeats every flood season because the coordination gap is still open, not because anyone missed a warning sign.",
+    "#FloodSeason #WestAfrica"
+  ],
+  "card": {
+    "eyebrow": "Flood season",
+    "headline": "The flood starts <em>upstream</em>",
+    "sub": "Cross-border dam releases on the Benue system are public record. Downstream warning still isn't synced to them.",
+    "footright": "Benue basin hydrology"
+  },
+  "rationale": "Introduces a distinct, publicly-sourced structural fact (cross-border dam decision-making) that hasn't been used in prior posts, reinforcing the context pillar without repeating the basin/border-mismatch or calendar-driver angles already published.",
+  "pillar": "CONTEXT",
+  "tier": "APPROVE",
+  "illustrative": false,
+  "cites_detection": false,
+  "generated_at": "2026-08-22T07:35:51.310Z",
+  "usage": {
+    "input": 2689,
+    "output": 1250
+  },
+  "opsec": {
+    "verdict": "PASS",
+    "reasons": []
+  },
+  "effective_tier": "APPROVE"
+}
