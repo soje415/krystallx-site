@@ -1,0 +1,30 @@
+{
+  "caption": "The collection plan does not pause between incidents. Standing tasking runs across the area of interest on a fixed revisit cycle, day and night, whether or not anything is happening on the ground.\n\nMost of that tasking produces nothing worth escalating. That is by design, not a shortfall — the value is in catching the pass that does. Every cycle gets reviewed, logged, and closed out, incident or no incident.\n\nThe volume that runs quietly is what makes the rare escalation credible. A system that only looks when something is already wrong isn't a collection plan. It's a reaction.",
+  "thread": [
+    "The collection plan runs on a fixed cycle across the area of interest. Day and night. Whether or not anything is happening on the ground.",
+    "Most cycles produce nothing worth escalating. That's the baseline working as intended, not a gap in coverage.",
+    "Every pass gets logged and closed out — incident or no incident. The record is what makes the rare escalation credible.",
+    "A system that only looks when something's already wrong isn't a collection plan. It's a reaction."
+  ],
+  "card": {
+    "eyebrow": "Operating tempo",
+    "headline": "The cycle runs whether or not anything <em>happens</em>",
+    "sub": "Standing tasking across the area of interest, logged and closed out on every pass — incident or no incident.",
+    "footright": "Continuous tasking"
+  },
+  "rationale": "Demonstrates operational scale and discipline through abstracted tempo language, reinforcing credibility without exposing any specific site, client, or detection.",
+  "pillar": "ACTIVITY",
+  "tier": "DRAFT",
+  "illustrative": false,
+  "cites_detection": false,
+  "generated_at": "2026-08-23T07:36:55.136Z",
+  "usage": {
+    "input": 2734,
+    "output": 849
+  },
+  "opsec": {
+    "verdict": "PASS",
+    "reasons": []
+  },
+  "effective_tier": "DRAFT"
+}
