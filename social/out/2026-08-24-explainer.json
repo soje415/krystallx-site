@@ -1,0 +1,30 @@
+{
+  "caption": "A false positive costs more than the fuel to check it. It costs the credibility of the next alert.\n\nSend a team to a site three times on a signature that turns out to be nothing — a sun-warmed rooftop, a herd, a barge — and the fourth alert gets a slower response, whatever the actual case. That drift starts quiet and compounds fast.\n\nThe fix isn't fewer alerts. It's ground-truthing the model against confirmed incidents until the threshold reflects what actually matters, not what technically triggers. An alert that isn't worth the trip is a cost — but the real cost lands later, in the alert nobody believed.",
+  "thread": [
+    "A false positive costs more than the trip to check it. It costs the credibility of the next alert.",
+    "Send a crew out three times on a signature that turns out to be nothing, and the fourth alert gets a slower response — whatever that case actually is.",
+    "That's not a sensor problem. It's a threshold problem. Fix requires ground-truthing against confirmed incidents until the trigger reflects what matters.",
+    "Trust in the collection plan erodes one bad call at a time. Tuning against real outcomes is what keeps it standing."
+  ],
+  "card": {
+    "eyebrow": "Collection basics",
+    "headline": "The <em>real</em> cost of a false alarm",
+    "sub": "It isn't the wasted trip. It's the next alert nobody trusts. Thresholds have to be tuned against confirmed outcomes, not just triggers.",
+    "footright": "Signal discipline"
+  },
+  "rationale": "Introduces a new, undiscussed EXPLAINER concept — false-positive cost as trust erosion — without overlapping prior posts on revisit, radar, or basin framing.",
+  "pillar": "EXPLAINER",
+  "tier": "AUTO",
+  "illustrative": false,
+  "cites_detection": false,
+  "generated_at": "2026-08-24T08:00:10.354Z",
+  "usage": {
+    "input": 2816,
+    "output": 705
+  },
+  "opsec": {
+    "verdict": "PASS",
+    "reasons": []
+  },
+  "effective_tier": "AUTO"
+}
