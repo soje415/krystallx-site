@@ -1,0 +1,30 @@
+{
+  "caption": "Change detection flags what's new between two passes. It cannot tell you when, within that window, the change happened.\n\nEach scheduled pass over a site is compared against the last confirmed baseline. New excavation, a fresh access track, a structure that wasn't there before — all surface as a change flag for review. That comparison is the core of pipeline right-of-way and reservoir-margin monitoring.\n\nThe honest limit: the flag only says something changed between pass one and pass two. If the interval is four days, the event could have started on day one or day three — ground truth has to close that gap. And anything smaller than the sensor's resolution threshold doesn't register at all. Change detection cues where to look. It does not replace the patrol that confirms what happened and when.",
+  "thread": [
+    "Change detection flags what's new between two passes. It cannot tell you when, within that window, the change happened.",
+    "Each site is compared against its last confirmed baseline. New excavation, a fresh track, a structure that wasn't there — surfaces as a flag for review.",
+    "Limit: the flag only proves change occurred somewhere between pass one and pass two. A four-day interval could hide a one-day event. Ground truth closes that gap, not the sensor.",
+    "Anything under the resolution threshold doesn't register. Change detection cues the look. It doesn't replace the patrol that confirms what and when."
+  ],
+  "card": {
+    "eyebrow": "Change detection",
+    "headline": "It flags the <em>change</em>. Not the moment",
+    "sub": "Baseline versus latest pass shows what's new. The exact hour it happened still needs ground truth.",
+    "footright": "Pass-to-pass comparison"
+  },
+  "rationale": "Introduces a distinct capability (change detection across revisits) with a fresh, specific limit — the timing gap within a revisit window and sub-resolution blindness — without repeating prior angles on thresholds, radar-vs-optical, or upstream drivers.",
+  "pillar": "CAPABILITY",
+  "tier": "APPROVE",
+  "illustrative": false,
+  "cites_detection": false,
+  "generated_at": "2026-08-25T07:48:51.939Z",
+  "usage": {
+    "input": 2784,
+    "output": 880
+  },
+  "opsec": {
+    "verdict": "PASS",
+    "reasons": []
+  },
+  "effective_tier": "APPROVE"
+}
