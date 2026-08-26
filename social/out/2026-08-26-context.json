@@ -1,0 +1,31 @@
+{
+  "caption": "Flood season and pipeline theft season overlap on the calendar. Not coincidence.\n\nWhen the Niger Delta and Benue floodplain rise, access roads and patrol routes go under water first. Ground teams lose mobility exactly when line-walking and inspection matter most. Publicly documented incident data shows theft and illegal tapping activity does not pause for flooding — in some reaches it increases, as submerged pipeline sections become harder to inspect and easier to approach by water.\n\nDam release schedules on the Benue system are public record. Theft economics track the crude-to-black-market price spread, also public record. Neither driver is hidden. What's missing is a single operating picture that connects hydrology, access denial, and theft risk on the same timeline — instead of three agencies reading three separate reports.\n\nThis is a structural problem, not a surprise. The data to see it coming has been publishable for years.",
+  "thread": [
+    "Flood season and pipeline theft season overlap on the calendar in Nigeria. Not coincidence.",
+    "Rising water cuts ground patrol access to pipeline corridors at the same weeks theft activity is documented to persist or rise. Two failure modes, one season.",
+    "Dam release timing (Benue system) and theft economics (crude-to-black-market spread) are both public record. Neither is a secret driver.",
+    "What's missing isn't data. It's one timeline that puts hydrology, access loss, and theft risk together instead of three separate reports.",
+    "#FloodSeason #PipelineSecurity"
+  ],
+  "card": {
+    "eyebrow": "Flood season and theft season",
+    "headline": "Two failure modes, <em>one</em> season",
+    "sub": "Rising water cuts patrol access to pipeline corridors in the same weeks theft activity is documented to persist or increase.",
+    "footright": "West Africa · seasonal risk"
+  },
+  "rationale": "Introduces a genuinely new CONTEXT angle — the seasonal collision between flood-driven access loss and pipeline theft — without repeating prior dam-timing or theft-margin posts.",
+  "pillar": "CONTEXT",
+  "tier": "APPROVE",
+  "illustrative": false,
+  "cites_detection": false,
+  "generated_at": "2026-08-26T07:51:11.392Z",
+  "usage": {
+    "input": 2782,
+    "output": 1098
+  },
+  "opsec": {
+    "verdict": "PASS",
+    "reasons": []
+  },
+  "effective_tier": "APPROVE"
+}
