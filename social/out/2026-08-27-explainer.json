@@ -1,0 +1,31 @@
+{
+  "caption": "Detection and identification are two different jobs. A radar pass can show that something changed at a location — a new structure, a cleared patch, a vessel where there wasn't one. That takes far less resolution than most people assume.\n\nIdentifying what changed is a separate question, and a harder one. Confirming a tank, a vehicle type, or a specific structure needs finer resolution, often a different sensor pass, and usually a cross-check against other imagery or a ground report.\n\nTreating the two as one step is where false confidence creeps in. A blurry radar return that says \"something is here\" is useful for tasking a closer look. It is not evidence of what that something is. Collection plans that conflate the two end up either over-alerting on noise or under-reacting because nobody trusted the last call.",
+  "thread": [
+    "Detecting change and identifying it are two different jobs. Confusing them is where false confidence creeps in.",
+    "Detection: something changed at a site. Low resolution can catch that. A radar return, a shift in the scene, is enough to cue a look.",
+    "Identification: what changed. That needs finer resolution, often a second pass or sensor, and usually ground truth to confirm.",
+    "A collection plan that treats detection as identification either over-alerts on noise or stops trusting real signals.",
+    "Task the cue. Confirm the identity separately. Don't skip the second step and call it certainty."
+  ],
+  "card": {
+    "eyebrow": "Collection basics",
+    "headline": "Seeing <em>change</em> isn't seeing what changed",
+    "sub": "Detection flags that something is different. Identification confirms what it is. Two steps, not one.",
+    "footright": "Detection vs. identification"
+  },
+  "rationale": "Teaches a real, non-obvious analytic distinction (detection vs identification) that hasn't been covered in prior posts and stays product-neutral.",
+  "pillar": "EXPLAINER",
+  "tier": "AUTO",
+  "illustrative": false,
+  "cites_detection": false,
+  "generated_at": "2026-08-27T18:10:07.739Z",
+  "usage": {
+    "input": 2794,
+    "output": 900
+  },
+  "opsec": {
+    "verdict": "PASS",
+    "reasons": []
+  },
+  "effective_tier": "AUTO"
+}
