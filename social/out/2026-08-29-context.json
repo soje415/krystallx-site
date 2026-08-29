@@ -1,0 +1,32 @@
+{
+  "caption": "Nigeria's two recurring disasters — seasonal flooding and pipeline theft — get treated as separate problems, one environmental, one criminal. Both have the same underlying shape: an institutional lag, not a data gap.\n\nCameroon publishes Lagdo Dam release schedules ahead of time. Nigeria's Hydrological Services Agency issues advisories based on those releases. The slow part isn't the forecast — it's the chain from advisory to state emergency management to the communities downstream, which routinely runs behind the water itself.\n\nPipeline theft follows a documented but different pattern: incident rates track the spread between crude oil price and black-market refined product price, not patrol density. Flood season doesn't reduce theft activity. It reduces the time available to inspect corridors that keep getting worked regardless of the weather.\n\nTwo mechanisms, same region, same season. The public data exists in both cases. Whether it reaches whoever has to act on it is the actual variable.",
+  "thread": [
+    "Nigeria's flood problem and its pipeline-theft problem share a root cause: coordination, not capability.",
+    "Cameroon publishes Lagdo Dam release schedules in advance. Nigeria's Hydrological Services Agency issues advisories from them. The lag is administrative — advisory to state to community — not informational.",
+    "Pipeline theft incident rates track the spread between crude price and black-market refined product price. That's public record, not speculation. Flood season doesn't reduce theft — it reduces the time available to check the corridors.",
+    "Different mechanisms, same lesson: data existing publicly isn't the same as data reaching whoever has to act on it before the deadline passes."
+  ],
+  "card": {
+    "eyebrow": "Flood season context",
+    "headline": "The <em>chain</em> is slower than the water",
+    "sub": "Dam releases are public record. The lag lives in advisory-to-community distribution, not the forecast.",
+    "footright": "Transboundary water management"
+  },
+  "rationale": "Grounds the brand in verifiable public-record context rather than a detection claim, reinforcing analytical credibility without repeating prior CONTEXT angles.",
+  "pillar": "CONTEXT",
+  "tier": "APPROVE",
+  "illustrative": false,
+  "cites_detection": false,
+  "generated_at": "2026-08-29T13:05:04.670Z",
+  "usage": {
+    "input": 2768,
+    "output": 2291
+  },
+  "opsec": {
+    "verdict": "REVIEW",
+    "reasons": [
+      "REVIEW: internal pillar label \"context\" leaked into the card eyebrow"
+    ]
+  },
+  "effective_tier": "APPROVE"
+}
