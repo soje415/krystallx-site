@@ -1,0 +1,30 @@
+{
+  "caption": "Standing tasking runs across multiple areas of interest every week. Each pass is logged and closed out whether or not it turns up anything worth escalating.\n\nThe volume is real: dozens of monitored sites, hundreds of collection passes, cycling on schedule regardless of season, weekend, or news cycle. That's the baseline the analysis rests on — not a one-off look after something already happened.\n\nWhat this post will not say: which sites, whose infrastructure, or what turned up. Naming any of that defeats the purpose of the collection plan. The tempo is the story here, not the target.",
+  "thread": [
+    "Standing tasking runs across multiple areas of interest every week. Logged and closed out on every pass — incident or no incident.",
+    "Dozens of monitored sites. Hundreds of collection passes cycling on schedule. That volume is the baseline the analysis rests on, not a reaction to one event.",
+    "We won't name the sites, the clients, or what any single pass turned up. That's not evasion — naming them would defeat the point of running a collection plan at all.",
+    "Scale is the proof point. Specifics stay out of this feed."
+  ],
+  "card": {
+    "eyebrow": "Operating tempo",
+    "headline": "The <em>rotation</em> doesn't pause for weekends",
+    "sub": "Standing tasking across multiple areas of interest, cycled on schedule and logged on every pass — incident or no incident.",
+    "footright": "Standing collection"
+  },
+  "rationale": "Demonstrates operational scale and discipline through abstracted tempo metrics, reinforcing credibility without leaking any location, client, or incident detail.",
+  "pillar": "ACTIVITY",
+  "tier": "DRAFT",
+  "illustrative": false,
+  "cites_detection": false,
+  "generated_at": "2026-08-30T12:41:29.655Z",
+  "usage": {
+    "input": 2750,
+    "output": 1015
+  },
+  "opsec": {
+    "verdict": "PASS",
+    "reasons": []
+  },
+  "effective_tier": "DRAFT"
+}
