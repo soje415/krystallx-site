@@ -1,0 +1,31 @@
+{
+  "caption": "Resolution gets the attention. Revisit cadence decides whether you catch anything.\n\nA sharp image of a site from six days ago tells you what happened last week. It does not tell you what is happening now. Between passes, the area of interest goes dark — no matter how fine the pixel. That gap is where activity starts, runs, and finishes before the next look arrives.\n\nA coarser sensor with a tight revisit window will outperform a sharp one with a long gap, every time the thing you care about moves fast — a breach, a flood pulse, a vessel transiting a corridor. Match the cadence to the tempo of the threat. Resolution without revisit is a photograph. Revisit without resolution is still indications and warning.",
+  "thread": [
+    "Resolution gets the attention. Revisit cadence decides whether you catch anything.",
+    "A sharp image from six days ago shows what happened last week. It says nothing about now. Between passes, the area of interest goes dark regardless of pixel size.",
+    "Coarser imagery on a tight revisit window beats sharp imagery on a long gap — whenever the threat moves faster than the sensor returns.",
+    "Match cadence to tempo. A breach, a flood pulse, a corridor transit all run their course inside a coverage gap if revisit is slow.",
+    "Resolution without revisit is a photograph. Revisit without resolution is still indications and warning."
+  ],
+  "card": {
+    "eyebrow": "Collection basics",
+    "headline": "Cadence beats <em>resolution</em>",
+    "sub": "A sharp image from days ago can't see what's happening now. Match revisit rate to how fast the threat moves.",
+    "footright": "Tasking & revisit"
+  },
+  "rationale": "Explains a real collection trade-off (revisit vs resolution) that hasn't been covered yet, stays product-neutral, and gives the reader a usable mental model.",
+  "pillar": "EXPLAINER",
+  "tier": "AUTO",
+  "illustrative": false,
+  "cites_detection": false,
+  "generated_at": "2026-08-31T14:57:10.860Z",
+  "usage": {
+    "input": 2774,
+    "output": 709
+  },
+  "opsec": {
+    "verdict": "PASS",
+    "reasons": []
+  },
+  "effective_tier": "AUTO"
+}
