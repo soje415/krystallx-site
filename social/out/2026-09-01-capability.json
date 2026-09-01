@@ -1,0 +1,31 @@
+{
+  "caption": "Tasking priority does not create more passes.\n\nWhen a site moves to the top of the collection plan, it gets first call on the next available pass over the area of interest. That shortens the wait inside the existing revisit cycle. It does not add orbits that are not there.\n\nIf the physical revisit interval for a given sensor and area is measured in days, priority tasking gets you the front of that queue — not an hourly look. Anyone who tells you otherwise is selling continuous surveillance that does not exist. Plan collection against what the orbit actually allows, not what the interface implies.",
+  "thread": [
+    "Priority tasking gets a site to the front of the queue for the next pass. It does not create passes that don't exist. Two different things — don't confuse them.",
+    "If the revisit interval for a sensor over an area is measured in days, that ceiling holds regardless of how urgent the tasking request is. Cueing shortens the wait inside the cycle. It cannot compress the cycle itself.",
+    "Build the collection plan against the real revisit ceiling, not against what a dashboard implies. A tasking request answers 'when's the next look' — never 'is anyone watching right now.'"
+  ],
+  "card": {
+    "eyebrow": "Tasking and revisit",
+    "headline": "Priority moves the queue, not the <em>orbit</em>",
+    "sub": "Cueing shortens the wait inside the revisit cycle. It cannot add passes the sensor geometry doesn't allow.",
+    "footright": "Collection planning"
+  },
+  "rationale": "Clarifies a capability operators actually rely on — tasking priority — while drawing a hard, credible line against the common misread that priority equals more frequent looks, reinforcing the periodic-not-continuous discipline without repeating prior cadence or change-detection angles.",
+  "pillar": "CAPABILITY",
+  "tier": "APPROVE",
+  "illustrative": false,
+  "cites_detection": false,
+  "generated_at": "2026-09-01T12:28:07.349Z",
+  "usage": {
+    "input": 2748,
+    "output": 1026
+  },
+  "opsec": {
+    "verdict": "REVIEW",
+    "reasons": [
+      "REVIEW: unverifiable absolute (\"continuous surveillance\")"
+    ]
+  },
+  "effective_tier": "APPROVE"
+}
