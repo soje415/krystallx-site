@@ -1,0 +1,30 @@
+{
+  "caption": "Pipeline theft in the Niger Delta isn't a security failure. It's a rational economic response to a cost structure that favors the thief.\n\nPublic estimates put daily crude losses in the tens of thousands of barrels, with a black-market price gap wide enough to fund the logistics — vessels, bunkering points, transport — and still clear a margin. Enforcement cost per barrel recovered has to beat that margin to change behavior. It rarely does.\n\nFlood season shifts the equation further. Rising water restricts ground patrol access to the same corridors where theft is documented to persist. Risk to the thief drops in the same weeks response capacity drops. That's not two separate problems. It's one cost curve moving in the thief's favor.\n\nDam management sits upstream of this too — but the economics don't wait for the water to arrive. They're already priced in.",
+  "thread": [
+    "Pipeline theft in West Africa isn't a security failure. It's a rational response to a cost structure that favors the thief. Public data shows theft volumes track the margin between black-market and legitimate crude prices, not enforcement presence.",
+    "Enforcement only changes behavior when its cost per barrel recovered beats the thief's margin. Publicly reported interdiction costs rarely clear that bar.",
+    "Flood season lowers the thief's risk further. Rising water restricts ground patrol access to the same corridors where theft is documented to persist. Risk drops as response capacity drops. Same cost curve, worse direction.",
+    "Dam releases upstream are public record. But the economics of theft downstream don't wait for the water to arrive — they're already priced in before the season starts."
+  ],
+  "card": {
+    "eyebrow": "Pipeline theft economics",
+    "headline": "The cost curve favors the <em>thief</em>",
+    "sub": "Theft tracks the margin between black-market and legitimate crude price. Flood season lowers enforcement's odds in the same weeks it persists.",
+    "footright": "West Africa / midstream risk"
+  },
+  "rationale": "Reframes pipeline theft as an incentive-economics problem rather than a detection story, giving the CONTEXT pillar a fresh angle distinct from prior dam/flood-cycle posts while staying within public-knowledge bounds.",
+  "pillar": "CONTEXT",
+  "tier": "APPROVE",
+  "illustrative": false,
+  "cites_detection": false,
+  "generated_at": "2026-09-02T12:01:30.190Z",
+  "usage": {
+    "input": 2751,
+    "output": 1096
+  },
+  "opsec": {
+    "verdict": "PASS",
+    "reasons": []
+  },
+  "effective_tier": "APPROVE"
+}
