@@ -1,0 +1,30 @@
+{
+  "caption": "Cloud cover blinds optical imagery. It does not blind radar.\n\nOptical sensors capture reflected light, same as a camera. Cloud, haze, and smoke sit between the sensor and the ground and the image is lost. In West Africa's wet season, that gap can run weeks at a stretch over the same area of interest.\n\nSynthetic-aperture radar sends its own signal down and reads the return. The wavelength passes through cloud and works in darkness. It does not produce a photograph — it produces a surface signature that has to be interpreted, not just viewed. That is the trade: all-weather coverage in exchange for a harder read.\n\nAnyone building a collection plan around optical alone should know when their coverage actually goes dark. Rainy season is exactly when the ground truth matters most and exactly when optical drops out.",
+  "thread": [
+    "Cloud cover blinds optical imagery. It does not blind radar. That is not a marketing line, it is physics.",
+    "Optical sensors read reflected light. Cloud, haze, smoke sit in the path and the frame is lost. In West Africa's wet season that gap can run weeks over the same area of interest.",
+    "Radar sends its own signal down and reads the return. The wavelength passes through cloud, works at night. Trade-off: all-weather coverage, harder interpretation. It's a signature, not a photograph.",
+    "If your collection plan leans on optical alone, know exactly when it goes dark. Rainy season is when ground truth matters most and when optical drops first."
+  ],
+  "card": {
+    "eyebrow": "How collection actually works",
+    "headline": "Radar doesn't <em>need</em> a clear sky",
+    "sub": "Optical imagery is blocked by cloud. Radar reads through it, day or night — at the cost of a harder interpretation.",
+    "footright": "Synthetic-aperture radar"
+  },
+  "rationale": "Delivers a genuinely new, unclaimed EXPLAINER angle (cloud penetration vs optical) with no overlap to prior cadence/false-positive/detection posts, staying instructive and product-free.",
+  "pillar": "EXPLAINER",
+  "tier": "AUTO",
+  "illustrative": false,
+  "cites_detection": false,
+  "generated_at": "2026-09-03T12:00:36.469Z",
+  "usage": {
+    "input": 2782,
+    "output": 864
+  },
+  "opsec": {
+    "verdict": "PASS",
+    "reasons": []
+  },
+  "effective_tier": "AUTO"
+}
