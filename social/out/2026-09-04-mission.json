@@ -1,0 +1,30 @@
+{
+  "caption": "A brief that only has to satisfy the room it's delivered in is a weak brief. Ours has to survive the room it's challenged in.\n\nThat means every finding is written the way we'd defend it under cross-examination — what's confirmed by the sensor, what's assessed from pattern, what we simply don't know yet. No rounding up to sound more finished than the evidence allows.\n\nWe build this way because these briefs feed decisions with legal weight: enforcement actions, inquiries, compensation claims. A confident guess that doesn't hold up later costs more than an honest gap stated up front.",
+  "thread": [
+    "A brief that only satisfies the room it's delivered in is weak. Ours has to survive the room it's challenged in — an inquiry, a court, a second look months later.",
+    "That's why findings are labeled by confidence, not rounded up. Confirmed by the sensor. Assessed from pattern. Unknown, stated as unknown.",
+    "These briefs feed decisions with legal weight. An overstated finding costs more later than an honest gap costs now.",
+    "Evidence over assertion isn't a slogan here. It's the only version of the brief we're willing to put our name on."
+  ],
+  "card": {
+    "eyebrow": "How we brief",
+    "headline": "Built to survive <em>cross-examination</em>",
+    "sub": "Every finding is labeled by confidence — confirmed, assessed, unknown — because some of these briefs end up in front of a judge, not just a commander.",
+    "footright": "Evidentiary standard"
+  },
+  "rationale": "Reframes the mission-pillar promise around judicial defensibility rather than repeating the confidence-labeling angle already covered, giving it a new operational stake.",
+  "pillar": "MISSION",
+  "tier": "AUTO",
+  "illustrative": false,
+  "cites_detection": false,
+  "generated_at": "2026-09-04T12:02:40.479Z",
+  "usage": {
+    "input": 2746,
+    "output": 679
+  },
+  "opsec": {
+    "verdict": "PASS",
+    "reasons": []
+  },
+  "effective_tier": "AUTO"
+}
