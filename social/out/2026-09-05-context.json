@@ -1,0 +1,30 @@
+{
+  "caption": "Dam management is not a national problem. It is a downstream one.\n\nMuch of the flood risk across the Niger and Benue basins originates outside the borders that bear the consequence. Reservoir releases upstream are announced through their own channels, on their own schedule, by an authority the downstream community has no say over. The water that arrives four to seven days later is someone else's decision, executed on someone else's timeline.\n\nThis is a governance gap, not a data gap. The release volumes are public record. What is missing is a shared operating picture that treats the basin as one system instead of two jurisdictions comparing notes after the fact.",
+  "thread": [
+    "Dam management is a downstream problem. Reservoir releases upstream cross a border before the consequence does.",
+    "The release decision sits with one authority. The flood risk sits with a different one. Basins don't respect the line on the map.",
+    "Release volumes are public record. What's missing is a shared operating picture treating the basin as one system, not two states comparing notes after the water arrives.",
+    "This is a governance gap, not a sensor gap. No amount of coverage fixes a coordination problem between jurisdictions."
+  ],
+  "card": {
+    "eyebrow": "Basin governance",
+    "headline": "The <em>border</em> the water doesn't respect",
+    "sub": "Release decisions sit upstream. Flood consequence lands downstream, in a different jurisdiction, on someone else's timeline.",
+    "footright": "Transboundary river basins"
+  },
+  "rationale": "Introduces a genuinely new angle — jurisdictional mismatch in basin governance — distinct from the already-covered advisory-lag and dual-hazard framings.",
+  "pillar": "CONTEXT",
+  "tier": "APPROVE",
+  "illustrative": false,
+  "cites_detection": false,
+  "generated_at": "2026-09-05T11:11:52.961Z",
+  "usage": {
+    "input": 2784,
+    "output": 1061
+  },
+  "opsec": {
+    "verdict": "PASS",
+    "reasons": []
+  },
+  "effective_tier": "APPROVE"
+}
