@@ -1,0 +1,31 @@
+{
+  "caption": "Most passes on the collection plan close with nothing to report. That is not downtime. Every pass, flagged or clean, gets logged and folded into the baseline for the next look.\n\nAcross the areas of interest under standing tasking, the ratio runs heavily toward quiet returns. Confirmed activity is the exception line in the log, not the norm. The exceptions only mean something because the quiet passes established what normal looks like first.\n\nWe do not disclose how many areas of interest are under tasking at a given time, or where. Scale of coverage is not the same thing as coverage of a specific site — and it is the specific site that gives an adversary something to work with.",
+  "thread": [
+    "Most passes on the collection plan close with nothing to report. That is not downtime — it is the log entry that makes the next flagged pass meaningful.",
+    "Across the areas of interest under standing tasking, quiet returns outnumber flagged ones by a wide margin. Baseline building is the bulk of the work, not the footnote.",
+    "We do not publish how many areas of interest are under tasking or where. Operating scale is not the same disclosure as a specific site, and the site is what matters to anyone probing for a gap.",
+    "Confirmed activity is the exception line. It only reads as an exception because the quiet passes came first.",
+    "#GeospatialIntelligence #WestAfrica"
+  ],
+  "card": {
+    "eyebrow": "Operating tempo",
+    "headline": "Most passes log <em>nothing</em>. That's the point.",
+    "sub": "Quiet returns build the baseline. Confirmed activity is the exception line, and it only means something because of the passes that found nothing.",
+    "footright": "Standing tasking log"
+  },
+  "rationale": "Reframes the huge volume of unremarkable passes as evidence of rigor rather than idle capacity, without disclosing scale, locations, or clients.",
+  "pillar": "ACTIVITY",
+  "tier": "DRAFT",
+  "illustrative": false,
+  "cites_detection": false,
+  "generated_at": "2026-09-06T11:34:57.758Z",
+  "usage": {
+    "input": 2769,
+    "output": 873
+  },
+  "opsec": {
+    "verdict": "PASS",
+    "reasons": []
+  },
+  "effective_tier": "DRAFT"
+}
