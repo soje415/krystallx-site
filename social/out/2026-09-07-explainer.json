@@ -1,0 +1,30 @@
+{
+  "caption": "A false alarm is not a null result. It has a cost.\n\nWhen a monitoring system flags an anomaly, someone has to act on it: divert a patrol, reposition a boat, wake a duty officer. If the flag turns out to be a fishing trawler or a sandbar shift, that resource is now unavailable for the next twenty minutes to two hours, depending on distance and terrain. Do that often enough and operators stop responding at full speed. They start waiting to see if it's real.\n\nThis is why analysts weigh a detection algorithm on more than hit rate. A system that catches everything but also flags everything is worse than one that misses a few genuine events but rarely cries wolf. The right threshold depends on what the false positive costs downstream — a wasted patrol is cheap, a wasted evacuation order is not.\n\nRate of true detection matters less than what the false rate does to trust in the next ten calls.",
+  "thread": [
+    "A false positive is not free. Every flag that turns out to be nothing costs a dispatched patrol, a diverted asset, or a duty officer pulled off other work.",
+    "Do that too often and the response slows down. Operators start waiting to confirm before they move — which defeats the purpose of an early warning.",
+    "The real design question for any detection system isn't \"how much does it catch.\" It's \"what does a wrong call cost, and how many wrong calls will the response chain tolerate before it stops trusting the feed.\"",
+    "A system tuned for maximum sensitivity without regard to that cost isn't more capable. It's just noisier."
+  ],
+  "card": {
+    "eyebrow": "Collection basics",
+    "headline": "A false alarm still costs a <em>patrol</em>",
+    "sub": "Every flag someone acts on has a price downstream. Tune for what a wrong call costs, not just for catch rate.",
+    "footright": "Detection tradecraft"
+  },
+  "rationale": "Teaches a concrete, non-repeated operational concept (false-positive cost and threshold tuning) with zero product pitch, filling the EXPLAINER pillar without overlapping prior angles.",
+  "pillar": "EXPLAINER",
+  "tier": "AUTO",
+  "illustrative": false,
+  "cites_detection": false,
+  "generated_at": "2026-09-07T13:23:30.733Z",
+  "usage": {
+    "input": 2809,
+    "output": 947
+  },
+  "opsec": {
+    "verdict": "PASS",
+    "reasons": []
+  },
+  "effective_tier": "AUTO"
+}
