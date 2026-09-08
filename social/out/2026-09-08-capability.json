@@ -1,0 +1,30 @@
+{
+  "caption": "One capability: wide-area screening across dozens of sites without moving a single patrol. One limit: it only sees each site when the pass falls.\n\nA tasked area of interest gets imaged on a fixed revisit cycle, not on a live feed. Between passes there is no coverage. An incident that starts and finishes inside that gap is invisible to us, full stop.\n\nThat is why the collection plan matters more than the sensor. Match revisit rate to the site's risk profile, stack multiple areas of interest against the same pass, and state the gap in the brief instead of hiding it. A commander who knows the blind window can still plan around it. One who doesn't finds out the hard way.\n\nWe log every pass, flag or no flag, so the gap itself is documented — not assumed away.",
+  "thread": [
+    "Wide-area screening covers dozens of sites without a patrol moving. It does not cover them continuously. Each site is seen on its scheduled pass, not in between.",
+    "Between passes there is no coverage. An incident that opens and closes inside that window will not appear in the collection. That's not a caveat, it's the operating reality of revisit-based tasking.",
+    "The fix isn't pretending the gap doesn't exist. It's stating it: revisit interval, dwell per pass, and what that leaves dark. A commander who knows the blind window plans around it.",
+    "We log every pass — flag or no flag — so the gap is on record, not assumed."
+  ],
+  "card": {
+    "eyebrow": "Wide-area screening",
+    "headline": "Coverage on a cycle, not a <em>watch</em>",
+    "sub": "Each site is imaged on its scheduled pass. Between passes, there is no coverage — and we say so in the brief.",
+    "footright": "Revisit-based tasking"
+  },
+  "rationale": "Directly teaches a capability (wide-area, multi-site screening) while making the periodic-vs-continuous limit explicit and undercutting any surveillance overclaim, without repeating prior revisit/cueing angles' exact framing.",
+  "pillar": "CAPABILITY",
+  "tier": "APPROVE",
+  "illustrative": false,
+  "cites_detection": false,
+  "generated_at": "2026-09-08T12:03:07.163Z",
+  "usage": {
+    "input": 2778,
+    "output": 913
+  },
+  "opsec": {
+    "verdict": "PASS",
+    "reasons": []
+  },
+  "effective_tier": "APPROVE"
+}
