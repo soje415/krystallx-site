@@ -1,0 +1,31 @@
+{
+  "caption": "Flood season and pipeline theft season are the same season. In the Niger Delta and Middle Belt river corridors, the months that flood the creeks are the same months that flood the roads security teams use to reach them.\n\nThis is not a coincidence. Rising water cuts patrol access at the same time it raises the incentive: enforcement capacity drops in the same weeks the black-market margin on stolen crude stays wide. Two problems that get budgeted, staffed, and briefed separately are drawing on the same terrain and the same stretched manpower.\n\nDam releases upstream compound this. A release decision made in one state produces a flood consequence in another, on a timeline nobody downstream controls, in the same window patrol routes are already underwater. Treating flood response and theft interdiction as unrelated line items misses that they compete for the same road network in the same six weeks.\n\nNone of this is proprietary. It is public hydrology and public crude-price data, laid side by side.",
+  "thread": [
+    "Flood season and pipeline theft season are not two problems. They are one calendar overlap. Rising water cuts patrol road access in the same months the black-market crude margin stays wide enough to make the risk worth it.",
+    "Dam releases are public record and made upstream. The flood consequence lands downstream, on someone else's road network, in the same weeks that network is needed for interdiction, not evacuation.",
+    "Budget flood response and pipeline security as separate line items and you miss that they draw on the same manpower, the same access routes, the same six-week window.",
+    "Public hydrology data plus public crude-price data tells you when the overlap is coming. No proprietary feed required to see the pattern.",
+    "#FloodSeason #PipelineSecurity"
+  ],
+  "card": {
+    "eyebrow": "Flood season overlap",
+    "headline": "Same <em>weeks</em>, same terrain, two threats",
+    "sub": "Rising water cuts patrol access in the same months theft margins stay wide. Flood response and pipeline security compete for the same roads.",
+    "footright": "Niger Delta / seasonal risk"
+  },
+  "rationale": "Reframes flood season and pipeline theft as a shared operational calendar rather than two separate topics, giving CONTEXT a genuinely new angle distinct from prior dam-lag and cost-curve posts.",
+  "pillar": "CONTEXT",
+  "tier": "APPROVE",
+  "illustrative": false,
+  "cites_detection": false,
+  "generated_at": "2026-09-09T12:14:13.119Z",
+  "usage": {
+    "input": 2797,
+    "output": 1118
+  },
+  "opsec": {
+    "verdict": "PASS",
+    "reasons": []
+  },
+  "effective_tier": "APPROVE"
+}
