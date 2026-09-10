@@ -1,0 +1,30 @@
+{
+  "caption": "A radar image is not a photograph. It is a measurement of how a surface scatters a radio pulse back to the sensor — surface roughness, moisture, angle. Water looks smooth and returns almost nothing. Flooded fields look like open water. Wet pavement can look like a river. None of that is visible light. It has to be read, not just looked at.\n\nThis is why radar interpretation takes trained analysts, not a glance. Two returns that look identical on a screen can mean standing floodwater or a smooth road surface after rain. Get the read wrong and the flag is worse than useless — it sends a patrol or a warning to the wrong place.\n\nThe payoff is real: radar sees through cloud cover, day or night, when optical sensors are blind. But the tradeoff is that every pass demands correct interpretation, not just a bigger image. Resolution without a trained read is just a sharper wrong answer.",
+  "thread": [
+    "A radar image is not a photograph. It measures backscatter — how a surface reflects a radio pulse. Smooth water returns almost nothing. Wet ground can look like a river. It has to be interpreted, not just viewed.",
+    "This is the tradeoff behind radar's biggest advantage: it sees through cloud, day or night, when optical sensors are blind. But every one of those passes needs a trained read, not a glance.",
+    "Two identical-looking returns can mean standing floodwater or wet pavement after rain. Misread one and you send a patrol, or a warning, to the wrong place. Sharper imagery does not fix a bad interpretation.",
+    "The gap isn't sensor coverage. It's interpretation discipline. #EO #GEOINT"
+  ],
+  "card": {
+    "eyebrow": "How radar actually works",
+    "headline": "A radar return is not a <em>photograph</em>",
+    "sub": "It measures backscatter, not light. Reading it wrong costs more than missing it.",
+    "footright": "Synthetic-aperture radar"
+  },
+  "rationale": "Fills a real EXPLAINER gap — teaches radar interpretation risk, distinct from prior posts on cloud penetration and cadence, without repeating phrasing.",
+  "pillar": "EXPLAINER",
+  "tier": "AUTO",
+  "illustrative": false,
+  "cites_detection": false,
+  "generated_at": "2026-09-10T12:08:10.029Z",
+  "usage": {
+    "input": 2819,
+    "output": 977
+  },
+  "opsec": {
+    "verdict": "PASS",
+    "reasons": []
+  },
+  "effective_tier": "AUTO"
+}
