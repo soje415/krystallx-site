@@ -1,0 +1,30 @@
+{
+  "caption": "KrystallX Shield exists because assertion is cheap and evidence is not. Anyone can claim a threat. Few can show the pass that confirmed it, the pass before it that found nothing, and the pass after it that closed the loop.\n\nThat discipline shapes how the company is built, not just how a brief reads. Every finding carries a confidence label — confirmed, assessed, unknown — because the same record that informs a commander's decision cycle may later sit in an evidentiary file. We write for both readers from the start, not just the second one after the fact.\n\nThe limit gets stated with the same weight as the finding. A coverage gap is not a footnote. It is part of the answer. A system that only reports success stops being useful the first time it is wrong.",
+  "thread": [
+    "KrystallX Shield exists because assertion is cheap and evidence is not. Anyone can claim a threat. Few can show the pass that confirmed it and the pass that found nothing before it.",
+    "Every finding is labeled: confirmed, assessed, unknown. Not for style. Because the same record built for a commander's decision cycle may later sit in front of a judge.",
+    "A coverage gap gets stated with the same weight as a detection. That is not caution. It is what makes the rest of the brief believable.",
+    "We do not report what would sell. We report what the pass shows."
+  ],
+  "card": {
+    "eyebrow": "Why we work this way",
+    "headline": "Assertion is cheap. <em>Evidence</em> is the standard.",
+    "sub": "Every finding is labeled confirmed, assessed, or unknown — built for the decision cycle and the evidentiary record alike.",
+    "footright": "Methodology"
+  },
+  "rationale": "Positions the company's evidentiary discipline as a founding design principle rather than a feature, using a fresh angle (assertion vs. evidence, dual-audience design) distinct from the earlier cross-examination and confidence-labeling posts.",
+  "pillar": "MISSION",
+  "tier": "AUTO",
+  "illustrative": false,
+  "cites_detection": false,
+  "generated_at": "2026-09-11T12:06:30.437Z",
+  "usage": {
+    "input": 2767,
+    "output": 1048
+  },
+  "opsec": {
+    "verdict": "PASS",
+    "reasons": []
+  },
+  "effective_tier": "AUTO"
+}
