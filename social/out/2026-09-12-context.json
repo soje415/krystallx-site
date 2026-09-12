@@ -1,0 +1,30 @@
+{
+  "caption": "Flood season in the Niger and Benue basins is not a surprise event. The rainfall calendar is known months in advance. Upstream reservoir levels, monsoon onset, and historical inundation zones are all public record before the water rises.\n\nYet year after year, warning systems in the basin operate on a reactive footing — responding to the flood instead of the forecast. The information to plan ahead exists. The gap is in acting on it early enough to matter.\n\nThis is a planning failure as much as a hydrological one. A known seasonal risk should drive a standing collection plan, not an annual scramble once the water is already moving.",
+  "thread": [
+    "Flood season in West Africa's river basins is not new information. Rainfall onset, upstream reservoir behavior, and historical flood zones are known months ahead of the water.",
+    "The gap isn't data. It's the shift from a known seasonal risk to a standing collection plan that runs before the rains, not after.",
+    "Treating an annual pattern as an emergency each year is a planning failure. The calendar has already told you when to look.",
+    "#FloodSeason #WestAfrica"
+  ],
+  "card": {
+    "eyebrow": "Flood season",
+    "headline": "The calendar already <em>warned</em> you",
+    "sub": "Rainfall onset and basin flood risk are known months ahead. The gap is a standing plan, not the data.",
+    "footright": "Niger–Benue basin"
+  },
+  "rationale": "Fresh CONTEXT angle — treats flood season as a predictable planning problem rather than an emergency, without repeating prior dam, patrol, or theft-economics framing.",
+  "pillar": "CONTEXT",
+  "tier": "APPROVE",
+  "illustrative": false,
+  "cites_detection": false,
+  "generated_at": "2026-09-12T11:32:17.816Z",
+  "usage": {
+    "input": 2799,
+    "output": 923
+  },
+  "opsec": {
+    "verdict": "PASS",
+    "reasons": []
+  },
+  "effective_tier": "APPROVE"
+}
