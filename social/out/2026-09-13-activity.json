@@ -1,0 +1,30 @@
+{
+  "caption": "Standing collection plan, not a one-off tasking. Across the current area of interest, multiple reaches and installations sit on scheduled revisit — some daily, some weekly, set by what each site needs, not by convenience.\n\nMost of that volume produces a quiet return. That is expected. The tempo exists to build the baseline so the exception line means something when it appears.\n\nWe do not publish site counts, cadence tables, or client rosters. That level of detail belongs in the brief, not the feed.",
+  "thread": [
+    "Standing collection plan, not a one-off tasking. Multiple sites, multiple reaches, on scheduled revisit at any given time.",
+    "Cadence varies by site — daily for some, weekly for others. Set by risk and terrain, not by convenience.",
+    "Most passes return nothing to report. That is the baseline the exception line depends on.",
+    "Site counts, cadence tables, and client rosters stay in the brief. This is the tempo, not the target list."
+  ],
+  "card": {
+    "eyebrow": "Operating tempo",
+    "headline": "Multiple sites, one standing <em>plan</em>",
+    "sub": "Revisit cadence set by risk, not convenience. Most passes come back quiet — that's what makes the exception count.",
+    "footright": "Collection plan"
+  },
+  "rationale": "Communicates scale and rigor of standing monitoring without disclosing any site, client, or date that could deanonymize an operation.",
+  "pillar": "ACTIVITY",
+  "tier": "DRAFT",
+  "illustrative": false,
+  "cites_detection": false,
+  "generated_at": "2026-09-13T12:38:01.946Z",
+  "usage": {
+    "input": 2792,
+    "output": 553
+  },
+  "opsec": {
+    "verdict": "PASS",
+    "reasons": []
+  },
+  "effective_tier": "DRAFT"
+}
