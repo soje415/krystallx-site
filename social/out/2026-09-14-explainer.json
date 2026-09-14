@@ -1,0 +1,30 @@
+{
+  "caption": "Resolution gets the attention. Revisit cadence is what actually determines whether you see the event.\n\nA sharper image taken once every twelve days can miss an entire flood rise, a full theft-tap cycle, or a camp built and struck before the next pass. A coarser image taken every day catches the change even if it can't count the barrels.\n\nThe question to ask a vendor isn't \"how many centimeters per pixel.\" It's \"how many hours between looks at this site, and what can happen in that gap.\" Most operational failures trace back to the gap, not the pixel.\n\nAssessed: for change-detection tasking, cadence should be chosen before resolution, not after.",
+  "thread": [
+    "Resolution gets the marketing. Revisit cadence is what determines whether you actually see the event.",
+    "A sharp image every 12 days can miss a flood rise or a theft-tap cycle start to finish. A coarser image every day catches the change even without fine detail.",
+    "The right question for any monitoring task: how many hours between looks, not how many centimeters per pixel.",
+    "Assessed: for change detection, choose cadence first. Resolution is the second decision, not the first."
+  ],
+  "card": {
+    "eyebrow": "Collection basics",
+    "headline": "Cadence beats <em>resolution</em>",
+    "sub": "A sharp image taken too rarely misses the event. A coarser image taken often enough catches it.",
+    "footright": "Revisit planning"
+  },
+  "rationale": "Delivers a genuinely useful, non-obvious collection-planning lesson (cadence vs resolution) that hasn't been covered in prior posts, with no product pitch.",
+  "pillar": "EXPLAINER",
+  "tier": "AUTO",
+  "illustrative": false,
+  "cites_detection": false,
+  "generated_at": "2026-09-14T13:47:00.535Z",
+  "usage": {
+    "input": 2814,
+    "output": 689
+  },
+  "opsec": {
+    "verdict": "PASS",
+    "reasons": []
+  },
+  "effective_tier": "AUTO"
+}
