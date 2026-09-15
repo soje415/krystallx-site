@@ -1,0 +1,30 @@
+{
+  "caption": "Change detection compares one pass against the last and flags what's different. New structure, cleared vegetation, a stalled vessel, a breached berm — if it wasn't there before and is there now, it shows up in the diff.\n\nThe limit: change detection tells you something moved. It does not tell you what moved, or why. A flag still needs eyes-on or a secondary source to become ground truth. And the diff only exists between two scheduled passes — anything that appeared and vanished in between never entered the record.\n\nWe report the change and the confidence, not a story about intent. The interpretation is a separate step, and we label it as one.",
+  "thread": [
+    "Change detection compares this pass to the last one and flags the difference. That's the capability.",
+    "The limit: it tells you something changed, not what it is or why. Confirming that still takes ground truth or a secondary source.",
+    "It also only sees what happened between two scheduled passes. Anything that appeared and disappeared in the gap never made the diff.",
+    "We report the flag and the confidence level. We don't report a motive we didn't observe."
+  ],
+  "card": {
+    "eyebrow": "Change detection",
+    "headline": "It flags <em>difference</em>, not cause",
+    "sub": "New activity between two passes gets logged. What it means, and what happened between passes, is a separate question.",
+    "footright": "SAR change detection"
+  },
+  "rationale": "Introduces a distinct capability (change detection) not covered in prior posts, with a clean honest-limit hook that reinforces periodic-sampling discipline.",
+  "pillar": "CAPABILITY",
+  "tier": "APPROVE",
+  "illustrative": false,
+  "cites_detection": false,
+  "generated_at": "2026-09-15T12:32:50.239Z",
+  "usage": {
+    "input": 2765,
+    "output": 799
+  },
+  "opsec": {
+    "verdict": "PASS",
+    "reasons": []
+  },
+  "effective_tier": "APPROVE"
+}
