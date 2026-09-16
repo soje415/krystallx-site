@@ -1,0 +1,30 @@
+{
+  "caption": "Pipeline theft in the Niger Delta is not a security failure. It is a margin calculation.\n\nWhen the spread between stolen crude and refined product on the informal market exceeds the cost of tapping, transporting, and paying off risk, the tap gets cut. That math does not change because a patrol route is added or a checkpoint goes up. It changes when the spread closes or the probability of loss goes up enough to matter to the economics.\n\nThis is public knowledge, published in every audit of the sector for a decade. It matters for anyone building a monitoring plan: a system that only counts incidents is measuring the symptom. The driver is price, not presence.",
+  "thread": [
+    "Pipeline theft in the Niger Delta runs on a margin calculation, not a security gap. If the spread between stolen crude and informal-market product exceeds the cost of tapping and moving it, the tap gets cut.",
+    "Adding patrols does not close that spread. It only raises the probability of loss slightly — and operators price that in. This is public knowledge from a decade of sector audits, not a new finding.",
+    "A monitoring plan built around counting incidents measures the symptom. The driver is economics. Plan for that, not for enforcement optics.",
+    "#NigerDelta #PipelineSecurity"
+  ],
+  "card": {
+    "eyebrow": "Pipeline theft economics",
+    "headline": "It's <em>margin</em>, not a manpower problem",
+    "sub": "When the spread between stolen crude and market price exceeds the cost of tapping, the tap gets cut. Patrol density doesn't change that math.",
+    "footright": "Niger Delta / pipeline security"
+  },
+  "rationale": "Reframes a widely known driver of pipeline theft as an economics problem rather than a coverage problem, giving planners a different lens without touching detection claims or repeating prior angles.",
+  "pillar": "CONTEXT",
+  "tier": "APPROVE",
+  "illustrative": false,
+  "cites_detection": false,
+  "generated_at": "2026-09-16T12:30:33.901Z",
+  "usage": {
+    "input": 2761,
+    "output": 765
+  },
+  "opsec": {
+    "verdict": "PASS",
+    "reasons": []
+  },
+  "effective_tier": "APPROVE"
+}
