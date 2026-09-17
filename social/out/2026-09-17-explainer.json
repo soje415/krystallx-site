@@ -1,0 +1,31 @@
+{
+  "caption": "Optical imagery cannot see through cloud. Radar can. That single fact decides which sensor is useful in West Africa's rainy season.\n\nOptical sensors record reflected light — the same physics as a camera. Put a cloud deck between the sensor and the ground, and the pass returns nothing usable. Synthetic-aperture radar transmits its own microwave energy and measures what bounces back. Cloud is mostly transparent at that wavelength. The pass still returns ground truth.\n\nThis is not a resolution argument. A radar image is coarser than a clear-day optical shot. But a coarser image on the day you need it beats a sharp image you never get because the sky was overcast for six weeks straight — which is exactly the pattern during peak flood season.\n\nAssessed: for any site where cloud cover is a recurring collection constraint, radar is the sensor that keeps the collection plan alive. Confirmed: optical still wins on interpretability when skies are clear. Unknown, for any given site: how many consecutive cloud-bound weeks it will see this year.",
+  "thread": [
+    "Optical imagery cannot see through cloud. Radar can. That decides which sensor works in rainy season, not resolution.",
+    "Optical sensors record reflected light. A cloud deck between sensor and ground and the pass returns nothing. Same physics as a camera pointed at fog.",
+    "Synthetic-aperture radar sends its own microwave signal and reads the return. Cloud is largely transparent at that wavelength. The pass still delivers ground truth.",
+    "Trade-off is real: radar is coarser than a clear-day optical image. But a coarser image on the day you need it beats a sharp one you never got because the sky stayed overcast for six weeks.",
+    "Assessed: for cloud-prone sites, radar keeps the collection plan alive through the season optical can't cover."
+  ],
+  "card": {
+    "eyebrow": "How the sensors differ",
+    "headline": "Cloud stops light. Not <em>radar</em>.",
+    "sub": "Optical imagery needs a clear sky. Synthetic-aperture radar reads its own return through cloud cover — coarser, but there when it matters.",
+    "footright": "Sensor physics"
+  },
+  "rationale": "Fills a clear EXPLAINER gap — cloud-penetration physics — without repeating cadence, false-positive, or backscatter angles already posted, and stays useful during the current rainy-season news cycle.",
+  "pillar": "EXPLAINER",
+  "tier": "AUTO",
+  "illustrative": false,
+  "cites_detection": false,
+  "generated_at": "2026-09-17T12:30:10.518Z",
+  "usage": {
+    "input": 2783,
+    "output": 959
+  },
+  "opsec": {
+    "verdict": "PASS",
+    "reasons": []
+  },
+  "effective_tier": "AUTO"
+}
