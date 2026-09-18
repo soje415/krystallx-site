@@ -1,0 +1,30 @@
+{
+  "caption": "A brief that only works in a command post is not enough. It has to hold up in a courtroom, a board of inquiry, an after-action review.\n\nThat means every finding is labeled confirmed, assessed, or unknown — and stays labeled that way through the chain. No upgrading an assessment to a fact because the reader wants certainty. No dropping a caveat because it complicates the story.\n\nThe method is slower than a confident guess. It is also the only version that survives someone asking, later, how you knew.",
+  "thread": [
+    "A brief that only holds up in a command post is not enough. It has to hold up in a courtroom, a board of inquiry, an after-action review.",
+    "Every finding carries a label — confirmed, assessed, or unknown — and the label travels with it. We don't upgrade an assessment to a fact because someone wants certainty.",
+    "Caveats don't get dropped to make the story cleaner. If we don't know, the brief says so.",
+    "This is slower than a confident guess. It's also the only version that survives someone asking, later, how you knew."
+  ],
+  "card": {
+    "eyebrow": "How we brief",
+    "headline": "Built to survive the <em>question</em> later",
+    "sub": "Every finding is labeled confirmed, assessed, or unknown — and the label doesn't change to fit the room.",
+    "footright": "Evidentiary standard"
+  },
+  "rationale": "Establishes the mission's evidentiary-accountability angle without repeating prior confirmed/assessed/unknown posts, framing it around judicial durability rather than operational tuning.",
+  "pillar": "MISSION",
+  "tier": "AUTO",
+  "illustrative": false,
+  "cites_detection": false,
+  "generated_at": "2026-09-18T12:08:43.203Z",
+  "usage": {
+    "input": 2745,
+    "output": 644
+  },
+  "opsec": {
+    "verdict": "PASS",
+    "reasons": []
+  },
+  "effective_tier": "AUTO"
+}
