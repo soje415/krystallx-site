@@ -1,0 +1,31 @@
+{
+  "caption": "Downstream flood risk in the Niger-Benue basin is frequently set by a decision made outside the state that floods. Dam operators upstream release water to protect their own infrastructure. The surge arrives days later, in another jurisdiction, with no say in the release schedule.\n\nThis is public record for the region: the 2012 and 2022 floods both followed upstream dam releases combined with heavy rainfall. The rainfall is a known seasonal risk. The release timing is a separate decision, made by a different authority, on a different set of priorities.\n\nA downstream security or emergency-management plan built only on local rainfall forecasts is missing half the input. The other half sits in a control room upstream, outside the local chain of command.",
+  "thread": [
+    "Downstream flood risk in the Niger-Benue basin is often set by a decision made outside the flooded state's borders.",
+    "Upstream dam operators release water to protect their own structures. The surge reaches downstream communities days later, on someone else's schedule, not the rainfall's.",
+    "2012 and 2022: both events combined heavy rainfall with upstream releases. Public record. Rainfall risk was forecastable. Release timing was a separate call, made elsewhere.",
+    "A downstream plan built only on local rainfall misses half the picture. The other half is a decision made in a control room outside the local chain of command.",
+    "#FloodSeason #WestAfrica"
+  ],
+  "card": {
+    "eyebrow": "Dam management",
+    "headline": "The flood decision isn't made <em>downstream</em>",
+    "sub": "Rainfall risk is forecastable locally. Release timing upstream is a separate authority's call — and it arrives as someone else's flood.",
+    "footright": "Niger-Benue basin"
+  },
+  "rationale": "Reframes dam-driven flooding as a cross-jurisdiction coordination gap rather than a data or rainfall problem, opening new CONTEXT territory without touching prior angles or the Numan proof point.",
+  "pillar": "CONTEXT",
+  "tier": "APPROVE",
+  "illustrative": false,
+  "cites_detection": false,
+  "generated_at": "2026-09-19T11:51:15.291Z",
+  "usage": {
+    "input": 2759,
+    "output": 986
+  },
+  "opsec": {
+    "verdict": "PASS",
+    "reasons": []
+  },
+  "effective_tier": "APPROVE"
+}
