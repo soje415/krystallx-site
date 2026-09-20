@@ -1,0 +1,30 @@
+{
+  "caption": "Across the current tasking load, sites under standing collection are imaged on staggered cycles, not on demand. Most passes return nothing worth escalating. That is the expected outcome of a working collection plan, not a gap in it.\n\nThe volume that matters is the exception rate, not the pass count. A handful of anomalies come out of each cycle for analyst review. Everything else gets logged as quiet and rolled into pattern of life.\n\nWe do not publish where the tasking sits or how many sites are active at a given time. That information tells an adversary as much as it tells a client. What we will say: the system runs at a tempo set by risk, and it holds that tempo whether or not anything is happening.",
+  "thread": [
+    "Standing tasking runs on a schedule, not on demand. Most cycles return quiet. That is the system working, not idling.",
+    "The number that matters isn't sites monitored — it's the exception rate per cycle. A small fraction of passes get escalated to analyst review. The rest close out as pattern of life.",
+    "We don't publish tasking volume, site counts, or cadence by location. That's targeting information, not a stat for a feed.",
+    "Tempo doesn't flex to match attention. It runs the same in a quiet month as a bad one."
+  ],
+  "card": {
+    "eyebrow": "Operating tempo",
+    "headline": "Most cycles come back <em>quiet</em>",
+    "sub": "Standing tasking runs on schedule across active sites. Quiet passes are the expected result, not a gap in coverage.",
+    "footright": "Collection tempo"
+  },
+  "rationale": "Reinforces operational scale and discipline without leaking any detectable specifics, filling the ACTIVITY pillar with a genuinely new angle (exception rate / tempo) not used in prior posts.",
+  "pillar": "ACTIVITY",
+  "tier": "DRAFT",
+  "illustrative": false,
+  "cites_detection": false,
+  "generated_at": "2026-09-20T12:08:44.549Z",
+  "usage": {
+    "input": 2760,
+    "output": 749
+  },
+  "opsec": {
+    "verdict": "PASS",
+    "reasons": []
+  },
+  "effective_tier": "DRAFT"
+}
