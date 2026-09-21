@@ -1,0 +1,30 @@
+{
+  "caption": "A false positive is not a shrug. It is a cost.\n\nEvery time a flagged change turns out to be nothing — a parked vehicle, a shift in vegetation, a shadow the algorithm misread — someone spent fuel, time, and attention chasing it. Do that enough times and the next real alert gets a slower response, because the desk has learned to discount the system.\n\nThat is why a tasking and alert pipeline is judged on precision, not just sensitivity. A system that flags everything catches everything and is trusted by no one. The discipline is knowing what confidence level a flag deserves before it reaches a commander's desk — and saying so.\n\nGround truth is what closes the loop. Until someone confirms what the imagery showed, every flag is a lead, not a fact.",
+  "thread": [
+    "A false positive is not free. Someone burns fuel, hours, and attention chasing a flag that turns out to be nothing.",
+    "Do that enough times and the desk starts discounting the system — including the next alert that's real.",
+    "Precision matters as much as sensitivity. A feed that flags everything gets ignored eventually.",
+    "Ground truth closes the loop. Until confirmed, a flag is a lead — not a fact."
+  ],
+  "card": {
+    "eyebrow": "Collection basics",
+    "headline": "A flag is a <em>lead</em>, not a fact",
+    "sub": "A false positive costs fuel, hours, and trust in the next alert. Precision matters as much as sensitivity.",
+    "footright": "Collection discipline"
+  },
+  "rationale": "Teaches a concrete, underexplained cost of monitoring systems (false-positive fatigue) without repeating cadence, radar, or evidence-labeling angles already covered.",
+  "pillar": "EXPLAINER",
+  "tier": "AUTO",
+  "illustrative": false,
+  "cites_detection": false,
+  "generated_at": "2026-09-21T13:47:08.760Z",
+  "usage": {
+    "input": 2785,
+    "output": 825
+  },
+  "opsec": {
+    "verdict": "PASS",
+    "reasons": []
+  },
+  "effective_tier": "AUTO"
+}
