@@ -1,0 +1,30 @@
+{
+  "caption": "A pattern-of-life baseline is not instant. It takes repeated passes over a site before the system can tell you what's normal there — and only once normal is established does an anomaly mean anything.\n\nOn a new site, week one gives you an image. Week six gives you a baseline. Flagging deviation before that baseline exists is guesswork dressed as intelligence.\n\nThis is why standing tasking on a new area of interest starts quiet by design. The capability isn't slow to react — it's refusing to call a false alarm real just to look responsive on day one.",
+  "thread": [
+    "A pattern-of-life baseline takes time to build. Anomaly detection means nothing until normal is established first.",
+    "New site, week one: an image. Week six: a baseline. Flag deviation before that baseline exists and you're guessing, not assessing.",
+    "Standing tasking on a new area of interest starts quiet on purpose. That's the baseline forming, not a coverage gap.",
+    "Confidence in a flag is only as good as the history behind it. No history, no confidence — regardless of the alert."
+  ],
+  "card": {
+    "eyebrow": "Baseline before flag",
+    "headline": "No baseline, no <em>anomaly</em>",
+    "sub": "Pattern of life takes repeated passes to establish. Deviation only means something once normal is known.",
+    "footright": "Change detection"
+  },
+  "rationale": "Fills a real capability gap not yet covered — the baseline-building limit — while reinforcing the confirmed/assessed/unknown discipline without repeating prior phrasing.",
+  "pillar": "CAPABILITY",
+  "tier": "APPROVE",
+  "illustrative": false,
+  "cites_detection": false,
+  "generated_at": "2026-09-22T12:28:46.721Z",
+  "usage": {
+    "input": 2745,
+    "output": 670
+  },
+  "opsec": {
+    "verdict": "PASS",
+    "reasons": []
+  },
+  "effective_tier": "APPROVE"
+}
