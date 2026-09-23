@@ -1,0 +1,31 @@
+{
+  "caption": "Flood season and pipeline theft season overlap in the Niger Delta. That is not coincidence.\n\nWhen creeks and swamp forest flood, foot and boat patrol access drops. Illegal tapping points are harder to reach and easier to work unseen. The same standing water that raises flood risk also degrades the ground response to theft.\n\nUpstream, the mechanics are separate but structurally similar: release timing on transboundary dams sits with another country's authority, and the flood that reaches Nigerian floodplains is the result of a decision made outside Nigerian jurisdiction. Two different risk domains, same lesson — the terrain and the authority that shapes it are rarely in the same place as the consequence.\n\nPlanning that treats flood risk and pipeline security as unrelated seasonal problems is planning against last year's map.",
+  "thread": [
+    "Flood season and pipeline theft season overlap in the Niger Delta. Not a coincidence — a shared terrain problem.",
+    "Flooded creeks and swamp forest cut foot and boat patrol access. Tapping points get harder to reach and easier to work unseen in the same window water levels rise.",
+    "Upstream, transboundary dam release timing sits with another country's authority. The flood that hits Nigerian floodplains is someone else's decision, arriving downstream.",
+    "Two risk domains, same structural gap: the authority and terrain shaping the risk aren't where the consequence lands.",
+    "Plan flood risk and pipeline security together or plan against last year's map."
+  ],
+  "card": {
+    "eyebrow": "Seasonal risk overlap",
+    "headline": "Flood season hides the <em>tap</em>",
+    "sub": "Rising water cuts patrol access to Delta creeks in the same window pipeline theft peaks. Two risks, one terrain problem.",
+    "footright": "Niger Delta / West Africa"
+  },
+  "rationale": "Introduces a fresh, publicly-grounded synthesis (flood terrain degrading anti-theft patrol access) distinct from prior dam- and theft-economics posts, keeping the CONTEXT pillar's analytic register without repeating phrasing or claiming a detection.",
+  "pillar": "CONTEXT",
+  "tier": "APPROVE",
+  "illustrative": false,
+  "cites_detection": false,
+  "generated_at": "2026-09-23T12:39:47.642Z",
+  "usage": {
+    "input": 2759,
+    "output": 1400
+  },
+  "opsec": {
+    "verdict": "PASS",
+    "reasons": []
+  },
+  "effective_tier": "APPROVE"
+}
