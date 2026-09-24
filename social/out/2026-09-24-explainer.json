@@ -1,0 +1,31 @@
+{
+  "caption": "Water shows up dark on a radar image. Land shows up bright. That's the whole mechanism behind flood-extent mapping, and it's worth understanding before you trust a flood map.\n\nSynthetic-aperture radar sends a pulse and measures what bounces back. Rough surfaces — soil, vegetation, buildings — scatter the pulse in all directions, and some of it returns to the sensor. Smooth surfaces, like open standing water, reflect the pulse away at an angle. Little or nothing comes back. The pixel reads dark.\n\nThat contrast is what lets an analyst trace a flood boundary through cloud cover, at night, without waiting for a ground report. It's also why the same method struggles with floodwater under a forest canopy — the canopy scatters the return before the water gets a chance to. Dense vegetation is a known coverage gap in radar-based flood mapping, not a defect in the sensor.\n\nUnderstanding the physics tells you where to trust the map and where to ask for a second source.",
+  "thread": [
+    "Flooded ground reads dark on a radar image. Dry ground reads bright. That's the mechanism flood-extent mapping runs on — and it has a real gap worth knowing.",
+    "Radar measures what bounces back from a pulse. Rough surfaces (soil, buildings, crops) scatter it every direction — some returns. Smooth surfaces, like open standing water, reflect it away at an angle. Little comes back. Dark pixel.",
+    "That contrast works through cloud and at night. No sunlight needed. It's why radar carries flood mapping when optical imagery is blind.",
+    "The gap: floodwater under forest canopy. The canopy scatters the return before the water can reflect it away. The map can miss flooding it can't see through the trees. That's a known coverage gap, not a sensor fault.",
+    "Know the physics, know where the map needs a second source. #FloodMapping"
+  ],
+  "card": {
+    "eyebrow": "Radar basics",
+    "headline": "Why flooded ground reads <em>dark</em>",
+    "sub": "Water reflects a radar pulse away from the sensor. Land scatters it back. That contrast is the whole basis for flood-extent mapping.",
+    "footright": "SAR backscatter"
+  },
+  "rationale": "Teaches the actual physics behind radar flood detection — a mechanism not covered in prior posts — and names a real limitation (canopy occlusion) with zero product pitch.",
+  "pillar": "EXPLAINER",
+  "tier": "AUTO",
+  "illustrative": false,
+  "cites_detection": false,
+  "generated_at": "2026-09-24T12:37:53.866Z",
+  "usage": {
+    "input": 2775,
+    "output": 1295
+  },
+  "opsec": {
+    "verdict": "PASS",
+    "reasons": []
+  },
+  "effective_tier": "AUTO"
+}
