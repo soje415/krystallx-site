@@ -1,0 +1,30 @@
+{
+  "caption": "A finding that can't survive cross-examination is not a finding. It's an opinion with a map behind it.\n\nWe build every product around that constraint. Confirmed means the imagery shows it and a second pass agrees. Assessed means the pattern supports a conclusion but the ground truth is inferred, not observed. Unknown means the collection plan didn't cover it, and we say so instead of filling the gap with confidence.\n\nThis is not caution for its own sake. A brief that overstates gets challenged once and distrusted after. A brief that states its limits gets used, because the reader knows which line to act on and which to verify first.",
+  "thread": [
+    "A finding that can't survive being challenged later is not a finding. It's an opinion with a map behind it.",
+    "We label every output confirmed, assessed, or unknown. Confirmed: imagery plus a second pass agree. Assessed: pattern supports it, ground truth is inferred. Unknown: outside the collection plan.",
+    "This isn't hedging. It's the difference between a brief that gets acted on and one that gets challenged once and ignored after.",
+    "No pass gets upgraded to confirmed because the room wants certainty. The label reflects what the sensor saw, not what would be convenient to claim."
+  ],
+  "card": {
+    "eyebrow": "How findings get labeled",
+    "headline": "Confirmed, assessed, <em>unknown</em> — pick one",
+    "sub": "Every output is graded by what the evidence actually supports. The label doesn't move to fit the room.",
+    "footright": "Analytic standards"
+  },
+  "rationale": "Reinforces the company's evidentiary discipline as an operating principle rather than a feature, positioning trust and accountability without any new proof claim.",
+  "pillar": "MISSION",
+  "tier": "AUTO",
+  "illustrative": false,
+  "cites_detection": false,
+  "generated_at": "2026-09-25T12:39:16.668Z",
+  "usage": {
+    "input": 2742,
+    "output": 661
+  },
+  "opsec": {
+    "verdict": "PASS",
+    "reasons": []
+  },
+  "effective_tier": "AUTO"
+}
