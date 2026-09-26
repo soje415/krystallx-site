@@ -1,0 +1,30 @@
+{
+  "caption": "Nigeria's worst flood years are not driven primarily by local rainfall. They are driven by release decisions made upstream, across a border, by an authority Nigeria does not control.\n\nThis is publicly documented. Cameroon's Lagdo Dam has released water during periods that preceded major Benue River flooding in past years, 2012 among them. There is no standing bilateral protocol tying release timing to Nigerian evacuation windows. That is a governance gap, not a sensing gap.\n\nPipeline theft runs on a parallel calendar, not the same cause. When flood season restricts patrol access to Delta creeks, theft activity does not stop, it relocates to the terrain patrols can no longer reach. Two separate risks, converging on the same months.",
+  "thread": [
+    "Nigeria's worst flood years are not mainly a rainfall problem. They are a release-timing problem, decided upstream, across a border, by an authority Nigeria does not control.",
+    "Public record: Cameroon's Lagdo Dam has released water during periods that preceded major Benue River flooding, including in 2012. There is no standing bilateral protocol tying release timing to Nigerian evacuation windows.",
+    "That's a governance gap, not a sensing gap. Local rainfall forecasting doesn't touch it.",
+    "Separately: flood season restricts patrol access to Delta creeks in the same window pipeline theft is active. Two risks, same calendar, different root causes. #FloodSeason"
+  ],
+  "card": {
+    "eyebrow": "Cross-border flood risk",
+    "headline": "Downstream of a <em>decision</em>, not a storm",
+    "sub": "Major Benue River flooding has followed upstream dam releases with no binding advance-notice protocol tying timing to Nigerian evacuation windows.",
+    "footright": "Benue River basin"
+  },
+  "rationale": "Grounds the brand in a widely-known, verifiable public fact (Lagdo Dam releases and Benue flooding) that reframes flood risk as a cross-border governance problem, distinct from all recent posts, without any unverifiable detection claim.",
+  "pillar": "CONTEXT",
+  "tier": "APPROVE",
+  "illustrative": false,
+  "cites_detection": false,
+  "generated_at": "2026-09-26T12:08:07.797Z",
+  "usage": {
+    "input": 2765,
+    "output": 1440
+  },
+  "opsec": {
+    "verdict": "PASS",
+    "reasons": []
+  },
+  "effective_tier": "APPROVE"
+}
