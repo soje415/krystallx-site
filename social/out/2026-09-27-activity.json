@@ -1,0 +1,29 @@
+{
+  "caption": "The collection plan runs on schedule, not on headlines. Across active sites in the area of interest, standing tasking cycles through on a fixed revisit cadence — coastline, pipeline right-of-way, river reach, border corridor — regardless of whether last week made news.\n\nMost passes return quiet. That is the system working, not idling. Volume is the point: pattern of life only holds up when the baseline is built from repetition, not from a single dramatic pass.\n\nWe don't publish where the tasking sits or how many sites are live. That detail is the collection plan itself, and it stays with the operator who owns the decision cycle.",
+  "thread": [
+    "Operating tempo update: standing tasking continues across multiple active sites in the area of interest, on a fixed revisit schedule. No single incident drives the cadence.",
+    "Most cycles return quiet. That's the expected result, not a gap — pattern of life is built from repeated passes, not one alert.",
+    "We do not publish site count, location, or client. That's the collection plan, and it belongs to whoever owns the decision cycle, not to a feed."
+  ],
+  "card": {
+    "eyebrow": "Operating tempo",
+    "headline": "The cadence runs whether or not it makes <em>news</em>",
+    "sub": "Standing tasking cycles across active sites on a fixed revisit schedule. Scale is the baseline — not any single pass.",
+    "footright": "Collection tempo"
+  },
+  "rationale": "Reinforces operational scale and discipline without disclosing any locatable detail, differentiating from prior posts that focused on detection mechanics rather than tempo.",
+  "pillar": "ACTIVITY",
+  "tier": "DRAFT",
+  "illustrative": false,
+  "cites_detection": false,
+  "generated_at": "2026-09-27T12:52:58.980Z",
+  "usage": {
+    "input": 2781,
+    "output": 574
+  },
+  "opsec": {
+    "verdict": "PASS",
+    "reasons": []
+  },
+  "effective_tier": "DRAFT"
+}
