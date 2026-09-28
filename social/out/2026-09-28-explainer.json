@@ -1,0 +1,30 @@
+{
+  "caption": "Resolution gets the attention. Revisit cadence is what actually decides whether a system sees anything useful.\n\nA sharper image of a location from four days ago tells you nothing about what changed there yesterday. Encroachment, a burn scar, a new access track, a flood edge — all of it can appear and vanish inside a single gap between passes. Tighter pixels don't buy back time you didn't collect.\n\nThe collection plan has to weigh revisit against resolution for the specific target, not chase the sharpest picture available. A coarser image every two days beats a crisp one every two weeks if the thing you're watching moves that fast. Coverage gaps are a scheduling decision, not a technology limit — know which one you're accepting.",
+  "thread": [
+    "Resolution gets the attention. Revisit cadence is what decides whether a system sees anything useful.",
+    "A sharp image from four days ago tells you nothing about what changed yesterday. Encroachment, a burn scar, a flood edge can appear and disappear inside one gap between passes.",
+    "Tighter pixels don't buy back time you didn't collect. A coarser pass every two days beats a crisp one every two weeks if the target moves that fast.",
+    "Coverage gaps are a scheduling decision, not a technology limit. Know which one you're accepting before you build the collection plan."
+  ],
+  "card": {
+    "eyebrow": "Collection basics",
+    "headline": "Sharper is not the same as <em>sooner</em>",
+    "sub": "A high-resolution image from four days ago cannot show what changed yesterday. Revisit cadence sets what a system can actually see.",
+    "footright": "Collection planning"
+  },
+  "rationale": "Directly delivers the brief's third teaching point (cadence over resolution) with a fresh framing not used in prior posts, keeping the explainer purely educational with no pitch.",
+  "pillar": "EXPLAINER",
+  "tier": "AUTO",
+  "illustrative": false,
+  "cites_detection": false,
+  "generated_at": "2026-09-28T15:09:26.638Z",
+  "usage": {
+    "input": 2824,
+    "output": 762
+  },
+  "opsec": {
+    "verdict": "PASS",
+    "reasons": []
+  },
+  "effective_tier": "AUTO"
+}
