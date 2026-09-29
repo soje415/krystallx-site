@@ -1,0 +1,30 @@
+{
+  "caption": "A single sensor type does not carry the mission. Synthetic-aperture radar runs wide-area passes on a fixed revisit schedule, covering the full area of interest regardless of weather. When a pass flags something worth a closer look, that site can be cued for a tighter, more frequent watch.\n\nThe limit: cueing is a decision, not a switch. Re-tasking a narrower watch onto a specific site takes time to plan and execute — it does not happen inside the same pass that generated the flag. Between the flag and the follow-up look, the site is uncovered.\n\nThat gap is real and it is priced into how findings are labeled. A flag from a wide pass is a lead. Confirmation waits for the next dedicated look — and the interval between them is stated, not hidden.",
+  "thread": [
+    "Wide-area radar passes run on schedule. When one flags a site, that site can be cued for a tighter follow-up watch. That's the capability.",
+    "The limit: cueing takes a decision cycle to execute. It is not an instant re-task. Between the flag and the follow-up pass, the site sits uncovered.",
+    "A flag from a wide pass is a lead, not confirmation. The interval to the next dedicated look is stated as part of the finding, not smoothed over.",
+    "Coverage gaps between cueing and follow-up are the honest cost of a wide-area collection plan. Naming them is what keeps the next flag credible."
+  ],
+  "card": {
+    "eyebrow": "Cueing and follow-up",
+    "headline": "A flag earns a closer look, not an <em>instant</em> one",
+    "sub": "Re-tasking a tighter watch onto a cued site takes a decision cycle. The gap between flag and follow-up is stated, not hidden.",
+    "footright": "Tasking & cueing"
+  },
+  "rationale": "Introduces the tasking/cueing distinction (unused angle) with an explicit, undramatized limit about re-tasking latency, avoiding overlap with prior revisit/quiet-cycle posts.",
+  "pillar": "CAPABILITY",
+  "tier": "APPROVE",
+  "illustrative": false,
+  "cites_detection": false,
+  "generated_at": "2026-09-29T13:53:11.454Z",
+  "usage": {
+    "input": 2787,
+    "output": 923
+  },
+  "opsec": {
+    "verdict": "PASS",
+    "reasons": []
+  },
+  "effective_tier": "APPROVE"
+}
