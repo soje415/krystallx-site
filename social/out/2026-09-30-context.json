@@ -1,0 +1,30 @@
+{
+  "caption": "Pipeline theft in the Niger Delta is not primarily an intrusion problem. It is a market problem with a security symptom.\n\nPublic reporting puts illegal refining and product laundering as the main draw — stolen crude has a downstream buyer before it ever reaches a tapped line. Perimeter security can raise the cost of a tap. It cannot remove the market that pays for it.\n\nThat changes what \"security\" has to mean here. A patrol boat or a fence line addresses access. It does not touch the refining camps, the transport chain, or the price differential that makes the theft worth the risk in the first place. Any collection plan built only around the pipeline right-of-way is watching one link in a longer chain.",
+  "thread": [
+    "Pipeline theft in the Delta is a market problem, not an intrusion problem.",
+    "Stolen crude has a downstream buyer — illegal refining and laundering — before a tap is ever cut. That's public reporting, not a new finding.",
+    "Perimeter security raises the cost of a tap. It doesn't touch the economics that make the tap worth cutting.",
+    "A collection plan that only watches the right-of-way is watching one link in a longer chain."
+  ],
+  "card": {
+    "eyebrow": "Pipeline theft, reframed",
+    "headline": "A tap is the <em>symptom</em>, not the market",
+    "sub": "Illegal refining and product laundering create the demand. Perimeter security addresses access — not the economics driving it.",
+    "footright": "Niger Delta / midstream security"
+  },
+  "rationale": "Reframes pipeline theft as an economic supply-chain problem rather than a fence-line problem, giving security leads a reason to widen their collection plan beyond right-of-way patrol.",
+  "pillar": "CONTEXT",
+  "tier": "APPROVE",
+  "illustrative": false,
+  "cites_detection": false,
+  "generated_at": "2026-09-30T13:28:37.937Z",
+  "usage": {
+    "input": 2798,
+    "output": 771
+  },
+  "opsec": {
+    "verdict": "PASS",
+    "reasons": []
+  },
+  "effective_tier": "APPROVE"
+}
