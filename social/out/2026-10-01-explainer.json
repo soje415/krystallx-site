@@ -1,0 +1,31 @@
+{
+  "caption": "Cloud cover is the reason optical imagery fails during the exact weeks flood and security risk peak. Rain season means cloud. Cloud blocks the optical sensor's view of the ground, full stop.\n\nRadar works differently. Its wavelength is long enough to pass through cloud and rain largely unaffected. The pulse reaches the ground, scatters back, and the sensor reads terrain regardless of what the sky is doing.\n\nThis is not a resolution story. A radar image and an optical image of the same ground can carry similar detail. The difference is availability. Optical coverage can go dark for weeks in monsoon conditions. Radar coverage does not depend on clear sky to collect.\n\nFor flood mapping and pattern-of-life work across West Africa, that single property decides whether a collection plan holds up when it matters most.",
+  "thread": [
+    "Cloud cover grounds optical imagery. It does not ground radar. That is the whole reason radar is the backbone of flood and security monitoring through rainy season.",
+    "Optical sensors need a clear line of sight to the ground. Heavy cloud blocks it completely. In West Africa's wet months, that can mean weeks of no usable optical coverage over an area of interest.",
+    "Radar's wavelength is long enough to pass through cloud and rain. The pulse reaches the ground, scatters back, and the sensor reads terrain whether the sky is clear or not.",
+    "This is not about sharper images. It's about which sensor is still collecting when you need the pass most.",
+    "#RemoteSensing #WestAfrica"
+  ],
+  "card": {
+    "eyebrow": "Collection basics",
+    "headline": "Clear sky is <em>optional</em> for radar",
+    "sub": "Optical imagery needs a clear view of the ground. Radar's wavelength passes through cloud and rain — exactly the conditions that define rainy season.",
+    "footright": "Synthetic-aperture radar"
+  },
+  "rationale": "Explains the cloud-penetration physics behind radar's reliability — a distinct, concrete lesson not covered by prior posts on revisit cadence, false positives, or the water/land backscatter contrast.",
+  "pillar": "EXPLAINER",
+  "tier": "AUTO",
+  "illustrative": false,
+  "cites_detection": false,
+  "generated_at": "2026-10-01T14:20:08.775Z",
+  "usage": {
+    "input": 2823,
+    "output": 890
+  },
+  "opsec": {
+    "verdict": "PASS",
+    "reasons": []
+  },
+  "effective_tier": "AUTO"
+}
