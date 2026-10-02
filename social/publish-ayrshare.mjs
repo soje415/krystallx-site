@@ -9,7 +9,7 @@
  *
  * Env:
  *   AYRSHARE_API_KEY
- *   AYRSHARE_PLATFORMS  optional CSV, default "facebook,instagram"
+ *   AYRSHARE_PLATFORMS  optional CSV, default "facebook,instagram,tiktok"
  */
 import { readFileSync } from 'node:fs'
 
@@ -36,7 +36,7 @@ export async function publishPost(post, cardPath, _slug, env = process.env) {
   const key = env.AYRSHARE_API_KEY
   if (!key) return { published: false, results: [], reason: 'AYRSHARE_API_KEY not set (dry run)' }
 
-  const platforms = (env.AYRSHARE_PLATFORMS ?? 'facebook,instagram').split(',').map((p) => p.trim())
+  const platforms = (env.AYRSHARE_PLATFORMS || 'facebook,instagram,tiktok').split(',').map((p) => p.trim())
 
   try {
     const mediaUrl = await uploadCard(key, cardPath)

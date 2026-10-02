@@ -1,10 +1,12 @@
 #!/usr/bin/env node
 /**
- * Daily social run: pick pillar → generate → OPSEC gate → render card → queue.
+ * Daily social run: pick pillar → generate → OPSEC gate → render card → queue → publish.
  *
- * Publishing is intentionally NOT wired. Posts land in social/out/ as a queue
- * of JSON + PNG. The publisher is an adapter (see publish() below) so Ayrshare
- * or direct platform APIs slot in without touching generation or the gate.
+ * AUTO-tier posts publish immediately through whichever provider is
+ * configured (see publisher() below); everything else queues in social/out/
+ * as JSON + PNG and waits for a Telegram approval tap. With neither
+ * AYRSHARE_API_KEY nor META_ACCESS_TOKEN set, publishing is a no-op dry run
+ * and posts still land in the queue.
  *
  *   node social/run.mjs                 # today's pillar
  *   node social/run.mjs --pillar EXPLAINER
@@ -19,6 +21,7 @@ import { opsecCheck } from './opsec.mjs'
 import { generatePost } from './generate.mjs'
 import { publishPost as publishMeta } from './publish.mjs'
 import { publishPost as publishAyrshare } from './publish-ayrshare.mjs'
+import { publishPost as publishZernio } from './publish-zernio.mjs'
 import { notify } from './notify.mjs'
 
 const HERE = dirname(fileURLToPath(import.meta.url))
@@ -80,10 +83,10 @@ function renderCard(post, slug) {
 
 
 /**
- * Whichever provider is configured wins; Ayrshare takes precedence when both
- * are present. Neither = dry run, and the post is still queued.
+ * Whichever provider is configured wins: Zernio, then Ayrshare, then Meta. Neither = dry run, and the post is still queued.
  */
 function publisher() {
+  if (process.env.ZERNIO_API_KEY) return publishZernio
   if (process.env.AYRSHARE_API_KEY) return publishAyrshare
   return publishMeta
 }

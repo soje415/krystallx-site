@@ -44,7 +44,12 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           # Whichever publisher is configured; absent = dry run.
+          # Ayrshare takes precedence over Meta when both are set (run.mjs),
+          # and covers Instagram + TikTok without needing our own Meta app
+          # review — that's the path to use while the Meta one is stalled.
+          ZERNIO_API_KEY: ${{ secrets.ZERNIO_API_KEY }}
           AYRSHARE_API_KEY: ${{ secrets.AYRSHARE_API_KEY }}
+          AYRSHARE_PLATFORMS: ${{ vars.AYRSHARE_PLATFORMS }}
           META_PAGE_ID: ${{ secrets.META_PAGE_ID }}
           META_IG_USER_ID: ${{ secrets.META_IG_USER_ID }}
           META_ACCESS_TOKEN: ${{ secrets.META_ACCESS_TOKEN }}

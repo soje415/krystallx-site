@@ -16,6 +16,7 @@ interface Env {
   TELEGRAM_OWNER_CHAT_ID: string
   GITHUB_TOKEN?: string
   GITHUB_REPO?: string // "soje415/krystallx-site"
+  ZERNIO_API_KEY?: string
   META_ACCESS_TOKEN?: string
   META_PAGE_ID?: string
   META_IG_USER_ID?: string
@@ -93,6 +94,68 @@ async function publishToMeta(env: Env, slug: string, caption: string) {
   return { ok: results.some((r) => r.endsWith('✓')), detail: results.join(' · ') }
 }
 
+/**
+ * Zernio publish — mirrors social/publish-zernio.mjs (keep the two in step).
+ * Used when ZERNIO_API_KEY is set; Meta direct remains the fallback.
+ */
+async function publishToZernio(env: Env, slug: string, post: { caption: string; thread?: string[] }) {
+  const key = env.ZERNIO_API_KEY!
+  const z = async (path: string, init: RequestInit = {}) => {
+    const r = await fetch(`https://zernio.com/api/v1${path}`, {
+      ...init,
+      headers: { authorization: `Bearer ${key}`, 'content-type': 'application/json' },
+    })
+    const j = (await r.json().catch(() => ({}))) as any
+    if (!r.ok) throw new Error(`${path}: ${j.error ?? j.message ?? r.statusText}`)
+    return j
+  }
+  try {
+    const { accounts = [] } = await z('/accounts')
+    if (!accounts.length) return { ok: false, detail: 'No accounts connected in Zernio' }
+    const card = await repoFile(env, `public/cards/${slug}.png`)
+    if (!card) return { ok: false, detail: 'Card not found in repo' }
+
+    const { uploadUrl, publicUrl } = await z('/media/presign', {
+      method: 'POST',
+      body: JSON.stringify({ filename: `${slug}.png`, contentType: 'image/png', size: card.byteLength }),
+    })
+    const put = await fetch(uploadUrl, { method: 'PUT', headers: { 'content-type': 'image/png' }, body: card })
+    if (!put.ok) return { ok: false, detail: `Media upload failed (${put.status})` }
+
+    const platforms = accounts.map((a: any) => {
+      const entry: any = { platform: a.platform, accountId: a._id ?? a.id }
+      if (a.platform === 'twitter' || a.platform === 'x') {
+        const [first, ...rest] = post.thread ?? [post.caption.slice(0, 275)]
+        entry.platformSpecificData = { content: first, threadItems: rest.map((content) => ({ content })) }
+      } else if (a.platform === 'tiktok') {
+        entry.platformSpecificData = {
+          tiktokSettings: {
+            media_type: 'photo', privacy_level: 'PUBLIC_TO_EVERYONE', allow_comment: true,
+            content_preview_confirmed: true, express_consent_given: true, auto_add_music: false,
+            description: post.caption.slice(0, 3990),
+          },
+        }
+      }
+      return entry
+    })
+    const res = await z('/posts', {
+      method: 'POST',
+      body: JSON.stringify({
+        content: post.caption.slice(0, 2190),
+        mediaItems: [{ type: 'image', url: publicUrl }],
+        platforms,
+        publishNow: true,
+      }),
+    })
+    const out = ((res.post ?? res).platforms ?? []) as any[]
+    const ok = out.filter((x) => x.status !== 'failed' && !x.error)
+    const bad = out.filter((x) => !ok.includes(x)).map((x) => `${x.platform} failed: ${x.error ?? x.errorMessage ?? '?'}`)
+    return { ok: ok.length > 0, detail: [...ok.map((x) => `${x.platform} ✓`), ...bad].join(' · ') || 'submitted' }
+  } catch (e: any) {
+    return { ok: false, detail: e.message }
+  }
+}
+
 /** Kick off a generation run in GitHub Actions. */
 async function dispatchRun(env: Env, pillar: string | null, days: string) {
   if (!env.GITHUB_TOKEN || !env.GITHUB_REPO) return 'GitHub not configured'
@@ -145,7 +208,9 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
         note = '⚠️ Could not load that post from the repo.'
       } else {
         const post = JSON.parse(new TextDecoder().decode(raw))
-        const r = await publishToMeta(env, slug, post.caption)
+        const r = env.ZERNIO_API_KEY
+          ? await publishToZernio(env, slug, post)
+          : await publishToMeta(env, slug, post.caption)
         note = r.ok ? `✅ Posted — ${r.detail}` : `⚠️ ${r.detail}`
       }
     } else {
