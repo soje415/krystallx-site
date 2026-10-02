@@ -1,0 +1,30 @@
+{
+  "caption": "An alert that cannot survive cross-examination is worthless to the person who has to act on it. That is the standard we build to — not persuasion, evidence.\n\nEvery output carries its own confidence grade and its own gaps. We state what the system saw, what it inferred, and what it did not observe. If a finding cannot be traced back to the imagery and the method that produced it, it does not go out as a finding.\n\nThe September 2022 Numan flood hindcast is the one case we point to publicly: the reach-monitoring array flagged the signature four days ahead of the official warning, and the 2021 control year stayed quiet when nothing was there. One confirmed result, honestly scoped, beats a sales deck full of assertions.\n\nA commander does not need confidence. A commander needs to know exactly how much to trust the line in front of him.",
+  "thread": [
+    "An alert that cannot survive cross-examination is worthless to the person who has to act on it. That is the standard we build to.",
+    "Every output carries its confidence grade and its gaps, stated plainly. What the system saw. What it inferred. What it did not observe. Findings that cannot be traced back to method do not ship.",
+    "Proof point, stated once: the September 2022 Numan flood hindcast flagged four days ahead of the official warning. The 2021 control year stayed quiet when nothing was there. That is the bar.",
+    "A commander does not need confidence. He needs to know exactly how much to trust the line in front of him."
+  ],
+  "card": {
+    "eyebrow": "Design philosophy",
+    "headline": "Evidence has to survive <em>cross-examination</em>",
+    "sub": "Every output states what was seen, what was inferred, and what was not observed. Confidence is graded, not asserted.",
+    "footright": "Analytic standards"
+  },
+  "rationale": "Reinforces the brand's judicial-grade accountability stance using the one approved proof point, without boasting or repeating prior pillar angles.",
+  "pillar": "MISSION",
+  "tier": "AUTO",
+  "illustrative": false,
+  "cites_detection": false,
+  "generated_at": "2026-10-02T13:41:56.886Z",
+  "usage": {
+    "input": 2780,
+    "output": 763
+  },
+  "opsec": {
+    "verdict": "PASS",
+    "reasons": []
+  },
+  "effective_tier": "AUTO"
+}
