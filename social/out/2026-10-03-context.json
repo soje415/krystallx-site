@@ -1,0 +1,30 @@
+{
+  "caption": "Flood season in the Niger-Benue basin is not a weather event. It is the output of a basin shared across borders, where upstream dam releases are scheduled by operators outside Nigeria's jurisdiction, and downstream communities absorb the timing.\n\nPipeline theft follows its own calendar too. Volumes track the price gap between stolen crude or laundered product and the legitimate market. Patrol surges push theft to a different stretch of pipe. They do not close the gap that funds it.\n\nBoth problems share a root failure mode: the authority that can act sits upstream of the harm, in time, geography, or economics. Any monitoring plan built only around the point of impact is watching the wrong end of the chain.",
+  "thread": [
+    "Flood season in the Niger-Benue basin is a governance output, not a weather event. Dam releases are scheduled upstream, often outside Nigerian jurisdiction. Downstream communities get the timing, not a seat in it.",
+    "Pipeline theft runs on the same logic in a different domain. Volume tracks the price gap between stolen product and the legitimate market. A patrol surge moves the tap, it doesn't close the gap.",
+    "Both failure modes sit upstream of where the harm lands, in geography or in economics. A collection plan aimed only at the impact point is watching the wrong end of the chain.",
+    "#FloodSeason #WestAfrica"
+  ],
+  "card": {
+    "eyebrow": "Flood season",
+    "headline": "The <em>harm</em> lands downstream of the decision",
+    "sub": "Dam releases and theft economics both originate upstream of where the damage shows up. Monitoring the impact point alone misses the chain.",
+    "footright": "Niger-Benue basin"
+  },
+  "rationale": "Extends the dam/theft context argument to a fresh structural angle — transboundary governance and market economics as upstream root causes — without repeating prior phrasing or claims.",
+  "pillar": "CONTEXT",
+  "tier": "APPROVE",
+  "illustrative": false,
+  "cites_detection": false,
+  "generated_at": "2026-10-03T12:22:48.586Z",
+  "usage": {
+    "input": 2805,
+    "output": 1314
+  },
+  "opsec": {
+    "verdict": "PASS",
+    "reasons": []
+  },
+  "effective_tier": "APPROVE"
+}
