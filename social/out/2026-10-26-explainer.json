@@ -1,0 +1,30 @@
+{
+  "caption": "A false positive is not free. It is a patrol diverted, a crew sent to a site with nothing there, hours of exposure for zero yield.\n\nMost pitches for monitoring systems talk about detection rate — how much it catches. Few talk about the other number: how often a flag turns out to be nothing. A system that flags everything catches everything too, and burns out the people who have to check each one.\n\nThe real measure of a collection system is not sensitivity alone. It is sensitivity weighed against the cost of acting on a flag that doesn't pan out. Confidence grading exists to carry that weight — so a low-confidence flag gets a different response than a confirmed one, not the same scramble every time.",
+  "thread": [
+    "A false positive is not free. It is a patrol sent out, fuel burned, hours of exposure, for a site where nothing was there.",
+    "Detection rate gets the attention. Precision — how often a flag is real — gets ignored. A system that flags everything catches everything, and exhausts whoever has to check it.",
+    "The fix isn't fewer flags. It's grading them. Confirmed, assessed, and uncertain calls draw different responses, not the same scramble every time.",
+    "Cost of a missed event and cost of a false alarm are different numbers. Treating them as the same number is how good systems get ignored."
+  ],
+  "card": {
+    "eyebrow": "Collection basics",
+    "headline": "A flag that's wrong still costs <em>fuel</em>",
+    "sub": "Every dispatched patrol on a false alarm is a real cost. Grading confidence, not just counting flags, is what keeps a system worth acting on.",
+    "footright": "Detection economics"
+  },
+  "rationale": "Covers an unaddressed EXPLAINER angle — the operational cost of false positives and precision vs. raw detection — teaching a concrete concept without repeating prior cadence/radar/confidence posts.",
+  "pillar": "EXPLAINER",
+  "tier": "AUTO",
+  "illustrative": false,
+  "cites_detection": false,
+  "generated_at": "2026-10-26T14:02:20.761Z",
+  "usage": {
+    "input": 2833,
+    "output": 860
+  },
+  "opsec": {
+    "verdict": "PASS",
+    "reasons": []
+  },
+  "effective_tier": "AUTO"
+}
