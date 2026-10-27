@@ -1,0 +1,31 @@
+{
+  "caption": "Capability: pattern-of-life baselining across a monitored site. The system builds a record of normal activity — vessel counts, vehicle presence, structure footprint — from repeated passes over time. A new structure, a parked vessel that wasn't there last cycle, a cleared patch of ground: these register as deviations from the baseline, not isolated guesses.\n\nLimit: the baseline is built from passes, not continuous watch. Between one pass and the next, an asset can arrive and leave and never appear in the record. The system reports what was present at each sampled moment. It does not reconstruct what happened in the interval.\n\nThat gap is stated in every output that depends on this capability. A baseline is a strong foundation for cueing. It is not a claim of uninterrupted watch over the site.",
+  "thread": [
+    "Capability: pattern-of-life baselining. Repeated passes over a site build a record of what's normal — vessel counts, vehicle presence, structure footprint. New additions or removals register as deviations, not guesses.",
+    "Limit: the baseline is built from passes, not continuous watch. An asset can arrive and leave between two passes and never enter the record. The gap is in time, not resolution.",
+    "Every output built on this capability states the interval it cannot see. A baseline strengthens cueing. It does not claim uninterrupted watch."
+  ],
+  "card": {
+    "eyebrow": "Capability: baseline detection",
+    "headline": "A baseline built from passes, not a <em>watch</em>",
+    "sub": "Pattern-of-life monitoring flags what's new against what's normal. It does not see what moved in the gap between passes.",
+    "footright": "Pattern-of-life monitoring"
+  },
+  "rationale": "Introduces a distinct capability (baseline deviation detection) while reinforcing the periodic-sampling limit without repeating prior revisit-cadence phrasing.",
+  "pillar": "CAPABILITY",
+  "tier": "APPROVE",
+  "illustrative": false,
+  "cites_detection": false,
+  "generated_at": "2026-10-27T13:04:10.981Z",
+  "usage": {
+    "input": 2823,
+    "output": 885
+  },
+  "opsec": {
+    "verdict": "REVIEW",
+    "reasons": [
+      "REVIEW: internal pillar label \"capability\" leaked into the card eyebrow"
+    ]
+  },
+  "effective_tier": "APPROVE"
+}
