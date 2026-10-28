@@ -1,0 +1,30 @@
+{
+  "caption": "Flood season and pipeline theft are usually briefed as separate problems. They are not.\n\nRising water cuts ground patrol access along river-adjacent rights-of-way at the same time refining margins make tapping worth the risk. Access routes flood, foot patrols fall back, and the window for illegal connections widens — not because enforcement failed, but because the terrain did the work for the operators.\n\nThis is public knowledge across the Niger Delta and Middle Belt corridors every rainy season. A collection plan that treats flood monitoring and pipeline security as one problem, not two, is the only one that matches how the risk actually moves.",
+  "thread": [
+    "Flood season and pipeline theft are not separate problems. They share a calendar.",
+    "Rising water cuts ground patrol access along river-adjacent pipeline corridors. Foot patrols fall back. Illegal tapping windows widen — not from enforcement failure, but from terrain doing the work for the operators.",
+    "This pattern is publicly documented across the Niger Delta and Middle Belt every rainy season. Treating flood monitoring and pipeline security as one collection problem, not two, matches how the risk actually moves.",
+    "Indications and warning that ignore the seasonal link will always be a step behind it."
+  ],
+  "card": {
+    "eyebrow": "Flood season",
+    "headline": "Two risks, one <em>calendar</em>",
+    "sub": "Rising water cuts ground patrol access on pipeline corridors at the same time theft economics peak. Same season, same terrain, one collection problem.",
+    "footright": "Pipeline corridors"
+  },
+  "rationale": "Introduces a new connective CONTEXT angle — flood season as a seasonal enabler of pipeline theft via degraded ground access — without repeating any prior dam, tap, or radar-physics framing.",
+  "pillar": "CONTEXT",
+  "tier": "APPROVE",
+  "illustrative": false,
+  "cites_detection": false,
+  "generated_at": "2026-10-28T13:54:23.323Z",
+  "usage": {
+    "input": 2831,
+    "output": 1043
+  },
+  "opsec": {
+    "verdict": "PASS",
+    "reasons": []
+  },
+  "effective_tier": "APPROVE"
+}
