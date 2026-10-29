@@ -1,0 +1,30 @@
+{
+  "caption": "A tasking request is not an order the satellite obeys instantly. It is a request queued against an orbit.\n\nA satellite follows a fixed path. It passes over a given area of interest on its own schedule, not on ours. If a request for a fresh look lands right after a pass, the next opportunity might be hours away. If it lands right before one, the wait is short. Either way, the orbit decides, not the urgency of the request.\n\nThis is why revisit cadence is planned in advance, not improvised in the moment. A collection plan exists so that the areas that matter most get queued ahead of the need, not after it. Understanding this changes what a commander should ask for: not \"can you look now,\" but \"what is the standing cadence on this site, and when is the next pass.\"\n\nThe gap between request and look is physics, not reluctance. Any system that implies otherwise is overselling what orbits allow.",
+  "thread": [
+    "Tasking a satellite does not mean it looks now. It means the request joins a queue bounded by orbital mechanics.",
+    "A satellite passes over a given area on its own schedule. Request right after a pass, wait for the next one. Request right before, the wait is short. Urgency does not move the orbit.",
+    "This is why standing cadence is planned ahead of need, not requested after it. The areas that matter most should already be in the collection plan before the question comes up.",
+    "The right question to a provider isn't \"can you look now.\" It's \"what's the revisit on this site, and when's the next pass.\" #EO #satellite"
+  ],
+  "card": {
+    "eyebrow": "Collection basics",
+    "headline": "Tasking is a <em>request</em>, not a command",
+    "sub": "A satellite passes over an area on its own orbital schedule. Urgency does not move the orbit — cadence has to be planned ahead of the need.",
+    "footright": "Orbital mechanics"
+  },
+  "rationale": "Teaches a real mechanical constraint (orbital tasking lag) distinct from prior resolution/cadence and cloud-penetration explainers, with no product pitch.",
+  "pillar": "EXPLAINER",
+  "tier": "AUTO",
+  "illustrative": false,
+  "cites_detection": false,
+  "generated_at": "2026-10-29T14:00:25.693Z",
+  "usage": {
+    "input": 2852,
+    "output": 1201
+  },
+  "opsec": {
+    "verdict": "PASS",
+    "reasons": []
+  },
+  "effective_tier": "AUTO"
+}
