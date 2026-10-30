@@ -1,0 +1,30 @@
+{
+  "caption": "The standard is not whether a brief sounds convincing. It is whether it still holds up six months later, under question, in front of people who were not in the room when it was written.\n\nThat means every assessment traces back to something checkable: a specific pass, a timestamp, a stated confidence level, a line for what was not observed. No conclusion gets written that cannot be walked back to its source.\n\nThis is not a compliance exercise. It is the only way a flag stays worth acting on after the first reaction has passed and someone starts asking how you knew.",
+  "thread": [
+    "The standard is not whether a brief sounds convincing. It is whether it still holds up under question, months later, from someone who was not in the room when it was written.",
+    "Every assessment traces to a source: a specific pass, a timestamp, a confidence level, a stated line for what was not observed.",
+    "No conclusion gets written that cannot be walked back to where it came from. That is what lets it still stand after the first reaction has passed.",
+    "Built to be reviewed, not just trusted in the moment."
+  ],
+  "card": {
+    "eyebrow": "Method and accountability",
+    "headline": "Built to be <em>checked</em>, not believed",
+    "sub": "Every assessment traces to a pass, a timestamp, a stated confidence level — reviewable after the fact, not just trusted in the moment.",
+    "footright": "Analytic standards"
+  },
+  "rationale": "Reframes the company's evidence-discipline as an accountability design choice aimed at surviving later scrutiny, without reusing the 'cross-examination' phrasing or any prior MISSION/PROOF angle.",
+  "pillar": "MISSION",
+  "tier": "AUTO",
+  "illustrative": false,
+  "cites_detection": false,
+  "generated_at": "2026-10-30T13:55:47.395Z",
+  "usage": {
+    "input": 2815,
+    "output": 1050
+  },
+  "opsec": {
+    "verdict": "PASS",
+    "reasons": []
+  },
+  "effective_tier": "AUTO"
+}
