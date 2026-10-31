@@ -1,0 +1,30 @@
+{
+  "caption": "A dam release decision and the flood it causes often happen in two different countries. The Lagdo Dam on the Benue River sits in Cameroon. Its spill schedule is set by Cameroonian operators managing their own reservoir levels. The flood arrives days later in Nigerian states with no seat at that table and no automatic notice.\n\nThis is publicly documented after the 2012 and 2022 flood years. The lag between release and arrival — often three to five days on the Benue system — is also the only window in which a downstream agency can act. Miss the release, and you are reacting to water that is already moving.\n\nThe same logic applies to pipeline theft economics. Illegal refining pays because the price gap between stolen crude and refined product on the local market is wide enough to cover the risk. Neither problem is solved by watching the point of damage. Both require watching the decision point, upstream, before the consequence crosses a border or a fence line.",
+  "thread": [
+    "A flood in Nigeria can start with a decision made in Cameroon. The Lagdo Dam's release schedule is set by its own operators, managing their own reservoir — not the river downstream.",
+    "The lag between a release and floodwater arrival on the Benue system runs three to five days, based on past events including 2012 and 2022. That lag is the warning window. It closes the moment the water starts moving.",
+    "Pipeline theft runs on the same upstream logic. The price gap between stolen crude and refined product funds the network. Guarding the tap line watches the symptom, not the economics.",
+    "Downstream monitoring alone cannot see either trigger. One sits across a border. The other sits in a market price."
+  ],
+  "card": {
+    "eyebrow": "Flood season, upstream",
+    "headline": "The decision crosses the <em>border</em> first",
+    "sub": "A dam release in one country becomes a flood warning problem in another. The lag between the two is the only window to act in.",
+    "footright": "Transboundary water management"
+  },
+  "rationale": "Introduces a concrete, publicly documented transboundary dam angle (Lagdo/Benue) distinct from prior downstream-harm posts, reinforcing the pillar without repeating phrasing or claims.",
+  "pillar": "CONTEXT",
+  "tier": "APPROVE",
+  "illustrative": false,
+  "cites_detection": false,
+  "generated_at": "2026-10-31T13:28:20.466Z",
+  "usage": {
+    "input": 2834,
+    "output": 1210
+  },
+  "opsec": {
+    "verdict": "PASS",
+    "reasons": []
+  },
+  "effective_tier": "APPROVE"
+}
