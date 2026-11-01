@@ -1,0 +1,30 @@
+{
+  "caption": "Operating tempo, stated plainly: multiple areas of interest under standing watch across the region, each on its own revisit cycle, reviewed on a fixed cadence rather than only when something goes wrong.\n\nMost passes return nothing worth escalating. That is the expected outcome of a working collection plan — not a gap in it. The small fraction that do escalate get a graded confidence call before anyone is tasked to look closer.\n\nWe do not publish where the watch is tightest or for whom. The value of a collection plan is partly that an adversary can't read it off a press release.",
+  "thread": [
+    "Operating tempo, stated plainly: multiple areas of interest under standing watch across the region, each on its own revisit cycle.",
+    "Most passes return nothing worth escalating. That's the expected outcome of a working collection plan, not a gap in it.",
+    "The fraction that do escalate get a graded confidence call before any tasking moves. Scale is in the review cadence, not the headline count.",
+    "We don't publish where coverage is tightest or for whom. That's part of what keeps a collection plan worth running."
+  ],
+  "card": {
+    "eyebrow": "Operating tempo",
+    "headline": "Most passes return <em>nothing</em>",
+    "sub": "Standing watch across multiple areas of interest, reviewed on a fixed cadence. Silence is the expected result, not a gap in coverage.",
+    "footright": "Collection plan"
+  },
+  "rationale": "Demonstrates operational scale and discipline without disclosing any detectable location, client, or incident, reinforcing credibility through restraint.",
+  "pillar": "ACTIVITY",
+  "tier": "DRAFT",
+  "illustrative": false,
+  "cites_detection": false,
+  "generated_at": "2026-11-01T14:09:38.157Z",
+  "usage": {
+    "input": 2817,
+    "output": 615
+  },
+  "opsec": {
+    "verdict": "PASS",
+    "reasons": []
+  },
+  "effective_tier": "DRAFT"
+}
