@@ -1,0 +1,30 @@
+{
+  "caption": "Resolution tells you what something is. Cadence tells you when it changed. For warning problems, cadence is the one that matters.\n\nA sharp image taken once a month can miss a flood crest, a new access road, or a tank farm filling up — because the change happened in the gap, not on the day of the pass. A coarser image taken every few days catches the same event while it is still forming.\n\nThe Numan flood hindcast in September 2022 made this case directly. The reach-monitoring array flagged the rising-water signature four days ahead of the official warning — not because the imagery was exceptionally detailed, but because the site was being looked at often enough to see the trend before it became the crisis.\n\nBuying detail without buying frequency is a common mistake. Know which one the problem actually needs before tasking either.",
+  "thread": [
+    "Resolution answers what something is. Cadence answers when it changed. For flood and theft warning, cadence is the one that carries the weight.",
+    "A sharp image once a month can miss a flood crest forming or a site filling up — the change happens in the gap between passes, not during one. A coarser image every few days catches it while it's still developing.",
+    "Proof point: the September 2022 Numan reach-monitoring run flagged the flood signature four days before the official warning. Not because the imagery was unusually detailed — because the site was watched often enough to see the trend form.",
+    "Buying detail without buying frequency is a common procurement mistake. Know which one the problem needs before tasking either."
+  ],
+  "card": {
+    "eyebrow": "Collection basics",
+    "headline": "Resolution answers <em>what</em>. Cadence answers <em>when</em>.",
+    "sub": "Change happens in the gap between passes, not during one. For warning problems, how often you look matters more than how sharp the look is.",
+    "footright": "Revisit cadence"
+  },
+  "rationale": "Delivers a genuinely new, concrete lesson (resolution vs. cadence trade-off) distinct from prior posts, grounds it in the one permitted proof point without overclaiming, and stays instructive rather than promotional.",
+  "pillar": "EXPLAINER",
+  "tier": "AUTO",
+  "illustrative": false,
+  "cites_detection": false,
+  "generated_at": "2026-11-02T16:55:22.827Z",
+  "usage": {
+    "input": 2846,
+    "output": 1114
+  },
+  "opsec": {
+    "verdict": "PASS",
+    "reasons": []
+  },
+  "effective_tier": "AUTO"
+}
