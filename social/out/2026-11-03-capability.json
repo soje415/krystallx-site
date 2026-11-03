@@ -1,0 +1,30 @@
+{
+  "caption": "Persistent thermal monitoring flags heat anomalies — illegal refining sites, flaring, fire fronts — against a baseline of normal activity for that terrain. It does this well. What it does not do is tell you, on its own, what is burning or who lit it.\n\nA thermal return is a cue, not a conclusion. It says: this pixel is hotter than its history. It does not say: this is a cook site versus a bush fire versus a flare stack venting on schedule. That identification takes corroboration — optical imagery, radar, ground reporting — before a patrol gets tasked.\n\nAnd like every pass-based sensor, thermal monitoring only sees the moment it looks. A burn that starts and ends between revisits leaves no signature. The system reports what it observed, when it observed it — not a continuous watch over the area.\n\nState the limit with the finding. That is what makes the finding usable.",
+  "thread": [
+    "Persistent thermal monitoring flags heat anomalies against a site's normal pattern. It does not tell you what's burning or who lit it. That's the limit — and it's the part worth stating out loud.",
+    "A thermal return is a cue, not a conclusion. Cook site, bush fire, flare stack venting on schedule — all read as heat. Identification needs corroboration before anyone gets tasked to respond.",
+    "Thermal monitoring is also pass-based like everything else in the collection plan. A short burn between revisits leaves no trace. The report covers what was observed, when — not a continuous watch.",
+    "A cue that overstates its own certainty costs the same as a false alarm: a dispatched patrol for nothing. Grade the confidence, name the gap, let the responder decide."
+  ],
+  "card": {
+    "eyebrow": "Thermal detection",
+    "headline": "A heat flag names a hotspot, not a <em>cause</em>",
+    "sub": "Thermal monitoring detects anomalies against baseline. It does not identify the source — that takes corroboration before anyone is tasked to respond.",
+    "footright": "Persistent thermal monitoring"
+  },
+  "rationale": "Introduces a capability not yet covered (thermal anomaly detection) while reinforcing the series' core discipline of stating limits plainly, without repeating prior angles' phrasing or examples.",
+  "pillar": "CAPABILITY",
+  "tier": "APPROVE",
+  "illustrative": false,
+  "cites_detection": false,
+  "generated_at": "2026-11-03T14:55:37.549Z",
+  "usage": {
+    "input": 2812,
+    "output": 1265
+  },
+  "opsec": {
+    "verdict": "PASS",
+    "reasons": []
+  },
+  "effective_tier": "APPROVE"
+}
