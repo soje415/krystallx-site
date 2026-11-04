@@ -1,0 +1,31 @@
+{
+  "caption": "Pipeline theft in the Niger Delta is not a security failure in isolation. It is an economics problem. Informal refining margins make stolen crude profitable even with enforcement losses factored in. As long as the margin holds, the incentive holds — patrols manage the symptom, not the driver.\n\nFlood season adds a second governance problem. Major river systems in West Africa cross borders, and upstream dam releases are managed by national authorities on their own schedules. Downstream flood risk depends on information reaching the right desk in time, not just on rainfall.\n\nBoth problems share a trait: the cause sits upstream of where the damage is counted. Treating either as a local, downstream event misses where the decision actually gets made.",
+  "thread": [
+    "Pipeline theft is an economics problem before it is a security problem. Informal refining margins keep the incentive profitable even against enforcement losses. Patrols manage the symptom.",
+    "Flood risk downstream depends on dam release decisions made upstream, often in a different country, on that country's own schedule. The damage is local. The decision is not.",
+    "Both cases: the cause sits upstream of where the cost lands. Context has to track the decision point, not just the impact point."
+  ],
+  "card": {
+    "eyebrow": "Flood season context",
+    "headline": "The cause sits <em>upstream</em> of the cost",
+    "sub": "Pipeline theft tracks refining margins. Flood risk tracks dam release decisions made in another jurisdiction. Neither is a local event.",
+    "footright": "West Africa / public record"
+  },
+  "rationale": "Grounds the brand in regional structural literacy using only public knowledge, distinct from prior dam/patrol/calendar angles already posted.",
+  "pillar": "CONTEXT",
+  "tier": "APPROVE",
+  "illustrative": false,
+  "cites_detection": false,
+  "generated_at": "2026-11-04T15:15:25.418Z",
+  "usage": {
+    "input": 2837,
+    "output": 956
+  },
+  "opsec": {
+    "verdict": "REVIEW",
+    "reasons": [
+      "REVIEW: internal pillar label \"context\" leaked into the card eyebrow"
+    ]
+  },
+  "effective_tier": "APPROVE"
+}
