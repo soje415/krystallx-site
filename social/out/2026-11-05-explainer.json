@@ -1,0 +1,30 @@
+{
+  "caption": "Optical imagery is blind during rainy season. That is the exact season floods and cover-dependent movement happen.\n\nA camera, airborne or orbital, needs a clear line of sight and daylight. Cloud cover, smoke, and haze block the wavelength it depends on. Over West Africa in peak monsoon months, usable optical frames across a flood-prone reach can be sparse for weeks at a stretch.\n\nSynthetic-aperture radar uses a longer wavelength that cloud does not stop, and it generates its own illumination, so it works at night. It is not a sharper camera — it is a different physical principle, chosen because the gap in optical coverage falls precisely when the risk is highest.\n\nThe trade: radar imagery reads differently than a photograph and takes more interpretation to turn into a confirmed call. That cost is why both have a role in a collection plan.",
+  "thread": [
+    "Optical imagery goes blind in rainy season. That is exactly when flood risk peaks. This is a physics problem, not a software one.",
+    "A camera needs a clear line of sight and daylight. Cloud, haze, smoke block it. Synthetic-aperture radar uses a wavelength cloud does not stop, and generates its own illumination — it works at night and through cover.",
+    "Radar is not a sharper camera. It is a different principle, chosen because the optical coverage gap falls exactly when the risk is highest.",
+    "Trade-off: radar imagery takes more interpretation to turn into a confirmed call than a photograph does. That's why a collection plan uses both, not one."
+  ],
+  "card": {
+    "eyebrow": "How collection works",
+    "headline": "Cloud stops a camera. It doesn't stop <em>radar</em>.",
+    "sub": "Synthetic-aperture radar uses a wavelength cloud does not block, and lights its own scene — built for the exact season when optical imagery goes blind.",
+    "footright": "Synthetic-aperture radar"
+  },
+  "rationale": "Delivers a concrete, non-repeated physics lesson (why radar beats cloud cover) that builds operator literacy without touching any banned claims or prior angles.",
+  "pillar": "EXPLAINER",
+  "tier": "AUTO",
+  "illustrative": false,
+  "cites_detection": false,
+  "generated_at": "2026-11-05T15:17:01.163Z",
+  "usage": {
+    "input": 2858,
+    "output": 806
+  },
+  "opsec": {
+    "verdict": "PASS",
+    "reasons": []
+  },
+  "effective_tier": "AUTO"
+}
