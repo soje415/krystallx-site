@@ -1,0 +1,30 @@
+{
+  "caption": "An assessment that cannot be checked is an opinion with better graphics.\n\nWe grade confidence as confirmed, assessed, or unknown, and we say which is which. We log the pass, the timestamp, and the reasoning behind every call, so a reviewer can walk back through it after the fact — including in a courtroom, if it comes to that. That discipline is slower than issuing a verdict. It is also the only version of this work that holds up when someone checks it.\n\nThe Numan reach-monitoring array flagged the September 2022 flood signature four days ahead of the official warning. In the 2021 control year, with no flood building, the same array stayed quiet. We publish the quiet year with the same weight as the catch, because a system that only shows its hits is not evidence, it's marketing.\n\nWe do not claim coverage we don't have, confidence we haven't earned, or results we can't trace. That is the whole method.",
+  "thread": [
+    "An assessment that cannot be checked is an opinion with better graphics. Confirmed, assessed, unknown — we state which is which, every time.",
+    "Every call logs the pass, the timestamp, the confidence level behind it. Reviewable after the fact, including under cross-examination. That's the design constraint, not a feature.",
+    "Proof point: the Numan reach array flagged the Sept 2022 flood signature four days before the official warning. In 2021, with no flood building, it correctly stayed quiet.",
+    "We publish the quiet year next to the catch. A system that only shows its hits isn't evidence."
+  ],
+  "card": {
+    "eyebrow": "How we work",
+    "headline": "Built to be <em>checked</em>, not taken on faith",
+    "sub": "Confirmed, assessed, unknown — graded and logged, pass by pass, so the record holds up after the fact.",
+    "footright": "Methodology"
+  },
+  "rationale": "Directly addresses the MISSION brief (evidence over assertion, honest limits, accountability) using the Numan proof as methodology illustration rather than a boast, with fresh angle and phrasing distinct from prior posts.",
+  "pillar": "MISSION",
+  "tier": "AUTO",
+  "illustrative": false,
+  "cites_detection": false,
+  "generated_at": "2026-11-06T14:52:24.218Z",
+  "usage": {
+    "input": 2833,
+    "output": 790
+  },
+  "opsec": {
+    "verdict": "PASS",
+    "reasons": []
+  },
+  "effective_tier": "AUTO"
+}
