@@ -1,0 +1,30 @@
+{
+  "caption": "Pipeline theft in the Niger Delta tracks price, not opportunity. When the spread between stolen crude and legitimate market price widens, tapping incidents rise. When it narrows, they fall. That correlation is documented across multiple public reporting cycles over the past decade.\n\nThis matters for how enforcement is framed. A patrol or a sensor can raise the cost of getting caught. It cannot close a price gap set by refining margins and fuel subsidy policy. Treating theft as a security problem alone, without naming the economics underneath it, produces enforcement that displaces the activity rather than ending it.\n\nFlood season adds a second variable on the same terrain. Rising water cuts ground access to corridors exactly when theft economics tend to peak. The two pressures share a map. Any collection plan for the region has to account for both, not pick one.",
+  "thread": [
+    "Pipeline theft in Nigeria tracks price. Wider the spread between stolen product and legitimate market value, higher the incident rate. This pattern has shown up across public reporting for over a decade.",
+    "Enforcement raises the cost of getting caught. It does not close a margin set by refining economics and subsidy policy upstream of the pipeline. Address one without the other and the activity relocates — it does not stop.",
+    "Flood season and theft season overlap on the same corridors. Rising water degrades ground patrol access at the same time theft incentives tend to peak. Same terrain, two pressures, one collection problem.",
+    "Any assessment of Niger Delta infrastructure risk that treats theft as purely a security failure is reading half the picture."
+  ],
+  "card": {
+    "eyebrow": "Pipeline theft economics",
+    "headline": "The spread drives the <em>tap</em>",
+    "sub": "Theft incidents track the margin between stolen product and market price, not patrol presence alone. Enforcement without economics displaces the activity.",
+    "footright": "Niger Delta, public record"
+  },
+  "rationale": "Grounds the CONTEXT pillar in a widely-documented economic driver of pipeline theft that hasn't appeared in recent posts, reinforcing analytical credibility without any detection claim.",
+  "pillar": "CONTEXT",
+  "tier": "APPROVE",
+  "illustrative": false,
+  "cites_detection": false,
+  "generated_at": "2026-11-07T13:49:53.245Z",
+  "usage": {
+    "input": 2854,
+    "output": 1531
+  },
+  "opsec": {
+    "verdict": "PASS",
+    "reasons": []
+  },
+  "effective_tier": "APPROVE"
+}
