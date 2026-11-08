@@ -1,0 +1,29 @@
+{
+  "caption": "The collection plan does not pause. Across multiple areas of interest — pipeline corridors, river reaches, coastal stretches — passes come in on a fixed cadence, get checked against baseline, and get closed out. Confirmed, assessed, or logged as unknown. Every one.\n\nMost of that queue closes quiet. No anomaly, no flag, no story. That is the expected outcome, not a gap in the work.\n\nWhat changes is not the volume of effort. It is which area of interest earns the next look. The schedule is set ahead of need, not in response to it.",
+  "thread": [
+    "The queue does not empty. Passes come in across multiple areas of interest on a fixed cadence, get checked against baseline, get closed out.",
+    "Most close quiet. No anomaly, no flag. That is the expected result of standing watch, not evidence the system missed something.",
+    "What shifts over time is priority — which area of interest gets the next pass — not the discipline of reviewing every one that lands."
+  ],
+  "card": {
+    "eyebrow": "Operating tempo",
+    "headline": "The <em>queue</em> never empties",
+    "sub": "Every pass, across every area of interest, reviewed and closed out — confirmed, assessed, or logged as unknown.",
+    "footright": "Collection plan"
+  },
+  "rationale": "Demonstrates operational scale and discipline through abstracted tempo language, reinforcing credibility without disclosing any location, client, or detection.",
+  "pillar": "ACTIVITY",
+  "tier": "DRAFT",
+  "illustrative": false,
+  "cites_detection": false,
+  "generated_at": "2026-11-08T14:09:55.150Z",
+  "usage": {
+    "input": 2837,
+    "output": 1150
+  },
+  "opsec": {
+    "verdict": "PASS",
+    "reasons": []
+  },
+  "effective_tier": "DRAFT"
+}
