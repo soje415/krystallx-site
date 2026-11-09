@@ -1,0 +1,30 @@
+{
+  "caption": "A false positive is not a shrug. It is a cost.\n\nEvery alarm that turns out to be nothing spends something real: a patrol diverted, a shift pulled off another task, an adviser's attention for the next ten alerts. Cry wolf three times on a quiet pass and the fourth alert — the real one — gets a slower read. That is the actual price of a bad detection, not embarrassment, lost response capacity.\n\nThis is why a serious system does not output yes or no. It outputs confirmed, assessed, or unknown, with the reasoning attached. An anomaly against baseline is a lead, not a verdict. Corroboration — a second pass, a different sensor type, a pattern that holds over time — is what moves it from lead to call. Skipping that step is cheaper to build and more expensive to trust.\n\nThe discipline is not technical. It is restraint: stating what is known, flagging what is not, and never letting urgency round an unknown up to a confirmed.",
+  "thread": [
+    "A false positive is not free. It spends decision-maker trust and diverts a patrol that was needed elsewhere. That is the real cost, not an engineering footnote.",
+    "A raw anomaly against baseline is a lead, not a verdict. It needs corroboration — a second pass, a different look, a pattern holding over time — before anyone is tasked to respond.",
+    "Cry wolf a few times on a quiet pass and the real alert gets a slower read on the fifth call. The cost compounds.",
+    "This is why the output is graded — confirmed, assessed, unknown — not a binary alarm. Restraint is the discipline, not a limitation."
+  ],
+  "card": {
+    "eyebrow": "Collection basics",
+    "headline": "A false alarm still costs <em>something</em>",
+    "sub": "Every unconfirmed alert spends response capacity and trust. Grading confidence is how that cost gets managed, not avoided.",
+    "footright": "Detection confidence"
+  },
+  "rationale": "Covers the false-positive-cost angle from the brief with fresh framing (operational trust cost, not the already-used hotspot/cause wording), teaching a concrete analytic concept with no product pitch.",
+  "pillar": "EXPLAINER",
+  "tier": "AUTO",
+  "illustrative": false,
+  "cites_detection": false,
+  "generated_at": "2026-11-09T17:18:19.568Z",
+  "usage": {
+    "input": 2858,
+    "output": 1132
+  },
+  "opsec": {
+    "verdict": "PASS",
+    "reasons": []
+  },
+  "effective_tier": "AUTO"
+}
