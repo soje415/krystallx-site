@@ -1,0 +1,29 @@
+{
+  "caption": "Pattern of life is built from repeated passes, not one look. A single image shows a moment. Only a sequence — the same area, revisited over days or weeks — shows what is normal there, so an analyst can flag what is not.\n\nThe honest limit: between passes, the area is dark. If something starts and finishes inside that gap, the pattern never registers it. Revisit interval sets the floor on what pattern-of-life analysis can actually see — no amount of sharpening the image afterward fixes that.\n\nThis is why collection plans fix cadence before an incident, not after. You cannot backfill a pattern you never sampled.",
+  "thread": [
+    "Pattern of life is built from repeated passes, not one look. A single image shows a moment. A sequence shows what's normal — so an analyst can flag what isn't.",
+    "The limit: between passes, the area is dark. Anything that starts and ends inside that gap never enters the pattern. No sharpening the image afterward recovers it.",
+    "Revisit interval sets the floor on what pattern-of-life analysis can see. This is why cadence gets fixed in the collection plan before an incident, not reconstructed after one."
+  ],
+  "card": {
+    "eyebrow": "Pattern-of-life analysis",
+    "headline": "A pattern needs more than <em>one</em> pass",
+    "sub": "Repeated revisits establish what's normal. Anything that starts and ends between passes never enters the record.",
+    "footright": "Collection planning"
+  },
+  "rationale": "Introduces a distinct capability (pattern-of-life analysis) with its own honest limit (the inter-pass gap), without repeating prior cadence/silence framings.",
+  "pillar": "CAPABILITY",
+  "tier": "APPROVE",
+  "illustrative": false,
+  "cites_detection": false,
+  "generated_at": "2026-11-10T15:28:42.299Z",
+  "usage": {
+    "input": 2820,
+    "output": 833
+  },
+  "opsec": {
+    "verdict": "PASS",
+    "reasons": []
+  },
+  "effective_tier": "APPROVE"
+}
