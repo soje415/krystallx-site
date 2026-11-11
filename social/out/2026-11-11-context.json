@@ -1,0 +1,30 @@
+{
+  "caption": "Flood season in the Niger Delta and the wet-season peak in pipeline theft overlap on the calendar. Both draw on the same finite pool of personnel, boats, and transport. That overlap is rarely discussed, but it shapes what actually gets a response.\n\nDam releases upstream raise river levels downstream over days to weeks — a known physical lag, not a surprise. Theft activity also tracks a known driver: the spread between stolen product and market price. Neither is random. Both are predictable enough to plan against, if the planning accounts for them competing for the same assets in the same months.\n\nWhen flood response and pipeline security draw on one shared capacity pool, a surge in one degrades the other. That's a resourcing problem before it's an intelligence problem. Collection plans that ignore the seasonal overlap will under-serve one or both.",
+  "thread": [
+    "Flood season and the wet-season peak in pipeline theft land in the same months. Both draw on the same personnel, boats, and transport. That overlap gets little attention, but it decides what gets a response.",
+    "Dam releases raise downstream river levels over days to weeks — a known lag, not a surprise. Theft tracks the spread between stolen product and market price — also a known driver. Neither event is random.",
+    "When flood response and pipeline security compete for one shared capacity pool in the same season, a surge in one degrades the other. That's a resourcing problem first, an intelligence problem second.",
+    "Collection plans built around a single area of interest, with no account for the seasonal overlap, will under-serve one or both missions when it matters most."
+  ],
+  "card": {
+    "eyebrow": "Flood season",
+    "headline": "One <em>capacity</em>, two risks, same season",
+    "sub": "Flood response and pipeline security draw on the same finite personnel and transport, and both peak in the same months.",
+    "footright": "Seasonal overlap"
+  },
+  "rationale": "Introduces a genuinely new CONTEXT angle — the resourcing collision between flood season and theft season — without repeating the border-lag, margin, or upstream-cause framings already posted.",
+  "pillar": "CONTEXT",
+  "tier": "APPROVE",
+  "illustrative": false,
+  "cites_detection": false,
+  "generated_at": "2026-11-11T14:59:38.546Z",
+  "usage": {
+    "input": 2816,
+    "output": 1179
+  },
+  "opsec": {
+    "verdict": "PASS",
+    "reasons": []
+  },
+  "effective_tier": "APPROVE"
+}
