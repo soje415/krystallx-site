@@ -1,0 +1,30 @@
+{
+  "caption": "Satellite monitoring is not a camera you point. It is a schedule you work with.\n\nA tasking request does not summon a pass. It queues a request against an orbit that is already fixed. If the next viable pass over an area of interest is eighteen hours out, that is the earliest fresh imagery arrives — no exception for urgency.\n\nThis is why collection planning happens before the crisis, not during it. Areas of interest get built into the standing revisit schedule in advance, so the data is already arriving when something starts. Asking for a one-off look after the fact means waiting for the orbit to come back around.\n\nKnow the cadence of your own coverage before you need it.",
+  "thread": [
+    "Satellite monitoring is not a camera you point. It is a schedule you work with.",
+    "A tasking request doesn't summon a pass. It queues against an orbit that's already fixed. If the next viable pass is 18 hours out, that's the earliest fresh imagery arrives — no exception for urgency.",
+    "This is why collection planning happens before the crisis, not during it. Standing revisit on an area of interest beats a one-off request made after something has already started.",
+    "Know your coverage cadence before you need it, not after."
+  ],
+  "card": {
+    "eyebrow": "Collection basics",
+    "headline": "A request doesn't summon a <em>pass</em>",
+    "sub": "Orbits are fixed. Tasking queues against the next viable pass — it does not override the schedule.",
+    "footright": "Collection planning"
+  },
+  "rationale": "Teaches a genuinely under-understood mechanic (tasking vs. scheduled revisit) that reframes reader expectations about response speed, without overlapping prior cadence or false-positive posts.",
+  "pillar": "EXPLAINER",
+  "tier": "AUTO",
+  "illustrative": false,
+  "cites_detection": false,
+  "generated_at": "2026-11-12T15:52:00.828Z",
+  "usage": {
+    "input": 2827,
+    "output": 1031
+  },
+  "opsec": {
+    "verdict": "PASS",
+    "reasons": []
+  },
+  "effective_tier": "AUTO"
+}
