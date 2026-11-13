@@ -1,0 +1,30 @@
+{
+  "caption": "A brief is only as good as what happens when someone checks it later. That is the standard we build to — not persuasion, verification.\n\nEvery alert carries a confidence grade: confirmed, assessed, or unknown. Every call is logged against the imagery pass that produced it. Nothing is rounded up to sound more certain than the evidence supports.\n\nThis matters past the first decision cycle. If a response gets contested — in a briefing, in a review, in a courtroom — the record has to hold up on its own, not on the reputation of whoever wrote it. That is the only kind of intelligence worth paying for.\n\nIn the Numan flood hindcast, the reach-monitoring array flagged the signature four days ahead of the official warning. In the 2021 control year, it stayed quiet, correctly. We publish both outcomes, not just the one that looks good.",
+  "thread": [
+    "A brief is only as good as what happens when someone checks it later. We build for the check, not the pitch.",
+    "Every alert carries a grade — confirmed, assessed, or unknown — logged against the pass that produced it. Nothing gets rounded up to sound more certain than the evidence allows.",
+    "If a response is ever contested, in a review or a courtroom, the record has to stand on its own. That's the bar, not persuasion.",
+    "Numan 2022 hindcast: flood signature flagged four days ahead of the official warning. 2021 control year: correctly silent. We report both results, not just the one that flatters us."
+  ],
+  "card": {
+    "eyebrow": "Evidence standard",
+    "headline": "Graded, not <em>asserted</em>",
+    "sub": "Confirmed, assessed, unknown — logged pass by pass, built to hold up after the fact.",
+    "footright": "Analyst tradecraft"
+  },
+  "rationale": "Establishes the company's accountability posture without boasting, using the one approved proof point and a fresh framing (judicial/review standard) not covered in prior posts.",
+  "pillar": "MISSION",
+  "tier": "AUTO",
+  "illustrative": false,
+  "cites_detection": false,
+  "generated_at": "2026-11-13T15:12:11.024Z",
+  "usage": {
+    "input": 2780,
+    "output": 886
+  },
+  "opsec": {
+    "verdict": "PASS",
+    "reasons": []
+  },
+  "effective_tier": "AUTO"
+}
