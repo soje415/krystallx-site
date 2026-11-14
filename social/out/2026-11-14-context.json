@@ -1,0 +1,30 @@
+{
+  "caption": "Flood timing on the Benue is often set by a decision, not by weather. Much of the water that reaches Numan and downstream communities each wet season originates from a dam release upstream, in another country, on a schedule Nigeria does not control. The rain that falls locally is only part of the picture.\n\nThat is why rainfall totals alone are a poor warning signal. The 2022 Numan flood followed this pattern: a reach-monitoring array flagged the signature four days before the official warning went out. A 2021 control year with no release event stayed quiet, as it should have.\n\nThe lesson generalizes. Pipeline theft tracks refining economics set elsewhere. Flood risk tracks release decisions made elsewhere. Local response capacity is the one thing both problems have in common, and it is finite.",
+  "thread": [
+    "Flood timing on the Benue is often set by a release decision upstream, not by local rainfall. Nigeria does not control the schedule. That is the gap any warning system has to close.",
+    "Proof point: the September 2022 Numan flood followed a known release pattern. A reach-monitoring array flagged the signature four days before the official warning. The 2021 control year, no release event, correctly stayed quiet.",
+    "Rainfall gauges answer a local question. Release decisions answer the one that actually matters. A system tuned only to the first will always lag the second.",
+    "Same structural point applies to pipeline theft: the driver sits in refining margins, not in the local area. Response capacity is the shared constraint across both problems, and it does not scale with the number of threats."
+  ],
+  "card": {
+    "eyebrow": "Flood season",
+    "headline": "The release happens before the <em>rain</em> matters",
+    "sub": "Much of the Benue's flood risk is set by a dam release decision made in another jurisdiction, days before local rainfall becomes the story.",
+    "footright": "Benue basin, hydrology"
+  },
+  "rationale": "Reframes flood risk as a cross-border administrative event rather than a weather event, giving the Numan proof point fresh context without repeating prior upstream/cadence phrasing.",
+  "pillar": "CONTEXT",
+  "tier": "APPROVE",
+  "illustrative": false,
+  "cites_detection": false,
+  "generated_at": "2026-11-14T14:00:19.512Z",
+  "usage": {
+    "input": 2791,
+    "output": 1008
+  },
+  "opsec": {
+    "verdict": "PASS",
+    "reasons": []
+  },
+  "effective_tier": "APPROVE"
+}
