@@ -1,0 +1,31 @@
+{
+  "caption": "BLUF: the collection plan runs on a fixed schedule, not a headline cycle. Areas of interest stay under standing tasking whether or not anything is happening in them this week.\n\nMost passes close with nothing to report. That is not downtime — it is the baseline getting re-confirmed. A quiet pass over a pipeline corridor or a flood-prone reach is still logged, graded, and checked against the last one.\n\nThe tempo does not spike for a crisis and go dark after. It holds steady across the season, across every area under watch, so that when something does deviate from baseline, there is a record to measure it against — not a guess.",
+  "thread": [
+    "BLUF: the collection plan runs on a fixed schedule, not a news cycle. Areas of interest stay under standing tasking whether or not anything is happening this week.",
+    "Most passes close with nothing to report. That's not downtime. A quiet pass still gets logged and checked against the last one — confirmed absence is still a confirmed state.",
+    "Tempo doesn't spike for a crisis and drop after. It holds flat across the season, across every area under watch — so deviation from baseline means something when it shows up.",
+    "Scale is the point: standing coverage, not reactive coverage.",
+    "#FloodRisk #PipelineSecurity"
+  ],
+  "card": {
+    "eyebrow": "Operating tempo",
+    "headline": "Most passes report <em>nothing</em>",
+    "sub": "A quiet pass is still logged and checked against baseline. The collection plan holds steady across the season, not just during a crisis.",
+    "footright": "Standing collection plan"
+  },
+  "rationale": "Demonstrates scale and discipline of continuous monitoring without disclosing any specific detection, location, or client, reinforcing credibility through operational tempo rather than hype.",
+  "pillar": "ACTIVITY",
+  "tier": "DRAFT",
+  "illustrative": false,
+  "cites_detection": false,
+  "generated_at": "2026-11-15T14:36:47.851Z",
+  "usage": {
+    "input": 2779,
+    "output": 1004
+  },
+  "opsec": {
+    "verdict": "PASS",
+    "reasons": []
+  },
+  "effective_tier": "DRAFT"
+}
