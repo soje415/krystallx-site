@@ -1,0 +1,30 @@
+{
+  "caption": "Resolution gets the attention. Cadence does the work.\n\nA single high-resolution image answers one question: what does this scene look like right now. It cannot tell you whether something changed since the last look, because it has no last look to compare against. That comparison is what reveals a new access road, a bank cut, a dam gate reopened, a stockpile that wasn't there before.\n\nRevisit cadence is how often a sensor returns to the same ground. Miss the interval and the event sits in the gap between passes — gone before the next image, invisible no matter how sharp the pixel. A collection plan built around tight, consistent revisit over an area of interest will outperform a sharper sensor that only shows up once.\n\nSharper pixels help confirm what cadence already found. They don't substitute for showing up on schedule.",
+  "thread": [
+    "Resolution answers: what does this scene look like right now. Revisit answers: what changed since the last time we looked. Different questions. Most decisions need the second one.",
+    "A sharp image with no comparison point is a snapshot, not intelligence. Pattern of life — what's normal, what isn't — only emerges across repeated passes over the same ground.",
+    "Miss a revisit window and the event sits in the coverage gap. It can start and finish between passes. No resolution fixes that — the sensor simply wasn't looking.",
+    "Tasking plans get judged on pixel size. They should get judged on interval. A lower-resolution sensor with tight, reliable cadence over an area of interest beats a sharper one that shows up once a month."
+  ],
+  "card": {
+    "eyebrow": "Collection basics",
+    "headline": "Cadence over <em>pixels</em>",
+    "sub": "A single sharp image can't show you change. Revisit — not resolution — is what catches it.",
+    "footright": "Tasking & revisit"
+  },
+  "rationale": "Delivers a genuinely new, concrete explainer point (cadence vs resolution) distinct from prior radar/cloud and false-positive posts, with no product pitch.",
+  "pillar": "EXPLAINER",
+  "tier": "AUTO",
+  "illustrative": false,
+  "cites_detection": false,
+  "generated_at": "2026-11-16T16:52:11.516Z",
+  "usage": {
+    "input": 2792,
+    "output": 819
+  },
+  "opsec": {
+    "verdict": "PASS",
+    "reasons": []
+  },
+  "effective_tier": "AUTO"
+}
