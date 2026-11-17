@@ -1,0 +1,30 @@
+{
+  "caption": "A thermal anomaly on a pipeline route tells you heat is where heat shouldn't be. It does not tell you why.\n\nPersistent thermal monitoring flags temperature signatures along a route — consistent with a tap, a flare, a fire, or routine maintenance. The signature alone does not distinguish between them. That call requires corroboration: optical confirmation on the next viable pass, ground reporting, or pattern against baseline.\n\nThe other limit is revisit, not resolution. A thermal pass samples the route at intervals — it does not watch it continuously. An anomaly that starts and clears between passes may never register. State what the system saw and when. Do not state more than that.",
+  "thread": [
+    "A thermal anomaly on a pipeline route means heat is present where it shouldn't be. It does not mean you know the cause.",
+    "Tap, flare, fire, maintenance — all can produce a similar signature. Confirmation needs a second pass or ground reporting, not the thermal read alone.",
+    "Thermal monitoring samples a route at intervals. It does not watch it continuously. An anomaly that starts and ends between passes may not register.",
+    "Report what was seen and when. Grade the rest as assessed, not confirmed."
+  ],
+  "card": {
+    "eyebrow": "Pipeline monitoring",
+    "headline": "Heat tells you <em>where</em>, not why",
+    "sub": "A thermal anomaly flags a location. Cause — tap, flare, fire, maintenance — needs corroboration, not assumption.",
+    "footright": "Thermal — periodic revisit"
+  },
+  "rationale": "Explains a distinct capability (thermal anomaly detection) while drawing a sharp, credible line around what it cannot determine alone, reinforcing periodic-sampling honesty without repeating prior angles.",
+  "pillar": "CAPABILITY",
+  "tier": "APPROVE",
+  "illustrative": false,
+  "cites_detection": false,
+  "generated_at": "2026-11-17T16:46:17.563Z",
+  "usage": {
+    "input": 2737,
+    "output": 883
+  },
+  "opsec": {
+    "verdict": "PASS",
+    "reasons": []
+  },
+  "effective_tier": "APPROVE"
+}
