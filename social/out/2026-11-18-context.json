@@ -1,0 +1,31 @@
+{
+  "caption": "Flood warning lead time in the Niger-Benue basin is limited by gauge density, not effort. Public hydrological reporting across West Africa has long flagged sparse river-gauge coverage upstream of population centers — fewer stations means fewer independent readings before a surge reaches a town.\n\nThis is a structural gap, not a one-country failure. The basin crosses borders. Gauge networks were built piecemeal, decades apart, by different agencies with different budgets. A downstream community's warning time is set by whichever upstream stretch has the thinnest instrumentation, not by its own preparedness.\n\nPipeline theft economics follow a similar logic from a different direction: it's a distributed market problem, not a single breach to patrol. Both flood exposure and pipeline loss sit on infrastructure gaps that predate any single incident and won't close with a patrol schedule or a press release.",
+  "thread": [
+    "Flood warning lead time in the Niger-Benue basin is set by gauge density upstream, not effort downstream. Sparse river-gauge coverage is a known structural gap across West Africa's shared basins.",
+    "The basin crosses borders. Gauge networks were built piecemeal, by different agencies, different decades, different budgets. A town's warning time is set by the thinnest instrumented stretch upstream of it, not by its own readiness.",
+    "Pipeline theft economics run on a parallel logic. It's a distributed market problem — refining margin and logistics chains — not a single breach point to patrol.",
+    "Both gaps predate any one incident. Neither closes with a patrol schedule or a warning press release alone.",
+    "#FloodSeason #WestAfrica"
+  ],
+  "card": {
+    "eyebrow": "River basin monitoring",
+    "headline": "Warning time is set <em>upstream</em>",
+    "sub": "Gauge density, not local effort, sets how much lead time a downstream community gets. The basin crosses borders; the instrumentation doesn't follow them evenly.",
+    "footright": "Niger-Benue basin"
+  },
+  "rationale": "Gives the CONTEXT pillar a fresh, publicly-grounded angle on structural flood risk (gauge sparsity) distinct from the already-posted dam-release framing, while briefly bridging to the pipeline-economics theme without repeating prior phrasing.",
+  "pillar": "CONTEXT",
+  "tier": "APPROVE",
+  "illustrative": false,
+  "cites_detection": false,
+  "generated_at": "2026-11-18T16:18:29.765Z",
+  "usage": {
+    "input": 2730,
+    "output": 1371
+  },
+  "opsec": {
+    "verdict": "PASS",
+    "reasons": []
+  },
+  "effective_tier": "APPROVE"
+}
