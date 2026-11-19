@@ -1,0 +1,30 @@
+{
+  "caption": "Optical imagery needs a clear sky. Radar does not.\n\nAn optical sensor collects visible light, the same way a camera does. Cloud cover blocks that light entirely. During West Africa's rainy season, when flood risk and ground activity both peak, large parts of the region sit under cloud for weeks. An optical pass over a clouded area returns a picture of the cloud, not the ground.\n\nSynthetic-aperture radar sends its own microwave signal and reads the return. That wavelength passes through cloud and most rain. The image comes back regardless of weather. This is why radar, not optical, carries the load for flood-plain and infrastructure monitoring in this region — the months you need coverage most are the months optical is least usable.\n\nThe trade: radar imagery takes more work to interpret. It shows surface roughness and moisture, not color and shape. Reading it well is a separate skill from reading a photograph.",
+  "thread": [
+    "Optical imagery needs a clear sky. Radar does not. That single fact decides which sensor carries flood and infrastructure monitoring in West Africa.",
+    "Optical sensors collect visible light — cloud blocks it completely. Radar sends its own microwave signal and reads the return. That wavelength passes through cloud and most rain.",
+    "Rainy season is exactly when optical coverage drops out and flood/ground-activity risk rises. Radar is why the collection plan doesn't go dark for the months that matter most.",
+    "Trade-off: radar images read as surface texture and moisture, not color and shape. Interpreting it is a distinct skill from reading a photograph."
+  ],
+  "card": {
+    "eyebrow": "Collection basics",
+    "headline": "Radar doesn't wait for <em>clear skies</em>",
+    "sub": "Optical imagery needs a clear sky. Radar's microwave signal passes through cloud and rain — which is exactly when coverage matters most.",
+    "footright": "SAR vs optical"
+  },
+  "rationale": "Delivers a genuinely new, concrete mechanism (radar vs optical physics) not touched by prior posts, fulfilling the explainer brief without repeating cadence/confidence-grading angles already used.",
+  "pillar": "EXPLAINER",
+  "tier": "AUTO",
+  "illustrative": false,
+  "cites_detection": false,
+  "generated_at": "2026-11-19T16:26:43.416Z",
+  "usage": {
+    "input": 2763,
+    "output": 1091
+  },
+  "opsec": {
+    "verdict": "PASS",
+    "reasons": []
+  },
+  "effective_tier": "AUTO"
+}
