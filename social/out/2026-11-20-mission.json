@@ -1,0 +1,30 @@
+{
+  "caption": "A brief that only has to satisfy the person reading it today isn't doing its job. It has to hold up when it's read again later — by an inquiry, an auditor, a court, a successor who wasn't in the room.\n\nThat's the standard we build to. Every output carries its confidence level and its basis: what was observed, what was inferred, what wasn't visible at all. We don't round an assessment up to a confirmation to make the brief feel more decisive. We don't round a gap down to zero to make the coverage feel more complete.\n\nThis isn't caution for its own sake. It's what lets a decision made on our output survive scrutiny after the fact — including scrutiny we don't control the timing of.",
+  "thread": [
+    "A brief that only satisfies today's reader isn't doing its job. It has to hold up when read again later — by an inquiry, an auditor, a successor who wasn't in the room.",
+    "That's the standard: every output carries its confidence level and its basis. Observed, inferred, or not visible at all — stated as what it is, not rounded up or down.",
+    "We don't inflate an assessment into a confirmation to make a brief feel decisive. We don't shrink a gap to zero to make coverage feel complete.",
+    "This is what lets a decision made on our output survive scrutiny after the fact — on a timeline we don't control."
+  ],
+  "card": {
+    "eyebrow": "Operating standard",
+    "headline": "Built to survive <em>scrutiny</em>, not just the moment",
+    "sub": "Confidence is graded and basis is logged, because the record has to hold up after the fact — not just read well the day it's issued.",
+    "footright": "Methodology"
+  },
+  "rationale": "States the firm's accountability-first operating philosophy plainly, without boasting, and without repeating the grading/logging phrasing already used in prior PROOF-style posts.",
+  "pillar": "MISSION",
+  "tier": "AUTO",
+  "illustrative": false,
+  "cites_detection": false,
+  "generated_at": "2026-11-20T15:58:32.127Z",
+  "usage": {
+    "input": 2725,
+    "output": 874
+  },
+  "opsec": {
+    "verdict": "PASS",
+    "reasons": []
+  },
+  "effective_tier": "AUTO"
+}
