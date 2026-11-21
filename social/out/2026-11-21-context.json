@@ -1,0 +1,30 @@
+{
+  "caption": "Pipeline theft in the Niger Delta tracks economics, not just pipeline length. Illegal tapping clusters where road or creek access lets product move fast to informal refining sites — proximity to market, not vulnerability of the line, is the better predictor of where theft recurs.\n\nThis is public record: reported volumes lost to theft and resulting shut-ins have run into hundreds of thousands of barrels per day in bad years, and the illegal refining chain that buys the stolen product has its own logistics — cookers, barges, storage pits — that leaves a footprint over time.\n\nA security posture built only around pipeline right-of-way misses half the picture. The economics that sustain theft sit off the line, at the points where stolen product gets moved and sold. Pattern of life around those nodes matters as much as watching the pipe itself.",
+  "thread": [
+    "Pipeline theft tracks access economics, not pipeline length. Tap points cluster where product can move fast to informal refining sites — not where the line happens to be most exposed.",
+    "Public reporting has put theft-driven shut-ins at hundreds of thousands of barrels/day in bad years. The illegal refining chain behind that has its own logistics footprint: cookers, barges, storage pits.",
+    "Watching only the right-of-way misses the economics. The nodes where stolen product gets moved and sold are part of the same pattern of life worth tracking over time.",
+    "#NigerDelta #PipelineSecurity"
+  ],
+  "card": {
+    "eyebrow": "Pipeline theft economics",
+    "headline": "The tap is the <em>easy</em> part",
+    "sub": "Theft clusters where stolen product can move fast to market, not just where the line is exposed. The logistics chain behind it leaves its own footprint.",
+    "footright": "Niger Delta / onshore"
+  },
+  "rationale": "Introduces a fresh, publicly-sourced angle on pipeline theft economics that hasn't been used in recent posts, reinforcing the CONTEXT pillar without repeating prior dam or capacity-sharing framing.",
+  "pillar": "CONTEXT",
+  "tier": "APPROVE",
+  "illustrative": false,
+  "cites_detection": false,
+  "generated_at": "2026-11-21T15:11:20.530Z",
+  "usage": {
+    "input": 2760,
+    "output": 933
+  },
+  "opsec": {
+    "verdict": "PASS",
+    "reasons": []
+  },
+  "effective_tier": "APPROVE"
+}
