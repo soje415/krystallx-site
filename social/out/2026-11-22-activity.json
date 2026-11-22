@@ -1,0 +1,29 @@
+{
+  "caption": "Standing watch does not pause between incidents. Across the current collection cycle, multiple areas of interest are held under revisit — river reaches, pipeline corridors, flood-prone basins — each logged independently of whether anything is happening there.\n\nMost passes close with no finding. That is the expected outcome, not a gap in the system. The value is in the baseline that accumulates pass over pass, so that when a signature does deviate, it deviates against a known record, not a guess.\n\nWe do not publish where the queue is currently tasked or what it has flagged. That is the point of the collection plan — it runs whether or not anyone outside it is watching.",
+  "thread": [
+    "Standing watch does not pause between incidents. The collection plan runs across multiple areas of interest at once, independent of whether anything is happening in any one of them.",
+    "Most passes close with no finding. That's expected. The value is the baseline building underneath — river reaches, pipeline corridors, flood basins — logged pass over pass regardless of season or headline.",
+    "We don't publish current tasking, site count, or findings. The record exists so a deviation has something real to deviate from — not so it can be narrated in real time."
+  ],
+  "card": {
+    "eyebrow": "Operating tempo",
+    "headline": "The queue runs whether or not anything is <em>happening</em>",
+    "sub": "Multiple areas of interest held under standing revisit, pass over pass, independent of incident or season.",
+    "footright": "Standing collection plan"
+  },
+  "rationale": "Shows operational scale and discipline (multi-AOI, continuous tasking) without naming a single site, client, or detection — reinforcing credibility through abstraction rather than specifics.",
+  "pillar": "ACTIVITY",
+  "tier": "DRAFT",
+  "illustrative": false,
+  "cites_detection": false,
+  "generated_at": "2026-11-22T15:09:22.739Z",
+  "usage": {
+    "input": 2758,
+    "output": 738
+  },
+  "opsec": {
+    "verdict": "PASS",
+    "reasons": []
+  },
+  "effective_tier": "DRAFT"
+}
