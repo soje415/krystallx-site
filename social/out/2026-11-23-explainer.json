@@ -1,0 +1,30 @@
+{
+  "caption": "A false positive is not free. It costs a dispatch, a vehicle, fuel, and hours of a response team's day — and it costs the next alert its credibility if the crew arrives and finds nothing.\n\nAn anomaly on a pass is a cue, not a verdict. Before it moves anyone, it gets checked against history for that location, cross-referenced against other collection where available, and only then passed forward with a confidence grade attached. That step is slower than firing off every hit. It is also the difference between a system that gets believed and one that gets ignored by week three.\n\nThe discipline is not in catching more. It is in catching the right ones and saying plainly when something can't be confirmed yet.",
+  "thread": [
+    "A false positive is not free. It is a dispatched team, burned fuel, lost hours — and a dent in whether anyone trusts the next alert.",
+    "An anomaly on a single pass is a cue, not a verdict. It gets checked against history for that spot and whatever else is available before it moves anyone.",
+    "That corroboration step is slower than forwarding every hit raw. It is also why the fifth alert still gets a response instead of a shrug.",
+    "The job is not maximum detections. It is the right ones, with confidence stated plainly when it isn't there yet."
+  ],
+  "card": {
+    "eyebrow": "How detection works",
+    "headline": "A false alarm costs <em>trust</em>, not just fuel",
+    "sub": "An anomaly is a cue, not a verdict. It gets checked before it moves anyone — because the next alert has to still get believed.",
+    "footright": "Detection discipline"
+  },
+  "rationale": "Teaches a concrete, unaddressed mechanic — the operational and credibility cost of false positives and why corroboration precedes dispatch — without repeating prior radar/revisit/confidence angles.",
+  "pillar": "EXPLAINER",
+  "tier": "AUTO",
+  "illustrative": false,
+  "cites_detection": false,
+  "generated_at": "2026-11-23T19:05:14.959Z",
+  "usage": {
+    "input": 2788,
+    "output": 785
+  },
+  "opsec": {
+    "verdict": "PASS",
+    "reasons": []
+  },
+  "effective_tier": "AUTO"
+}
