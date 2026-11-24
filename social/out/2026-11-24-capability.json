@@ -1,0 +1,30 @@
+{
+  "caption": "A revisit schedule tells you when a location will be observed. It does not tell you what happened in between.\n\nFor an area under standing tasking, each pass gives a confirmed state at a point in time. If the interval is six days, anything that starts and finishes inside that window is invisible until the next pass picks up the aftermath. That gap is not a flaw to be hidden. It is the operating parameter the collection plan is built around.\n\nThe honest brief states the revisit interval alongside every finding, so the reader knows how fresh the picture is and how much could have changed since. A system that implies continuous watch when it samples periodically will eventually hand someone a false sense of coverage.",
+  "thread": [
+    "Revisit interval is a known gap, not a secret one. Between passes, an area of interest is not being watched. That is the tradeoff of scheduled collection, and it is stated, not hidden.",
+    "Each pass confirms a state at a point in time. Anything that starts and resolves inside the interval shows up only as an aftermath on the next pass, not as an event.",
+    "Shorter intervals narrow the gap. They do not close it. No revisit schedule delivers continuous track on a target — that claim belongs to a different kind of system, not this one.",
+    "Every finding we issue carries the revisit interval next to it. Know how fresh the picture is before you act on it."
+  ],
+  "card": {
+    "eyebrow": "Revisit basics",
+    "headline": "The gap between passes is <em>real</em>",
+    "sub": "A revisit schedule confirms state at each pass. What happens between passes is not observed — and the brief says so.",
+    "footright": "Collection planning"
+  },
+  "rationale": "Directly satisfies the brief's requirement to name a capability and its honest sampling limit, using a fresh angle (the inter-pass gap itself) distinct from prior revisit/cadence posts.",
+  "pillar": "CAPABILITY",
+  "tier": "APPROVE",
+  "illustrative": false,
+  "cites_detection": false,
+  "generated_at": "2026-11-24T18:44:40.843Z",
+  "usage": {
+    "input": 2768,
+    "output": 912
+  },
+  "opsec": {
+    "verdict": "PASS",
+    "reasons": []
+  },
+  "effective_tier": "APPROVE"
+}
