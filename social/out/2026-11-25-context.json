@@ -1,0 +1,31 @@
+{
+  "caption": "BLUF: both flood risk and pipeline theft this season trace back to economics, not just terrain.\n\nReservoir operators on the Benue-Niger system are mandated for power generation and irrigation first. Flood mitigation is a secondary function, applied when it doesn't conflict with the primary one. A dam held near capacity to hit a generation target can force a release that has nothing to do with local rainfall. The downstream community absorbs a decision made for an upstream objective it has no part in setting.\n\nPipeline theft runs on a parallel logic. Incident volume tracks the price differential between official and black-market product, not the length of exposed line. When that spread widens, activity rises across the whole corridor. Harden one tap point and the activity relocates to the next one. The spread drives the behavior, the fence does not remove it.\n\nNeither problem is solved by watching harder at a single site. Both are system-level questions and need system-level collection.",
+  "thread": [
+    "Flood risk on the Benue-Niger system is set by reservoir operating mandates, not just rainfall. Power and irrigation targets usually outrank flood mitigation in the release decision.",
+    "A dam held near capacity for a generation target can force a release unrelated to local weather. The downstream town absorbs a decision made for an upstream objective.",
+    "Pipeline theft runs on its own economics. Incident volume tracks the price gap between official and black-market product, not the length of line exposed.",
+    "Harden one tap point and the activity relocates along the corridor. The price spread drives the behavior, not the fence.",
+    "Both problems are system-level, not site-level. Watching one location harder doesn't change either basin economics or market economics."
+  ],
+  "card": {
+    "eyebrow": "Flood season economics",
+    "headline": "Built for <em>power</em>, not flood control",
+    "sub": "Reservoir releases serve generation and irrigation targets first. Flood mitigation is secondary, and downstream towns absorb the decision.",
+    "footright": "Benue-Niger basin"
+  },
+  "rationale": "Delivers new structural context (operating mandates, price-driven theft economics) distinct from the already-posted gauge-density and logistics angles, reinforcing the brand's systems-level framing without repeating prior phrasing.",
+  "pillar": "CONTEXT",
+  "tier": "APPROVE",
+  "illustrative": false,
+  "cites_detection": false,
+  "generated_at": "2026-11-25T17:52:46.928Z",
+  "usage": {
+    "input": 2777,
+    "output": 1909
+  },
+  "opsec": {
+    "verdict": "PASS",
+    "reasons": []
+  },
+  "effective_tier": "APPROVE"
+}
