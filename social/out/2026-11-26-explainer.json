@@ -1,0 +1,31 @@
+{
+  "caption": "A single radar return is a number, not a verdict. Backscatter changes with soil moisture, vegetation structure, surface roughness, even look angle from one pass to the next. Read in isolation, it tells you almost nothing.\n\nWhat makes it useful is a baseline — the same patch of ground, same time of year, compared across multiple prior passes. An anomaly is a deviation from that history, not a raw value crossing some fixed threshold. Build the baseline wrong and every flood plain looks like a flood, every dry season looks like drought.\n\nThis is why a monitoring system is only as good as its archive. A new area of interest starts with reduced confidence until enough history accumulates to know what normal looks like there.",
+  "thread": [
+    "A radar pixel by itself tells you almost nothing. Backscatter shifts with soil moisture, vegetation, surface roughness, even the angle of the pass. Raw value, no context, is not a detection.",
+    "What turns it into a signal is a baseline — the same ground, same season, compared against a run of prior passes. An anomaly is a deviation from that history, not a number crossing a fixed line.",
+    "Get the baseline wrong and a normal flood plain reads as a flood every wet season. A new area of interest starts on reduced confidence until enough passes accumulate to know what normal looks like.",
+    "This is unglamorous work — archive-building, not detection. But it's the part that decides whether an alert means anything.",
+    "#EarthObservation #RiskIntel"
+  ],
+  "card": {
+    "eyebrow": "Collection basics",
+    "headline": "A pixel means nothing without a <em>baseline</em>",
+    "sub": "Radar backscatter shifts with moisture, vegetation, and angle. An anomaly is a deviation from history — not a raw number crossing a line.",
+    "footright": "Synthetic-aperture radar"
+  },
+  "rationale": "Introduces a genuinely new mechanic (baseline construction for change detection) not covered in prior posts, keeps strict BLUF/analyst voice, and avoids any pitch or hard-rule violation.",
+  "pillar": "EXPLAINER",
+  "tier": "AUTO",
+  "illustrative": false,
+  "cites_detection": false,
+  "generated_at": "2026-11-26T17:37:22.727Z",
+  "usage": {
+    "input": 2813,
+    "output": 1055
+  },
+  "opsec": {
+    "verdict": "PASS",
+    "reasons": []
+  },
+  "effective_tier": "AUTO"
+}
