@@ -1,0 +1,30 @@
+{
+  "caption": "An assessment is only as good as what happens when someone pushes back on it. Every line in a KrystallX brief traces back to a specific pass, a specific baseline, a specific confidence grade. If it can't be traced, it doesn't go in the brief.\n\nThat discipline is not for the reader's comfort. It is for the moment, months later, when an inquiry or a courtroom asks what was known, when it was known, and on what basis. A brief that can't answer that is noise with good formatting.\n\nWe would rather hand over a thinner report that survives scrutiny than a confident one that doesn't. That is the whole design principle, and it costs us some headlines along the way.",
+  "thread": [
+    "An assessment is only as good as what happens when someone pushes back on it. That's the design principle, not a tagline.",
+    "Every line in a brief traces to a specific pass, baseline, and confidence grade. If it can't be traced, it doesn't go in.",
+    "That matters later — when an inquiry or a court asks what was known, when, and on what basis. Confident but untraceable is noise with good formatting.",
+    "We'll hand over a thinner report that survives scrutiny over a confident one that doesn't. Some headlines get lost that way. Fine."
+  ],
+  "card": {
+    "eyebrow": "How we work",
+    "headline": "If it can't be traced, it doesn't go in the <em>brief</em>",
+    "sub": "Every line is sourced to a pass, a baseline, a confidence grade. Built to hold up under inquiry, not just on the day it's read.",
+    "footright": "Evidentiary standard"
+  },
+  "rationale": "Positions KrystallX's method as accountability-driven rather than sales-driven, directly addressing the MISSION brief without repeating prior angles on cadence, confidence grading, or false alarms.",
+  "pillar": "MISSION",
+  "tier": "AUTO",
+  "illustrative": false,
+  "cites_detection": false,
+  "generated_at": "2026-11-27T17:19:39.090Z",
+  "usage": {
+    "input": 2773,
+    "output": 811
+  },
+  "opsec": {
+    "verdict": "PASS",
+    "reasons": []
+  },
+  "effective_tier": "AUTO"
+}
