@@ -1,0 +1,31 @@
+{
+  "caption": "Flood season and pipeline theft season overlap in the Niger Delta, and that overlap is not a coincidence. Rising creek levels reduce foot and boat patrol frequency along exposed reaches. Illegal tie-in points are easier to conceal under higher water and thicker vegetation growth that the rains bring. Product moves faster through flooded waterways that double as transport routes for the stolen volume.\n\nNone of this is new. It is public record in incident reporting from the region, and it is the reason theft reports historically climb alongside rainfall totals rather than against them.\n\nDam releases add a second variable. Reservoir operators schedule discharge for power generation and irrigation demand, not for theft-season risk downstream. A release timed for a generation target can raise water levels in exactly the reaches where reduced visibility already favors tapping. Two decisions made for two different reasons compound into one window of elevated risk for the same communities.\n\nUnderstanding the seasonal mechanism matters for where attention gets allocated, independent of what any single system detects.",
+  "thread": [
+    "Flood season and pipeline theft season overlap in the Niger Delta. Not a coincidence — it's a mechanism, and it's public record.",
+    "Rising water reduces patrol frequency and conceals illegal tie-ins. Stolen product also moves faster through flooded waterways. Theft reporting has long tracked with rainfall, not against it.",
+    "Dam releases compound it. Discharge is scheduled for power and irrigation targets, not theft risk downstream. A release timed for generation can raise water exactly where reduced visibility already favors tapping.",
+    "Two operating decisions, two different purposes, one overlapping window of risk for the same downstream communities.",
+    "Worth knowing where to look before the rains peak, not after. #NigerDelta #FloodSeason"
+  ],
+  "card": {
+    "eyebrow": "Seasonal risk overlap",
+    "headline": "Flood season is also <em>theft</em> season",
+    "sub": "Rising water cuts patrol visibility right as discharge schedules raise river levels. Two separate decisions, one overlapping risk window.",
+    "footright": "Niger Delta / flood season"
+  },
+  "rationale": "Connects two widely-reported but rarely linked seasonal dynamics (flood timing and theft timing) in plain public-knowledge terms, reinforcing category expertise without any detection claim.",
+  "pillar": "CONTEXT",
+  "tier": "APPROVE",
+  "illustrative": false,
+  "cites_detection": false,
+  "generated_at": "2026-11-28T16:03:12.929Z",
+  "usage": {
+    "input": 2814,
+    "output": 1302
+  },
+  "opsec": {
+    "verdict": "PASS",
+    "reasons": []
+  },
+  "effective_tier": "APPROVE"
+}
